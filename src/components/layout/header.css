@@ -5,15 +5,157 @@
     margin-left: 8px;
     width: calc(100% - 16px);
     top: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 32px;
-    background: hsl(var(--background) / 0.95);
-    backdrop-filter: blur(10px);
+    /* background: rgba(255, 255, 255, 0.95); */
+    backdrop-filter: blur(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 50;
+}
+
+/* Ensure mega menu has proper positioning and center alignment */
+.header-sticky [data-radix-navigation-menu-content] {
+    z-index: 60 !important;
+    position: fixed !important;
+    left: 50% !important;
+    top: 68px !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+    right: auto !important;
+}
+
+/* Override Radix default positioning */
+[data-radix-navigation-menu-content] {
+    position: fixed !important;
+    left: 50% !important;
+    top: 68px !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+}
+
+/* Remove Radix Navigation Menu viewport background */
+[data-radix-navigation-menu-viewport] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Hide/remove the default navigation menu viewport */
+.header-sticky [data-radix-navigation-menu-viewport] {
+    display: none !important;
+}
+
+/* Ensure no background interference */
+[data-radix-navigation-menu-root] {
+    background: transparent !important;
+}
+
+/* Responsive mega menu width adjustments */
+@media (max-width: 1200px) {
+    .header-sticky [data-radix-navigation-menu-content] > div {
+        width: 90vw !important;
+        min-width: 0 !important;
+    }
+}
+
+/* Hide mega menu completely on mobile and tablet */
+@media (max-width: 1023px) {
+    /* Hide the entire desktop navigation on mobile/tablet */
+    .header-sticky nav {
+        display: none !important;
+    }
+    
+    /* Hide any mega menu content */
+    [data-radix-navigation-menu-content] {
+        display: none !important;
+    }
+    
+    /* Hide any navigation menu triggers */
+    [data-radix-navigation-menu-trigger] {
+        display: none !important;
+    }
+    
+    /* Ensure hamburger menu button is visible on mobile */
+    .lg\:hidden {
+        display: flex !important;
+    }
+}
+
+.header-sticky:hover {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
 }
 
 [data-theme="dark"] .header-sticky {
-    border: 1px solid hsl(var(--border));
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+    background: rgba(17, 24, 39, 0.95);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .header-sticky:hover {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5), 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Mega menu animations */
+.mega-menu-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mega-menu-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mega-menu-exit {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-in;
+}
+
+.mega-menu-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Enhanced hover states */
+.nav-item {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #2563eb, #4f46e5);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    border-radius: 1px;
+}
+
+.nav-item:hover::before {
+    width: 75%;
+}
+
+/* Mobile menu animations */
+.mobile-menu-slide {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 656px) {
