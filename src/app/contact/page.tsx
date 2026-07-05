@@ -18,6 +18,7 @@ import {
 } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
+import { DemoForm } from "@/components/forms/demo-form"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -177,13 +178,21 @@ export default async function ContactPage({
         <div className="container mx-auto max-w-6xl">
           <div className="grid gap-10 lg:grid-cols-2">
             <Reveal variant="scale">
-              <ContactForm
-                key={mode}
-                defaultReason={cfg.form.defaultReason}
-                title={cfg.form.title}
-                subtitle={cfg.form.subtitle}
-                submitLabel={cfg.form.submitLabel}
-              />
+              {mode === "demo" ? (
+                <DemoForm
+                  title={cfg.form.title}
+                  subtitle={cfg.form.subtitle}
+                  submitLabel={cfg.form.submitLabel}
+                />
+              ) : (
+                <ContactForm
+                  key={mode}
+                  defaultReason={cfg.form.defaultReason}
+                  title={cfg.form.title}
+                  subtitle={cfg.form.subtitle}
+                  submitLabel={cfg.form.submitLabel}
+                />
+              )}
             </Reveal>
 
             <Reveal delay={100} className="space-y-6">

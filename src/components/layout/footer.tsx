@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Github, Linkedin, Twitter, Youtube } from "lucide-react"
+import { Github, Linkedin, Twitter, Youtube } from "lucide-react"
+import { NewsletterForm } from "@/components/forms/newsletter-form"
 
 const footerLinks = {
   Platform: [
@@ -69,23 +70,7 @@ export function Footer() {
                 No spam, unsubscribe anytime.
               </p>
             </div>
-            <form className="flex w-full max-w-sm flex-col gap-3 sm:flex-row">
-              <label htmlFor="footer-email" className="sr-only">Email address</label>
-              <input
-                id="footer-email"
-                type="email"
-                required
-                placeholder="you@company.com"
-                className="h-11 flex-1 rounded-lg border border-white/25 bg-white/15 px-4 text-sm text-white outline-none backdrop-blur transition-colors placeholder:text-white/60 focus-visible:border-white/70 focus-visible:ring-2 focus-visible:ring-white/40"
-              />
-              <button
-                type="submit"
-                className="group inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-lg bg-white px-5 text-sm font-semibold text-[oklch(0.45_0.2_280)] shadow-sm transition-all hover:-translate-y-px hover:shadow-md"
-              >
-                Subscribe
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </button>
-            </form>
+            <NewsletterForm sourcePage="footer" variant="dark" />
           </div>
         </div>
       </div>

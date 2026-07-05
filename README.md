@@ -18,6 +18,23 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Functional forms (Book a Demo / Contact / Newsletter)
+
+The three lead forms are wired end-to-end: **Zod validation → Supabase storage →
+Resend emails**, with honeypot + rate limiting + Turnstile, inline validation,
+loading/success/error states, and toasts.
+
+Quick start:
+
+```bash
+cp .env.example .env.local        # fill in Supabase + Resend values
+# run supabase/migrations/0001_init.sql in your Supabase project
+npm run dev
+```
+
+Full setup, security model, email map, and Vercel deployment steps are in
+**[docs/FORMS.md](docs/FORMS.md)**.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More

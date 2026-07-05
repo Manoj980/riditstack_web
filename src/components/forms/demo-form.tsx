@@ -9,46 +9,46 @@ import { Honeypot, SelectField, TextAreaField, TextField } from "@/components/fo
 import { Turnstile } from "@/components/forms/turnstile"
 import { useFormSubmit } from "@/hooks/use-form-submit"
 
-type ContactFormProps = {
-  /** Pre-selected "Reason for Contact" value (e.g. "demo", "login") */
-  defaultReason?: string
-  /** Form card title */
+const INDUSTRIES = [
+  "Manufacturing",
+  "Healthcare",
+  "Retail",
+  "Technology",
+  "Financial Services",
+  "Energy & Utilities",
+  "Public Sector",
+  "Other",
+]
+
+const COMPANY_SIZES = ["1-50", "51-200", "201-1000", "1001-5000", "5000+"]
+
+type DemoFormProps = {
   title?: string
-  /** Supporting copy under the title */
   subtitle?: string
-  /** Submit button label */
   submitLabel?: string
 }
 
-const REASONS: { value: string; label: string }[] = [
-  { value: "demo", label: "Demo Request" },
-  { value: "login", label: "Login Assistance" },
-  { value: "sales", label: "Sales Inquiry" },
-  { value: "support", label: "Technical Support" },
-  { value: "partnership", label: "Partnership Opportunity" },
-  { value: "other", label: "Other" },
-]
-
-export function ContactForm({
-  defaultReason = "",
-  title = "Send us a message",
-  subtitle = "Fill out the form and we'll get back to you within 24 hours.",
-  submitLabel = "Send message",
-}: ContactFormProps) {
+export function DemoForm({
+  title = "Request your demo",
+  subtitle = "Tell us about your team and we'll set up a walkthrough tailored to you.",
+  submitLabel = "Request demo",
+}: DemoFormProps) {
   const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
-    company: "",
     phone: "",
-    reason: defaultReason,
+    company: "",
+    job_title: "",
+    industry: "",
+    employees: "",
+    country: "",
     message: "",
   })
   const [honeypot, setHoneypot] = useState("")
   const [turnstileToken, setTurnstileToken] = useState("")
 
   const { submit, isSubmitting, isSuccess, fieldErrors } = useFormSubmit({
-    endpoint: "/api/contact",
+    endpoint: "/api/book-demo",
   })
 
   const set =
@@ -60,22 +60,8 @@ export function ContactForm({
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const reasonLabel = REASONS.find((r) => r.value === form.reason)?.label
-    await submit({
-      name: `${form.firstName} ${form.lastName}`.trim(),
-      email: form.email,
-      company: form.company,
-      phone: form.phone,
-      subject: reasonLabel,
-      message: form.message,
-      company_website: honeypot,
-      turnstileToken,
-    })
+    await submit({ ...form, company_website: honeypot, turnstileToken })
   }
-
-  // Map server-side `name`/`subject` errors back to the split UI fields.
-  const nameError = fieldErrors.name
-  const subjectError = fieldErrors.subject
 
   if (isSuccess) {
     return (
@@ -84,10 +70,10 @@ export function ContactForm({
           <span className="flex h-16 w-16 animate-in zoom-in-50 items-center justify-center rounded-full bg-primary/10 text-primary duration-500">
             <CheckCircle2 className="h-9 w-9" />
           </span>
-          <h3 className="text-2xl font-semibold">Message sent!</h3>
+          <h3 className="text-2xl font-semibold">Request received!</h3>
           <p className="max-w-sm text-muted-foreground">
-            Thanks, {form.firstName || "there"}. We&apos;ve received your message and
-            will get back to you within 24 hours.
+            Thanks, {form.name.split(" ")[0] || "there"}. A ProcLeo specialist will
+            reach out within 24 hours to schedule your personalized demo.
           </p>
         </CardContent>
       </Card>
@@ -95,7 +81,7 @@ export function ContactForm({
   }
 
   return (
-    <Card className="border-0 shadow-xl">
+    <Card className="relative border-0 shadow-xl">
       <CardHeader>
         <CardTitle className="text-2xl">{title}</CardTitle>
         <p className="text-muted-foreground">{subtitle}</p>
@@ -106,46 +92,49 @@ export function ContactForm({
 
           <div className="grid gap-4 md:grid-cols-2">
             <TextField
-              label="First name"
-              name="firstName"
+              label="Full name"
+              name="name"
               required
-              autoComplete="given-name"
-              value={form.firstName}
-              onChange={set("firstName")}
-              error={nameError}
+              autoComplete="name"
+              value={form.name}
+              onChange={set("name")}
+              error={fieldErrors.name}
             />
             <TextField
-              label="Last name"
-              name="lastName"
+              label="Work email"
+              name="email"
+              type="email"
               required
-              autoComplete="family-name"
-              value={form.lastName}
-              onChange={set("lastName")}
+              autoComplete="email"
+              value={form.email}
+              onChange={set("email")}
+              error={fieldErrors.email}
             />
           </div>
-
-          <TextField
-            label="Email address"
-            name="email"
-            type="email"
-            required
-            autoComplete="email"
-            value={form.email}
-            onChange={set("email")}
-            error={fieldErrors.email}
-          />
 
           <div className="grid gap-4 md:grid-cols-2">
             <TextField
               label="Company"
               name="company"
+              required
               autoComplete="organization"
               value={form.company}
               onChange={set("company")}
               error={fieldErrors.company}
             />
             <TextField
-              label="Phone number"
+              label="Job title"
+              name="job_title"
+              autoComplete="organization-title"
+              value={form.job_title}
+              onChange={set("job_title")}
+              error={fieldErrors.job_title}
+            />
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            <TextField
+              label="Phone"
               name="phone"
               type="tel"
               autoComplete="tel"
@@ -153,30 +142,52 @@ export function ContactForm({
               onChange={set("phone")}
               error={fieldErrors.phone}
             />
+            <TextField
+              label="Country"
+              name="country"
+              autoComplete="country-name"
+              value={form.country}
+              onChange={set("country")}
+              error={fieldErrors.country}
+            />
           </div>
 
-          <SelectField
-            label="Reason for contact"
-            name="reason"
-            required
-            value={form.reason}
-            onChange={set("reason")}
-            error={subjectError}
-          >
-            <option value="">Select a reason</option>
-            {REASONS.map((r) => (
-              <option key={r.value} value={r.value}>
-                {r.label}
-              </option>
-            ))}
-          </SelectField>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SelectField
+              label="Industry"
+              name="industry"
+              value={form.industry}
+              onChange={set("industry")}
+              error={fieldErrors.industry}
+            >
+              <option value="">Select an industry</option>
+              {INDUSTRIES.map((i) => (
+                <option key={i} value={i}>
+                  {i}
+                </option>
+              ))}
+            </SelectField>
+            <SelectField
+              label="Company size"
+              name="employees"
+              value={form.employees}
+              onChange={set("employees")}
+              error={fieldErrors.employees}
+            >
+              <option value="">Select company size</option>
+              {COMPANY_SIZES.map((s) => (
+                <option key={s} value={s}>
+                  {s} employees
+                </option>
+              ))}
+            </SelectField>
+          </div>
 
           <TextAreaField
-            label="Message"
+            label="What would you like to see?"
             name="message"
-            required
             rows={4}
-            placeholder="Tell us more about how we can help..."
+            placeholder="Tell us about your procurement workflows and goals..."
             value={form.message}
             onChange={set("message")}
             error={fieldErrors.message}
@@ -188,7 +199,7 @@ export function ContactForm({
             {isSubmitting ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                Sending…
+                Submitting…
               </>
             ) : (
               <>
