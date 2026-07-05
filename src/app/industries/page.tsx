@@ -39,8 +39,8 @@ export default function IndustriesIndexPage() {
                     href={`/industries/${ind.slug}`}
                     className="group flex h-full flex-col rounded-2xl border border-border bg-card/70 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
                   >
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
-                      <ind.icon className="h-6 w-6" />
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
+                      <ind.icon className="h-5 w-5" />
                     </div>
                     <h3 className="mt-4 flex items-center gap-1.5 text-lg font-semibold tracking-tight">
                       {ind.name}
@@ -58,7 +58,7 @@ export default function IndustriesIndexPage() {
           </div>
         </section>
 
-        <div className="mt-20">
+        <div className="mt-24 lg:mt-32">
           <CTA />
         </div>
       </Layout>

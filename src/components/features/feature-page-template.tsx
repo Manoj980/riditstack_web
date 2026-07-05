@@ -107,7 +107,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       </section>
 
       {/* =========================== PROBLEM =========================== */}
-      <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+      <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -138,7 +138,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       </section>
 
       {/* =========================== SOLUTION =========================== */}
-      <section className="px-4 py-18 sm:py-21">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <Reveal>
@@ -178,7 +178,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       </section>
 
       {/* =========================== BENEFITS =========================== */}
-      <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+      <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -206,7 +206,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       </section>
 
       {/* =========================== WORKFLOW =========================== */}
-      <section className="px-4 py-18 sm:py-21">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -237,7 +237,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       </section>
 
       {/* =========================== USE CASES =========================== */}
-      <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+      <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -266,7 +266,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       </section>
 
       {/* ============================= FAQ ============================= */}
-      <section className="px-4 py-18 sm:py-21">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <Reveal>
@@ -293,7 +293,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* ========================= RELATED ========================= */}
       {related.length > 0 && (
-        <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+        <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <Reveal>
@@ -337,7 +337,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       )}
 
       {/* ============================= CTA ============================= */}
-      <section className="px-4 py-18 sm:py-21">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <Reveal variant="scale">
             <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">
@@ -346,7 +346,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
                 <div className="absolute inset-0 bg-grid opacity-40 mask-fade-b" />
               </div>
 
-              <h2 className="mx-auto max-w-3xl text-3xl font-semibold tracking-tight sm:text-5xl">
+              <h2 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
                 See {feature.name.toLowerCase()} on
                 <span className="text-gradient-animated"> your own data</span>
               </h2>

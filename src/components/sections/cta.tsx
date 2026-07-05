@@ -17,7 +17,7 @@ const assurances = [
 
 export function CTA() {
   return (
-    <section className="px-4 py-18 sm:py-21">
+    <section className="px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <Reveal variant="scale">
           <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">

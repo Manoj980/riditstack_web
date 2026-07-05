@@ -35,11 +35,11 @@ const timelineSteps = [
 
 export function Timeline() {
   return (
-    <section className="relative overflow-hidden px-4 py-18 sm:py-21">
+    <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-32">
       {/* Subtle dotted texture only — the gradient rail carries the color here */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-dots opacity-40 mask-fade-b" />
 
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>

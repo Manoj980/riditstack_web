@@ -7,12 +7,12 @@ import { industries } from "@/content/industries"
 
 export function HomeSolutions() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <Reveal>
             <SectionBadge tone="primary" icon={Users}>Enterprise solutions</SectionBadge>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Shaped to your team</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Shaped to your team</h2>
           </Reveal>
           <Reveal delay={80}>
             <Link href="/solutions" className="group inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
@@ -48,12 +48,12 @@ export function HomeSolutions() {
 
 export function HomeIndustries() {
   return (
-    <section className="px-4 py-18 sm:py-21">
+    <section className="px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <Reveal>
             <SectionBadge tone="primary" icon={Building2}>Industries</SectionBadge>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Tuned to your sector</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Tuned to your sector</h2>
           </Reveal>
           <Reveal delay={80}>
             <Link href="/industries" className="group inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">

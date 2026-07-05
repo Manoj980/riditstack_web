@@ -29,12 +29,12 @@ const securityFeatures = [
 
 export function SecurityCompliance() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <SectionBadge tone="primary" icon={ShieldCheck}>Security & compliance</SectionBadge>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Enterprise-grade trust, by default
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
@@ -78,11 +78,11 @@ export function SecurityCompliance() {
 /* ---------------- Integrations ---------------- */
 export function HomeIntegrations() {
   return (
-    <section className="px-4 py-16">
+    <section className="px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Plug}>Integrations</SectionBadge></Reveal>
-          <Reveal delay={60} as="h2" className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">
+          <Reveal delay={60} as="h2" className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
             Connects to the systems you already run
           </Reveal>
           <Reveal delay={120} as="p" className="mt-4 text-muted-foreground">
@@ -128,11 +128,11 @@ const quotes = [
 
 export function HomeTestimonials() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Star}>Testimonials</SectionBadge></Reveal>
-          <Reveal delay={60} as="h2" className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+          <Reveal delay={60} as="h2" className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
             Trusted by the people who use it
           </Reveal>
         </div>
@@ -176,12 +176,12 @@ const caseStudies = [
 
 export function CaseStudiesTeaser() {
   return (
-    <section className="px-4 py-18 sm:py-21">
+    <section className="px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <Reveal>
             <SectionBadge tone="primary">Customer success</SectionBadge>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Proof, not promises</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Proof, not promises</h2>
           </Reveal>
           <Reveal delay={80}>
             <Link href="/customers" className="group inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
@@ -215,12 +215,12 @@ export function CaseStudiesTeaser() {
 
 export function ResourcesTeaser() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="grid items-center gap-8 rounded-3xl border border-border bg-card p-8 shadow-sm md:grid-cols-[1.3fr_1fr] sm:p-10">
           <div>
             <SectionBadge tone="primary" icon={BookOpen}>Latest resources</SectionBadge>
-            <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl">
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Sharpen your procurement strategy
             </h2>
             <p className="mt-4 text-muted-foreground">

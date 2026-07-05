@@ -108,7 +108,7 @@ export function MarketingPageTemplate({
       </section>
 
       {/* =========================== PAIN POINTS =========================== */}
-      <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+      <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -139,7 +139,7 @@ export function MarketingPageTemplate({
       </section>
 
       {/* =========================== SOLUTION =========================== */}
-      <section className="px-4 py-18 sm:py-21">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <Reveal>
@@ -175,7 +175,7 @@ export function MarketingPageTemplate({
       </section>
 
       {/* =========================== CAPABILITIES =========================== */}
-      <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+      <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -206,7 +206,7 @@ export function MarketingPageTemplate({
       </section>
 
       {/* =========================== WORKFLOW =========================== */}
-      <section className="px-4 py-18 sm:py-21">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -233,7 +233,7 @@ export function MarketingPageTemplate({
       </section>
 
       {/* =========================== CUSTOMER STORY =========================== */}
-      <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+      <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-5xl">
           <Reveal variant="scale">
             <figure className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-xl sm:p-12">
@@ -293,7 +293,7 @@ export function MarketingPageTemplate({
       </section>
 
       {/* ============================= FAQ ============================= */}
-      <section className="border-t border-border px-4 py-18 sm:py-21">
+      <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <Reveal>
@@ -316,7 +316,7 @@ export function MarketingPageTemplate({
 
       {/* =========================== RELATED =========================== */}
       {related.length > 0 && (
-        <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+        <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <Reveal>
@@ -355,7 +355,7 @@ export function MarketingPageTemplate({
       )}
 
       {/* ============================= CTA ============================= */}
-      <section className="px-4 py-18 sm:py-21">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <Reveal variant="scale">
             <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">
@@ -363,7 +363,7 @@ export function MarketingPageTemplate({
                 <div className="absolute -top-32 left-1/2 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-40" />
                 <div className="absolute inset-0 bg-grid opacity-40 mask-fade-b" />
               </div>
-              <h2 className="mx-auto max-w-3xl text-3xl font-semibold tracking-tight sm:text-5xl">
+              <h2 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
                 Ready to transform {page.name.toLowerCase()}
                 <span className="text-gradient-animated"> with RiditStack?</span>
               </h2>

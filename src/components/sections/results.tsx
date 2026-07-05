@@ -84,11 +84,11 @@ export function Results() {
   }, [])
 
   return (
-    <section className="relative overflow-hidden px-4 py-18 sm:py-21">
+    <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-32">
       <div aria-hidden className="absolute inset-0 -z-10 border-y border-border bg-muted/40" />
       <div aria-hidden className="pointer-events-none absolute -top-28 left-1/2 -z-10 h-[32rem] w-[38rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-[0.32]" />
 
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
             <SectionBadge tone="primary" icon={TrendingUp}>

@@ -25,7 +25,7 @@ export function LegalPage({
         </div>
         <div className="container mx-auto max-w-3xl text-center">
           <Reveal><SectionBadge tone="primary" icon={ScrollText}>Legal</SectionBadge></Reveal>
-          <Reveal delay={60} as="h1" className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+          <Reveal delay={60} as="h1" className="mt-5 text-4xl font-semibold tracking-tight sm:text-6xl">
             {title}
           </Reveal>
           <Reveal delay={120} as="p" className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted-foreground">
@@ -43,7 +43,7 @@ export function LegalPage({
             {sections.map((section, i) => (
               <Reveal key={section.heading} delay={Math.min(i, 4) * 40}>
                 <div>
-                  <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+                  <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{section.heading}</h2>
                   <div className="mt-3 space-y-3">
                     {section.body.map((para, j) => (
                       <p key={j} className="leading-relaxed text-muted-foreground">

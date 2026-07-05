@@ -28,12 +28,12 @@ export const homeFaqs = [
 
 export function HomeFaq() {
   return (
-    <section className="px-4 py-18 sm:py-21">
+    <section className="px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <Reveal>
             <SectionBadge tone="primary">FAQ</SectionBadge>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Questions, answered</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Questions, answered</h2>
             <p className="mt-4 text-muted-foreground">
               Everything you need to understand RiditStack and ProcLeo. Still curious?{" "}
               <Link href="/contact" className="font-medium text-primary hover:underline">

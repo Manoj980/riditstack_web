@@ -256,7 +256,7 @@ export default function CustomersPage() {
         </section>
 
         {/* Business outcomes / ROI */}
-        <section className="px-4 py-18 sm:py-21">
+        <section className="px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary" icon={TrendingUp}>Business outcomes</SectionBadge></Reveal>
@@ -285,7 +285,7 @@ export default function CustomersPage() {
         </section>
 
         {/* Featured customers */}
-        <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+        <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary">Featured customers</SectionBadge></Reveal>
@@ -329,7 +329,7 @@ export default function CustomersPage() {
         </section>
 
         {/* Testimonials */}
-        <section className="px-4 py-18 sm:py-21">
+        <section className="px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary" icon={Star}>Testimonials</SectionBadge></Reveal>
@@ -361,7 +361,7 @@ export default function CustomersPage() {
         </section>
 
         {/* Industry breakdown */}
-        <section className="border-t border-border bg-muted/40 px-4 py-18 sm:py-21">
+        <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary" icon={Building2}>By industry</SectionBadge></Reveal>
@@ -394,7 +394,7 @@ export default function CustomersPage() {
         </section>
 
         {/* Case study previews */}
-        <section className="px-4 py-18 sm:py-21">
+        <section className="px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <Reveal>
@@ -437,7 +437,7 @@ export default function CustomersPage() {
         </section>
 
         {/* FAQ */}
-        <section className="border-t border-border px-4 py-18 sm:py-21">
+        <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
               <Reveal>
@@ -457,7 +457,7 @@ export default function CustomersPage() {
         </section>
 
         {/* CTA */}
-        <section className="px-4 py-18 sm:py-21">
+        <section className="px-4 py-20 sm:py-24 lg:py-32">
           <div className="container mx-auto max-w-6xl">
             <Reveal variant="scale">
               <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">
@@ -465,7 +465,7 @@ export default function CustomersPage() {
                   <div className="absolute -top-32 left-1/2 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-40" />
                   <div className="absolute inset-0 bg-grid opacity-40 mask-fade-b" />
                 </div>
-                <h2 className="mx-auto max-w-3xl text-3xl font-semibold tracking-tight sm:text-5xl">
+                <h2 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
                   Become the next
                   <span className="text-gradient-animated"> success story</span>
                 </h2>

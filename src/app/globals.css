@@ -466,6 +466,69 @@
   .animate-spin-slow { animation: var(--animate-spin-slow); }
   .animate-drift { animation: var(--animate-drift); }
   .animate-badge-pulse { animation: var(--animate-badge-pulse); }
+
+  /* ---- Fine film grain for depth (expensive-surface trick) ---- */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ---- Premium multi-point mesh gradient (Stripe/Attio-style) ---- */
+  .bg-mesh {
+    background-image:
+      radial-gradient(42rem 34rem at 12% 8%, color-mix(in oklch, var(--brand-1) 20%, transparent), transparent 60%),
+      radial-gradient(38rem 32rem at 88% 14%, color-mix(in oklch, var(--brand-3) 18%, transparent), transparent 62%),
+      radial-gradient(34rem 30rem at 68% 96%, color-mix(in oklch, var(--brand-2) 16%, transparent), transparent 60%),
+      radial-gradient(30rem 28rem at 30% 88%, color-mix(in oklch, var(--brand-1) 12%, transparent), transparent 60%);
+  }
+
+  /* ---- Reusable premium glass card: tint + blur + gradient hairline ---- */
+  .glass-card {
+    position: relative;
+    background:
+      linear-gradient(180deg, color-mix(in oklch, var(--card) 92%, transparent), color-mix(in oklch, var(--card) 82%, transparent));
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    box-shadow:
+      0 1px 0 0 color-mix(in oklch, white 40%, transparent) inset,
+      0 20px 50px -28px color-mix(in oklch, var(--foreground) 40%, transparent);
+  }
+  .glass-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      140deg,
+      color-mix(in oklch, var(--primary) 42%, transparent),
+      transparent 38%,
+      transparent 62%,
+      color-mix(in oklch, var(--brand-2) 34%, transparent)
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  .dark .glass-card {
+    box-shadow:
+      0 1px 0 0 color-mix(in oklch, white 8%, transparent) inset,
+      0 24px 60px -30px rgba(0, 0, 0, 0.7);
+  }
+
+  /* ---- Parallax layers driven by a parent's normalized --nx/--ny ----
+     Parent sets --nx/--ny in ~[-0.5, 0.5]; each layer sets its own --depth. */
+  .parallax {
+    transform: translate3d(
+      calc(var(--nx, 0) * var(--depth, 18) * 1px),
+      calc(var(--ny, 0) * var(--depth, 18) * 1px),
+      0
+    );
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  .ring-track { stroke: color-mix(in oklch, var(--foreground) 12%, transparent); }
 }
 
 /* Register the custom angle property so border-glow can animate */
@@ -581,5 +644,6 @@
   .border-glow::after, .orb, .conic-glow,
   [data-bar], [data-draw] { animation: none !important; }
   [data-bar] { transform: none !important; }
+  .parallax { transform: none !important; }
   [data-draw] { stroke-dashoffset: 0 !important; }
 }

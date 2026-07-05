@@ -15,7 +15,6 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -218,15 +217,15 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12)
+    const onScroll = () => setScrolled(window.scrollY > 40)
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
   return (
-    <header data-scrolled={scrolled} className="header-sticky glass top-0 z-50 w-full">
-      <div className="container mx-auto px-4">
+    <header data-scrolled={scrolled} className="header-sticky top-0 z-50 w-full">
+      <div className="mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between gap-2">
           {/* Logo */}
           <Link
@@ -295,7 +294,6 @@ export function Header() {
 
           {/* Right side */}
           <div className="hidden items-center gap-2 lg:flex">
-            <ThemeToggle />
             <Link
               href={LOGIN_HREF}
               className={cn(NAV_ITEM_BASE, "text-foreground/80 hover:text-foreground")}
@@ -311,8 +309,7 @@ export function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex items-center gap-1 lg:hidden">
-            <ThemeToggle />
+          <div className="flex items-center lg:hidden">
             <Button
               variant="ghost"
               size="icon"

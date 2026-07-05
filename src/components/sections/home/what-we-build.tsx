@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Reveal } from "@/components/ui/reveal"
+import { Counter } from "@/components/ui/counter"
 import { Tilt } from "@/components/ui/tilt"
 import { SectionBadge } from "@/components/ui/section-badge"
 import { Button } from "@/components/ui/button"
@@ -23,10 +24,10 @@ const DEMO_HREF = "/contact?type=demo"
 
 /* ---------------- Enterprise statistics band ---------------- */
 const stats = [
-  { value: "1,000+", label: "enterprise teams" },
-  { value: "$1.4B+", label: "spend under management" },
-  { value: "40+", label: "AI-powered modules" },
-  { value: "4.8/5", label: "average rating" },
+  { value: 1000, suffix: "+", label: "enterprise teams" },
+  { value: 1.4, prefix: "$", decimals: 1, suffix: "B+", label: "spend under management" },
+  { value: 40, suffix: "+", label: "AI-powered modules" },
+  { value: 4.8, decimals: 1, suffix: "/5", label: "average rating" },
 ]
 
 export function EnterpriseStats() {
@@ -34,10 +35,12 @@ export function EnterpriseStats() {
     <section className="px-4 py-14">
       <div className="container mx-auto max-w-6xl">
         <Reveal variant="scale">
-          <div className="grid gap-6 rounded-3xl border border-border bg-card/60 p-8 shadow-sm backdrop-blur sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-4xl font-semibold tracking-tight text-gradient sm:text-5xl">{s.value}</div>
+          <div className="glass-card grid gap-y-8 rounded-3xl p-8 sm:grid-cols-2 sm:p-10 lg:grid-cols-4 lg:divide-x lg:divide-border/60">
+            {stats.map((s, i) => (
+              <div key={s.label} className={`text-center ${i > 0 ? "lg:pl-6" : ""}`}>
+                <div className="text-4xl font-semibold tracking-tight text-gradient sm:text-5xl">
+                  <Counter value={s.value} prefix={s.prefix} suffix={s.suffix} decimals={s.decimals} />
+                </div>
                 <div className="mt-2 text-sm text-muted-foreground">{s.label}</div>
               </div>
             ))}
@@ -91,11 +94,11 @@ const areas = [
 
 export function WhatWeBuild() {
   return (
-    <section className="border-y border-border bg-muted/40 px-4 py-18 sm:py-21">
+    <section className="border-y border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Sparkles}>What we build</SectionBadge></Reveal>
-          <Reveal delay={60} as="h2" className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">
+          <Reveal delay={60} as="h2" className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
             Intelligent software, across the enterprise
           </Reveal>
           <Reveal delay={120} as="p" className="mt-5 text-lg text-muted-foreground">
@@ -109,14 +112,19 @@ export function WhatWeBuild() {
             <Reveal key={a.title} delay={(i % 3) * 70}>
               <Link
                 href={a.href}
-                className={`group flex h-full flex-col rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
+                className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl ${
                   a.flagship
                     ? "border-primary/30 bg-gradient-to-br from-primary/10 via-card to-card"
-                    : "border-border bg-card/70 hover:border-primary/30"
+                    : "border-border bg-gradient-to-b from-card to-card/50 hover:border-primary/30"
                 }`}
               >
-                <div className="flex items-center justify-between">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
+                {/* Hover glow bloom */}
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/10 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
+                />
+                <div className="relative flex items-center justify-between">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-[var(--brand-2)] group-hover:text-primary-foreground group-hover:shadow-lg group-hover:shadow-primary/25">
                     <a.icon className="h-5 w-5" />
                   </div>
                   {a.flagship && (
@@ -125,11 +133,11 @@ export function WhatWeBuild() {
                     </span>
                   )}
                 </div>
-                <h3 className="mt-4 flex items-center gap-1.5 font-semibold">
+                <h3 className="relative mt-4 flex items-center gap-1.5 font-semibold">
                   {a.title}
                   <ArrowRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" />
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{a.body}</p>
+                <p className="relative mt-1.5 text-sm leading-relaxed text-muted-foreground">{a.body}</p>
               </Link>
             </Reveal>
           ))}
@@ -155,12 +163,12 @@ const procleoCallouts = [
 
 export function ProcleoHighlight() {
   return (
-    <section className="px-4 py-18 sm:py-21">
+    <section className="px-4 py-20 sm:py-24 lg:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <SectionBadge tone="primary" icon={ShoppingCart}>Flagship product · ProcLeo</SectionBadge>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               AI procurement, from request to payment
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">

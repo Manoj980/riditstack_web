@@ -1,108 +1,52 @@
-/* Floating pill header */
+/* Full-width sticky header (Precoro-style):
+   transparent while floating over the hero, then condenses into a
+   blurred glass bar once the user scrolls past ~40px. No rounded pill. */
 .header-sticky {
     position: fixed;
-    top: 14px;
-    left: 8px;
-    right: 8px;
-    width: calc(100% - 16px);
-    max-width: 1200px;
-    margin-inline: auto;
-    border-radius: 9999px;
-    /* Layered: subtle brand sheen over the glass base */
-    background-image:
-        linear-gradient(
-            120deg,
-            color-mix(in oklch, var(--primary) 7%, transparent),
-            transparent 42%,
-            transparent 58%,
-            color-mix(in oklch, var(--brand-2) 7%, transparent)
-        );
-    box-shadow:
-        0 4px 24px rgba(16, 20, 45, 0.08),
-        0 1px 2px rgba(16, 20, 45, 0.06);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid transparent;
     transition:
-        box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-        top 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-        max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        backdrop-filter 0.35s ease;
+        background 0.25s ease-out,
+        backdrop-filter 0.25s ease-out,
+        box-shadow 0.25s ease-out,
+        border-color 0.25s ease-out;
 }
 
-/* Gradient hairline border around the pill */
-.header-sticky::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(
-        120deg,
-        color-mix(in oklch, var(--primary) 45%, transparent),
-        transparent 35%,
-        transparent 65%,
-        color-mix(in oklch, var(--brand-2) 40%, transparent)
-    );
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
-    opacity: 0.7;
-}
-
-.header-sticky:hover {
-    box-shadow:
-        0 8px 32px rgba(16, 20, 45, 0.12),
-        0 2px 6px rgba(16, 20, 45, 0.08);
-}
-
-/* Condensed, more solid state once the user scrolls */
+/* Condensed, blurred glass state on scroll */
 .header-sticky[data-scrolled="true"] {
-    top: 8px;
-    max-width: 1080px;
-    backdrop-filter: blur(22px) saturate(180%);
-    -webkit-backdrop-filter: blur(22px) saturate(180%);
-    box-shadow:
-        0 10px 40px rgba(16, 20, 45, 0.14),
-        0 2px 6px rgba(16, 20, 45, 0.08),
-        inset 0 0 0 1px color-mix(in oklch, var(--primary) 12%, transparent);
+    background: color-mix(in oklch, var(--background) 72%, transparent);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-bottom-color: color-mix(in oklch, var(--foreground) 10%, transparent);
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.45);
 }
 
+/* Height condenses on scroll (64px → 56px) */
+.header-sticky .flex.h-16 {
+    transition: height 0.25s ease-out;
+}
 .header-sticky[data-scrolled="true"] .flex.h-16 {
     height: 3.5rem;
 }
-.header-sticky .flex.h-16 {
-    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.dark .header-sticky {
-    box-shadow:
-        0 4px 24px rgba(0, 0, 0, 0.4),
-        0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.dark .header-sticky[data-scrolled="true"] {
-    box-shadow:
-        0 12px 44px rgba(0, 0, 0, 0.5),
-        0 2px 6px rgba(0, 0, 0, 0.55),
-        inset 0 0 0 1px color-mix(in oklch, var(--primary) 20%, transparent);
-}
-
-/* Center the Radix mega-menu panel under the floating header.
-   Radix sets data-slot="navigation-menu-content" on the panel, so target that. */
+/* Center the Radix mega-menu panel under the full-width bar */
 .header-sticky [data-slot="navigation-menu-content"] {
     position: fixed !important;
     left: 50% !important;
-    top: 84px !important;
+    top: 72px !important;
     transform: translateX(-50%) !important;
     right: auto !important;
     margin: 0 !important;
     padding: 0 !important;
     z-index: 60;
-    transition: top 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: top 0.25s ease-out;
 }
 .header-sticky[data-scrolled="true"] [data-slot="navigation-menu-content"] {
-    top: 70px !important;
+    top: 62px !important;
 }
 
 /* Remove the default Radix viewport chrome */
@@ -135,20 +79,5 @@
     [data-slot="navigation-menu-content"],
     [data-slot="navigation-menu-trigger"] {
         display: none !important;
-    }
-}
-
-/* Full-width header on small screens */
-@media (max-width: 656px) {
-    .header-sticky {
-        position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
     }
 }

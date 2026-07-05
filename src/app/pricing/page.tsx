@@ -74,7 +74,7 @@ export default function PricingPage() {
       </section>
 
       {/* What's included */}
-      <section className="border-y border-border bg-muted/20 px-4 py-16">
+      <section className="border-y border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-4xl">
           <Reveal className="text-center">
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -100,7 +100,7 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="px-4 py-20">
+      <section className="px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-3xl">
           <Reveal className="mb-10 text-center">
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
