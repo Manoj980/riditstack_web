@@ -1,169 +1,154 @@
+/* Floating pill header */
 .header-sticky {
-    border: 1px solid hsl(var(--border));
-    margin-right: 8px;
     position: fixed;
-    margin-left: 8px;
+    top: 14px;
+    left: 8px;
+    right: 8px;
     width: calc(100% - 16px);
+    max-width: 1200px;
+    margin-inline: auto;
+    border-radius: 9999px;
+    /* Layered: subtle brand sheen over the glass base */
+    background-image:
+        linear-gradient(
+            120deg,
+            color-mix(in oklch, var(--primary) 7%, transparent),
+            transparent 42%,
+            transparent 58%,
+            color-mix(in oklch, var(--brand-2) 7%, transparent)
+        );
+    box-shadow:
+        0 4px 24px rgba(16, 20, 45, 0.08),
+        0 1px 2px rgba(16, 20, 45, 0.06);
+    transition:
+        box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        top 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        max-width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        backdrop-filter 0.35s ease;
+}
+
+/* Gradient hairline border around the pill */
+.header-sticky::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        120deg,
+        color-mix(in oklch, var(--primary) 45%, transparent),
+        transparent 35%,
+        transparent 65%,
+        color-mix(in oklch, var(--brand-2) 40%, transparent)
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.header-sticky:hover {
+    box-shadow:
+        0 8px 32px rgba(16, 20, 45, 0.12),
+        0 2px 6px rgba(16, 20, 45, 0.08);
+}
+
+/* Condensed, more solid state once the user scrolls */
+.header-sticky[data-scrolled="true"] {
     top: 8px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 32px;
-    /* background: rgba(255, 255, 255, 0.95); */
-    backdrop-filter: blur(20px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 50;
+    max-width: 1080px;
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+    box-shadow:
+        0 10px 40px rgba(16, 20, 45, 0.14),
+        0 2px 6px rgba(16, 20, 45, 0.08),
+        inset 0 0 0 1px color-mix(in oklch, var(--primary) 12%, transparent);
 }
 
-/* Ensure mega menu has proper positioning and center alignment */
-.header-sticky [data-radix-navigation-menu-content] {
-    z-index: 60 !important;
+.header-sticky[data-scrolled="true"] .flex.h-16 {
+    height: 3.5rem;
+}
+.header-sticky .flex.h-16 {
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .header-sticky {
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.4),
+        0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.dark .header-sticky[data-scrolled="true"] {
+    box-shadow:
+        0 12px 44px rgba(0, 0, 0, 0.5),
+        0 2px 6px rgba(0, 0, 0, 0.55),
+        inset 0 0 0 1px color-mix(in oklch, var(--primary) 20%, transparent);
+}
+
+/* Center the Radix mega-menu panel under the floating header.
+   Radix sets data-slot="navigation-menu-content" on the panel, so target that. */
+.header-sticky [data-slot="navigation-menu-content"] {
     position: fixed !important;
     left: 50% !important;
-    top: 68px !important;
+    top: 84px !important;
     transform: translateX(-50%) !important;
+    right: auto !important;
     margin: 0 !important;
-    right: auto !important;
+    padding: 0 !important;
+    z-index: 60;
+    transition: top 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-sticky[data-scrolled="true"] [data-slot="navigation-menu-content"] {
+    top: 70px !important;
 }
 
-/* Override Radix default positioning */
-[data-radix-navigation-menu-content] {
-    position: fixed !important;
-    left: 50% !important;
-    top: 68px !important;
-    transform: translateX(-50%) !important;
-    right: auto !important;
-}
-
-/* Remove Radix Navigation Menu viewport background */
-[data-radix-navigation-menu-viewport] {
+/* Remove the default Radix viewport chrome */
+[data-radix-navigation-menu-viewport],
+[data-slot="navigation-menu-viewport"] {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
-
-/* Hide/remove the default navigation menu viewport */
-.header-sticky [data-radix-navigation-menu-viewport] {
+.header-sticky [data-slot="navigation-menu-viewport"] {
     display: none !important;
 }
-
-/* Ensure no background interference */
-[data-radix-navigation-menu-root] {
+[data-slot="navigation-menu"] {
     background: transparent !important;
 }
 
-/* Responsive mega menu width adjustments */
-@media (max-width: 1200px) {
-    .header-sticky [data-radix-navigation-menu-content] > div {
-        width: 90vw !important;
+/* Keep the panel within the viewport on smaller desktops */
+@media (max-width: 1120px) {
+    .header-sticky [data-slot="navigation-menu-content"] > div {
+        width: 92vw !important;
         min-width: 0 !important;
     }
 }
 
-/* Hide mega menu completely on mobile and tablet */
+/* Hide desktop nav + mega menu on mobile/tablet */
 @media (max-width: 1023px) {
-    /* Hide the entire desktop navigation on mobile/tablet */
     .header-sticky nav {
         display: none !important;
     }
-    
-    /* Hide any mega menu content */
-    [data-radix-navigation-menu-content] {
+    [data-slot="navigation-menu-content"],
+    [data-slot="navigation-menu-trigger"] {
         display: none !important;
     }
-    
-    /* Hide any navigation menu triggers */
-    [data-radix-navigation-menu-trigger] {
-        display: none !important;
-    }
-    
-    /* Ensure hamburger menu button is visible on mobile */
-    .lg\:hidden {
-        display: flex !important;
-    }
 }
 
-.header-sticky:hover {
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.08);
-    transform: translateY(-1px);
-}
-
-[data-theme="dark"] .header-sticky {
-    background: rgba(17, 24, 39, 0.95);
-    border: 1px solid rgba(75, 85, 99, 0.3);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-[data-theme="dark"] .header-sticky:hover {
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5), 0px 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Mega menu animations */
-.mega-menu-enter {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mega-menu-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.mega-menu-exit {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.2s ease-in;
-}
-
-.mega-menu-exit-active {
-    opacity: 0;
-    transform: translateY(-10px);
-}
-
-/* Enhanced hover states */
-.nav-item {
-    position: relative;
-    transition: all 0.2s ease;
-}
-
-.nav-item::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #2563eb, #4f46e5);
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
-    border-radius: 1px;
-}
-
-.nav-item:hover::before {
-    width: 75%;
-}
-
-/* Mobile menu animations */
-.mobile-menu-slide {
-    animation: slideDown 0.3s ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Full-width header on small screens */
 @media (max-width: 656px) {
     .header-sticky {
-        margin:0;
-        top:0;
-        position: relative;
-        width:100%;
-        border-radius:0;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
     }
 }

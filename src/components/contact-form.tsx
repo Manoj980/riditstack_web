@@ -5,14 +5,30 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useState } from "react"
 
-export function ContactForm() {
+type ContactFormProps = {
+  /** Pre-selected "Reason for Contact" value (e.g. "demo", "login") */
+  defaultReason?: string
+  /** Form card title */
+  title?: string
+  /** Supporting copy under the title */
+  subtitle?: string
+  /** Submit button label */
+  submitLabel?: string
+}
+
+export function ContactForm({
+  defaultReason = "",
+  title = "Send us a message",
+  subtitle = "Fill out the form and we'll get back to you within 24 hours.",
+  submitLabel = "Send message",
+}: ContactFormProps) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     company: "",
     phone: "",
-    reason: "",
+    reason: defaultReason,
     message: ""
   })
 
@@ -32,10 +48,8 @@ export function ContactForm() {
   return (
     <Card className="border-0 shadow-xl">
       <CardHeader>
-        <CardTitle className="text-2xl">Send Us a Message</CardTitle>
-        <p className="text-muted-foreground">
-          Fill out the form and we&apos;ll get back to you within 24 hours.
-        </p>
+        <CardTitle className="text-2xl">{title}</CardTitle>
+        <p className="text-muted-foreground">{subtitle}</p>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -128,7 +142,8 @@ export function ContactForm() {
               className="w-full px-3 py-2 border border-border rounded-lg bg-background focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <option value="">Select a reason</option>
-              <option value="demo">Schedule a Demo</option>
+              <option value="demo">Demo Request</option>
+              <option value="login">Login Assistance</option>
               <option value="sales">Sales Inquiry</option>
               <option value="support">Technical Support</option>
               <option value="partnership">Partnership Opportunity</option>
@@ -153,7 +168,7 @@ export function ContactForm() {
           </div>
 
           <Button type="submit" size="lg" className="w-full">
-            Send Message
+            {submitLabel}
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </form>

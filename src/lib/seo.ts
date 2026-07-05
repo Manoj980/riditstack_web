@@ -69,7 +69,8 @@ export const organizationJsonLd = {
   "name": "RiditStack",
   "url": "https://riditstack.com",
   "logo": "https://riditstack.com/logo.png",
-  "description": "Procurement Centralization & Automation Platform for modern businesses",
+  "description":
+    "RiditStack is an enterprise AI company building intelligent software for procurement, automation, and digital transformation. ProcLeo is its flagship AI procurement product.",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+1-555-123-4567",
@@ -77,9 +78,60 @@ export const organizationJsonLd = {
     "availableLanguage": "en"
   },
   "sameAs": [
-    "https://linkedin.com/company/riditstack",
-    "https://twitter.com/riditstack"
+    "https://www.linkedin.com/company/riditstack",
+    "https://x.com/riditstack"
   ]
+}
+
+// Build a BreadcrumbList JSON-LD object from an ordered list of crumbs
+export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: `https://riditstack.com${item.path}`,
+    })),
+  }
+}
+
+// Build a FAQPage JSON-LD object from Q&A pairs
+export function faqJsonLd(faqs: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  }
+}
+
+// Build a Product/SoftwareApplication JSON-LD object
+export function productJsonLd({
+  name,
+  description,
+  path,
+}: {
+  name: string
+  description: string
+  path: string
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name,
+    description,
+    url: `https://riditstack.com${path}`,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web-based",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    provider: { "@type": "Organization", name: "RiditStack", url: "https://riditstack.com" },
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", ratingCount: "850" },
+  }
 }
 
 // JSON-LD structured data for software product

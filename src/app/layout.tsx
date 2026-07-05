@@ -22,16 +22,28 @@ const ttCommonsPro = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "RiditStack - Procurement Centralization & Automation Platform",
-  description: "Track, Control, and Save on Purchases Across Projects, Locations, or Business Units with RiditStack's comprehensive procurement software.",
-  keywords: "procurement software, automation, purchasing, spend management, supplier management",
+  metadataBase: new URL("https://riditstack.com"),
+  title: "RiditStack — Enterprise AI Company | ProcLeo AI Procurement",
+  description:
+    "RiditStack is an enterprise AI company building intelligent software for procurement, automation, cloud, and data. Meet ProcLeo, our flagship AI procurement product.",
+  keywords:
+    "enterprise ai, ai procurement, procleo, procurement software, digital transformation, ai consulting, automation, spend management",
   openGraph: {
-    title: "RiditStack - Procurement Centralization & Automation Platform",
-    description: "Track, Control, and Save on Purchases Across Projects, Locations, or Business Units with RiditStack's comprehensive procurement software.",
+    title: "RiditStack — Enterprise AI Company | ProcLeo AI Procurement",
+    description:
+      "Intelligent enterprise software from RiditStack — spanning AI procurement, automation, cloud, and data. Powered by ProcLeo, our flagship AI procurement product.",
     type: "website",
     locale: "en_US",
     url: "https://riditstack.com",
+    siteName: "RiditStack",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "RiditStack — Enterprise AI Company | ProcLeo AI Procurement",
+    description:
+      "Intelligent enterprise software from RiditStack, powered by ProcLeo — our flagship AI procurement product.",
+  },
+  alternates: { canonical: "https://riditstack.com" },
 };
 
 export default function RootLayout({

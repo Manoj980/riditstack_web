@@ -1,76 +1,131 @@
 import Link from "next/link"
 import Image from "next/image"
+import { ArrowRight, Github, Linkedin, Twitter, Youtube } from "lucide-react"
 
 const footerLinks = {
   Platform: [
-    { name: "Intake Management", href: "/features/intake" },
-    { name: "Purchasing", href: "/features/purchasing" },
-    { name: "AI-Powered AP", href: "/features/ai-automation" },
-    { name: "Supplier Management", href: "/features/suppliers" },
-    { name: "Spend Management", href: "/features/spend" },
-    { name: "Budgeting", href: "/features/budgeting" },
-    { name: "Reporting", href: "/features/reporting" },
+    { name: "AI Procurement", href: "/features/ai-procurement" },
+    { name: "Procure-to-Pay", href: "/features/procure-to-pay" },
+    { name: "Invoice Automation", href: "/features/invoice-automation" },
+    { name: "Spend Analytics", href: "/features/analytics" },
+    { name: "AI Copilot", href: "/features/ai-copilot" },
+    { name: "All modules", href: "/features" },
   ],
   Solutions: [
     { name: "Enterprise", href: "/solutions/enterprise" },
     { name: "Mid-Market", href: "/solutions/mid-market" },
-    { name: "Small Business", href: "/solutions/small-business" },
-    { name: "Non-Profit", href: "/solutions/non-profit" },
+    { name: "Procurement Teams", href: "/solutions/procurement" },
+    { name: "Finance Teams", href: "/solutions/finance" },
+    { name: "All solutions", href: "/solutions" },
+  ],
+  Industries: [
+    { name: "Manufacturing", href: "/industries/manufacturing" },
+    { name: "Healthcare", href: "/industries/healthcare" },
+    { name: "Retail", href: "/industries/retail" },
+    { name: "Technology", href: "/industries/technology" },
+    { name: "All industries", href: "/industries" },
   ],
   Resources: [
     { name: "Blog", href: "/blog" },
-    { name: "Case Studies", href: "/case-studies" },
-    { name: "Documentation", href: "/docs" },
-    { name: "Support", href: "/support" },
-    { name: "API", href: "/api" },
+    { name: "Customers", href: "/customers" },
+    { name: "Documentation", href: "/features/api" },
+    { name: "Pricing", href: "/pricing" },
   ],
   Company: [
     { name: "About", href: "/about" },
-    { name: "Careers", href: "/careers" },
     { name: "Contact", href: "/contact" },
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
+    { name: "Book a demo", href: "/contact?type=demo" },
+    { name: "Login", href: "/contact?type=login" },
   ],
 }
 
+const socials = [
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/riditstack", icon: Linkedin },
+  { name: "Twitter", href: "https://x.com/riditstack", icon: Twitter },
+  { name: "GitHub", href: "https://github.com/riditstack", icon: Github },
+  { name: "YouTube", href: "https://www.youtube.com/@riditstack", icon: Youtube },
+]
+
 export function Footer() {
   return (
-    <footer className="border-t bg-background">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
-          {/* Brand */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center space-x-3">
-              <Image
-                src="/logo.png"
-                alt="RiditStack Logo"
-                width={170}
-                height={32}
-                className="object-contain"
-              />
-              {/* <span className="text-2xl font-bold text-foreground">RiditStack</span> */}
-            </Link>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Procurement Centralization & Automation Platform for modern businesses
-            </p>
-            <div className="mt-6">
-              <p className="text-sm text-muted-foreground">
-                1000+ customers • $40B spend managed • 80+ countries
+    <footer className="relative overflow-hidden border-t border-border bg-muted/40">
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid opacity-[0.12] mask-fade-b" />
+
+      {/* Newsletter */}
+      <div className="container mx-auto px-4 pt-14">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[oklch(0.24_0.05_282)] via-[oklch(0.19_0.04_284)] to-[oklch(0.15_0.03_286)] px-6 py-10 shadow-2xl ring-1 ring-white/10 sm:px-10 sm:py-12">
+          <div aria-hidden className="pointer-events-none absolute inset-0">
+            <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-primary/40 blur-[90px]" />
+            <div className="absolute -left-16 bottom-0 h-48 w-48 rounded-full bg-[var(--brand-2)]/25 blur-[90px]" />
+            <div className="absolute inset-0 bg-grid opacity-[0.06]" />
+          </div>
+          <div className="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+            <div className="max-w-md">
+              <h3 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+                Enterprise AI insights, straight to your inbox
+              </h3>
+              <p className="mt-2 text-sm text-white/80">
+                Join 12,000+ leaders getting our monthly briefing on procurement, automation, and applied AI.
+                No spam, unsubscribe anytime.
               </p>
+            </div>
+            <form className="flex w-full max-w-sm flex-col gap-3 sm:flex-row">
+              <label htmlFor="footer-email" className="sr-only">Email address</label>
+              <input
+                id="footer-email"
+                type="email"
+                required
+                placeholder="you@company.com"
+                className="h-11 flex-1 rounded-lg border border-white/25 bg-white/15 px-4 text-sm text-white outline-none backdrop-blur transition-colors placeholder:text-white/60 focus-visible:border-white/70 focus-visible:ring-2 focus-visible:ring-white/40"
+              />
+              <button
+                type="submit"
+                className="group inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-lg bg-white px-5 text-sm font-semibold text-[oklch(0.45_0.2_280)] shadow-sm transition-all hover:-translate-y-px hover:shadow-md"
+              >
+                Subscribe
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* Link columns */}
+      <div className="container mx-auto px-4 pb-14 pt-14">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-[1.6fr_repeat(5,1fr)]">
+          {/* Brand */}
+          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
+            <Link href="/" className="inline-flex items-center">
+              <Image src="/logo.png" alt="RiditStack" width={170} height={32} className="object-contain dark:hidden" />
+              <Image src="/logo-white.png" alt="RiditStack" width={170} height={32} className="hidden object-contain dark:block" />
+            </Link>
+            <p className="mt-4 max-w-xs text-sm text-muted-foreground">
+              RiditStack is an enterprise AI company building intelligent software — powered by ProcLeo, our
+              flagship AI procurement product.
+            </p>
+            <div className="mt-6 flex gap-2">
+              {socials.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.name}
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-background text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                >
+                  <social.icon className="h-4 w-4" />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
-            <div key={category} className="lg:col-span-1">
-              <h3 className="text-sm font-semibold text-foreground">{category}</h3>
-              <ul className="mt-4 space-y-2">
+            <div key={category}>
+              <h4 className="text-sm font-semibold">{category}</h4>
+              <ul className="mt-4 space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
-                    >
+                    <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
                       {link.name}
                     </Link>
                   </li>
@@ -80,32 +135,21 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Bottom */}
-        <div className="mt-12 border-t pt-8">
-          <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-            <div className="flex space-x-6 text-sm text-muted-foreground">
-              <span>© 2024 RiditStack. All rights reserved.</span>
-            </div>
-            <div className="flex space-x-6">
-              <Link
-                href="/privacy"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/terms"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
-              >
-                Terms of Service
-              </Link>
-              <Link
-                href="/cookies"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
-              >
-                Cookie Policy
-              </Link>
-            </div>
+        {/* Bottom bar */}
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-muted-foreground md:flex-row">
+          <div className="flex items-center gap-2">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+            </span>
+            <span>All systems operational</span>
+            <span className="mx-2 text-border">•</span>
+            <span>© 2026 RiditStack. All rights reserved.</span>
+          </div>
+          <div className="flex gap-6">
+            <Link href="/privacy" className="transition-colors hover:text-primary">Privacy</Link>
+            <Link href="/terms" className="transition-colors hover:text-primary">Terms</Link>
+            <Link href="/cookies" className="transition-colors hover:text-primary">Cookies</Link>
           </div>
         </div>
       </div>
