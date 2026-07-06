@@ -43,6 +43,15 @@ const emailField = z
   .transform((v) => sanitize(v).toLowerCase())
   .pipe(z.string().min(1, "Email is required.").email("Enter a valid email address.").max(254))
 
+/**
+ * Work email: same rules as `emailField`, but rejects personal Gmail
+ * addresses so demo requests come from a business domain.
+ */
+const workEmailField = emailField.refine(
+  (v) => !/@(gmail|googlemail)\.com$/.test(v),
+  "Please use your work email — Gmail addresses aren't accepted.",
+)
+
 // Loose international phone check: digits, spaces, and + ( ) - . between 7 and 20 chars.
 const phoneField = z
   .string()
@@ -80,7 +89,7 @@ export const analyticsSchema = z
 // ---------------------------------------------------------------------
 export const bookDemoSchema = z.object({
   name: requiredString("Name", 2, 120),
-  email: emailField,
+  email: workEmailField,
   phone: phoneField,
   company: requiredString("Company", 1, 160),
   job_title: optionalString(120),
@@ -105,7 +114,8 @@ export const contactSchema = z.object({
   company: optionalString(160),
   phone: phoneField,
   subject: optionalString(160),
-  message: requiredString("Message", 10, 4000),
+  // Min length 1 so a single-word message/description is accepted.
+  message: requiredString("Message", 1, 4000),
   company_website: honeypot,
   turnstileToken: z.string().optional(),
   analytics: analyticsSchema.optional(),

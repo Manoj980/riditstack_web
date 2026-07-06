@@ -157,8 +157,28 @@ export default async function ContactPage({
      
 
       {/* Form + info */}
-      <section className="px-4 py-20 sm:py-24 lg:py-20">
-        <div className="container mx-auto max-w-6xl">
+      <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-20">
+        <div className="relative container mx-auto max-w-6xl">
+          {/* Ambient neon lighting behind the form */}
+          <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+            <div
+              className="animate-glow-breathe absolute -left-[6%] top-[2%] h-72 w-72 rounded-full mix-blend-screen"
+              style={{ background: "#2563EB", filter: "blur(160px)", opacity: 0.28 }}
+            />
+            <div
+              className="animate-glow-breathe-slow absolute left-[18%] top-[40%] h-72 w-72 rounded-full mix-blend-screen"
+              style={{ background: "#4F46E5", filter: "blur(180px)", opacity: 0.24 }}
+            />
+            <div
+              className="animate-glow-breathe absolute -left-[8%] bottom-[6%] h-80 w-80 rounded-full mix-blend-screen"
+              style={{ background: "#06B6D4", filter: "blur(200px)", opacity: 0.2 }}
+            />
+            {/* Bottom light reflection under the form */}
+            <div
+              className="absolute bottom-0 left-[4%] h-[120px] w-[40%] rounded-full mix-blend-screen"
+              style={{ background: "rgba(37,99,235,0.35)", filter: "blur(90px)", opacity: 0.2 }}
+            />
+          </div>
           <div className="grid gap-10 lg:grid-cols-2">
             <Reveal variant="scale">
               {mode === "demo" ? (

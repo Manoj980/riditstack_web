@@ -65,7 +65,8 @@ export function DemoForm({
 
   if (isSuccess) {
     return (
-      <Card className="border-0 shadow-xl">
+      <Card className="premium-form-border dark relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-[rgba(15,18,30,0.82)] backdrop-blur-[24px] shadow-[0_0_40px_rgba(37,99,235,0.18),0_0_90px_rgba(37,99,235,0.12),0_20px_80px_rgba(0,0,0,0.45)]">
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[100px] bg-gradient-to-b from-white/[0.08] to-transparent" />
         <CardContent className="flex animate-in fade-in flex-col items-center justify-center gap-4 py-16 text-center duration-500">
           <span className="flex h-16 w-16 animate-in zoom-in-50 items-center justify-center rounded-full bg-primary/10 text-primary duration-500">
             <CheckCircle2 className="h-9 w-9" />
@@ -81,7 +82,18 @@ export function DemoForm({
   }
 
   return (
-    <Card className="relative border-0 shadow-xl">
+    <Card className="premium-form-border dark relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-[rgba(15,18,30,0.82)] backdrop-blur-[24px] shadow-[0_0_40px_rgba(37,99,235,0.18),0_0_90px_rgba(37,99,235,0.12),0_20px_80px_rgba(0,0,0,0.45)] transition-all duration-500 hover:-translate-y-1 hover:scale-[1.01] hover:border-white/20 hover:shadow-[0_0_60px_rgba(37,99,235,0.28),0_0_120px_rgba(37,99,235,0.18),0_24px_90px_rgba(0,0,0,0.5)]">
+      {/* soft white top highlight for premium depth */}
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[100px] bg-gradient-to-b from-white/[0.08] to-transparent" />
+      {/* faint interior blue glow bleeding up through the glass */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-40"
+        style={{
+          background:
+            "radial-gradient(120% 100% at 50% 120%, rgba(37,99,235,0.28), transparent 70%)",
+        }}
+      />
       <CardHeader>
         <CardTitle className="text-2xl">{title}</CardTitle>
         <p className="text-muted-foreground">{subtitle}</p>
@@ -195,7 +207,12 @@ export function DemoForm({
 
           <Turnstile onToken={setTurnstileToken} />
 
-          <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            size="lg"
+            className="w-full border-0 bg-gradient-to-b from-[#2563EB] via-[#3B82F6] to-[#60A5FA] text-white shadow-[0_8px_30px_rgba(37,99,235,0.35)] transition-all duration-300 hover:scale-[1.02] hover:brightness-105 hover:shadow-[0_10px_40px_rgba(37,99,235,0.45)]"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />

@@ -439,6 +439,44 @@
     pointer-events: none;
   }
 
+  /* ---- Premium glass form: animated gradient border (masked ring) ---- */
+  .premium-form-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.9),
+      rgba(99, 102, 241, 0.9),
+      rgba(6, 182, 212, 0.9),
+      rgba(37, 99, 235, 0.9)
+    );
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.75;
+    animation: premium-border-pan 10s ease-in-out infinite;
+    pointer-events: none;
+    transition: opacity 500ms ease;
+  }
+  .premium-form-border:hover::before {
+    opacity: 1;
+  }
+
+  /* ---- Ambient neon blobs: slow opacity breathing ---- */
+  .animate-glow-breathe {
+    animation: glow-breathe 14s ease-in-out infinite;
+    will-change: opacity, transform;
+  }
+  .animate-glow-breathe-slow {
+    animation: glow-breathe 18s ease-in-out infinite;
+    will-change: opacity, transform;
+  }
+
   /* ---- Animated underline for nav links ---- */
   .nav-underline {
     position: relative;
@@ -543,6 +581,15 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-16px); }
 }
+@keyframes premium-border-pan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.55; transform: translate3d(0, 0, 0) scale(1); }
+  50% { opacity: 1; transform: translate3d(0, -3%, 0) scale(1.08); }
+}
 @keyframes aurora {
   0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
   33% { transform: translate3d(4%, -3%, 0) rotate(40deg) scale(1.1); }
@@ -641,7 +688,8 @@
   .aurora, .animate-float, .animate-float-slow, .animate-marquee,
   .text-gradient-animated, .animate-pulse-ring, .animate-shine,
   .animate-beam, .animate-spin-slow, .animate-drift, .animate-badge-pulse,
-  .border-glow::after, .orb, .conic-glow,
+  .border-glow::after, .premium-form-border::before,
+  .animate-glow-breathe, .animate-glow-breathe-slow, .orb, .conic-glow,
   [data-bar], [data-draw] { animation: none !important; }
   [data-bar] { transform: none !important; }
   .parallax { transform: none !important; }

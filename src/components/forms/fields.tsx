@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 /** Shared input styling matching the site's form controls. */
 const controlClass =
-  "w-full rounded-lg border border-border bg-background px-3 py-2 text-sm outline-none transition-colors focus:ring-2 focus:ring-primary aria-[invalid=true]:border-destructive aria-[invalid=true]:focus:ring-destructive/40"
+  "w-full rounded-[14px] border border-white/[0.08] bg-white/[0.04] px-3.5 py-2.5 text-sm text-white/90 placeholder:text-white/40 outline-none transition-all duration-300 focus:border-blue-500 focus:bg-white/[0.06] focus:shadow-[0_0_25px_rgba(37,99,235,0.25)] aria-[invalid=true]:border-destructive aria-[invalid=true]:focus:border-destructive aria-[invalid=true]:focus:shadow-[0_0_25px_rgba(239,68,68,0.25)]"
 
 export function FieldError({ id, message }: { id: string; message?: string }) {
   if (!message) return null

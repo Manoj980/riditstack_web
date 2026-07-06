@@ -48,11 +48,9 @@ const socials = [
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-border bg-muted/40">
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid opacity-[0.12] mask-fade-b" />
-
+    <footer className="dark relative overflow-hidden border-t border-white/10 bg-[#0a0e1a] py-10 text-white">
       {/* Newsletter */}
-      <div className="container mx-auto px-4 pt-14">
+      <div className="relative z-10 container mx-auto px-4 pt-14">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[oklch(0.24_0.05_282)] via-[oklch(0.19_0.04_284)] to-[oklch(0.15_0.03_286)] px-6 py-10 shadow-2xl ring-1 ring-white/10 sm:px-10 sm:py-12">
           <div aria-hidden className="pointer-events-none absolute inset-0">
             <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-primary/40 blur-[90px]" />
@@ -74,8 +72,29 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Link columns */}
-      <div className="container mx-auto px-4 pb-14 pt-14">
+      {/* Link columns — footer-bg image scoped to this section */}
+      <div className="relative isolate overflow-hidden">
+        {/* Single dark overlay (base tone), below the watermark */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-[#050814]/80" />
+        {/* Subtle grid texture */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-grid opacity-[0.12] mask-fade-b" />
+        {/* Watermark: footer-bg rendered as a Next.js <Image>, centered and scaled to
+            ~140% width with its natural aspect ratio preserved — never stretched.
+            Sits above the dark overlay (so it stays visible) but below the content. */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-[1] flex items-center justify-center overflow-hidden"
+        >
+          <Image
+            src="/footer-bg.jpeg"
+            alt=""
+            width={1600}
+            height={336}
+            className="h-auto w-[140%] max-w-none select-none object-contain opacity-[0.16] blur-[1px]"
+          />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 pb-14 pt-14">
         <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-[1.6fr_repeat(5,1fr)]">
           {/* Brand */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
@@ -135,6 +154,7 @@ export function Footer() {
             <Link href="/terms" className="transition-colors hover:text-primary">Terms</Link>
             <Link href="/cookies" className="transition-colors hover:text-primary">Cookies</Link>
           </div>
+        </div>
         </div>
       </div>
     </footer>
