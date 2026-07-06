@@ -112,17 +112,17 @@ const quotes = [
   {
     quote: "RiditStack gave my team back two days a week. We run sourcing events instead of firefighting POs.",
     author: "Priya Nair",
-    role: "Head of Procurement, Meridian Foods",
+    role: "Head of Procurement",
   },
   {
     quote: "We shaved four days off our monthly close and stopped chasing invoices entirely.",
-    author: "David Osei",
-    role: "VP Finance, Cobalt Health",
+    author: "Rahul Deshpande",
+    role: "VP Finance",
   },
   {
     quote: "We replaced a legacy suite that took three years to roll out. RiditStack was live in a quarter.",
-    author: "Thomas Wright",
-    role: "Global Head of Procurement, Northwind",
+    author: "Arjun Menon",
+    role: "Global Head of Procurement",
   },
 ]
 
