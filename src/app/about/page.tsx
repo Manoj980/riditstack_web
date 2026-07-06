@@ -21,10 +21,10 @@ export const metadata: Metadata = {
 }
 
 const stats = [
-  { number: "1000+", label: "Customers worldwide" },
-  { number: "$40B", label: "Spend managed" },
-  { number: "80+", label: "Countries" },
-  { number: "850+", label: "Five-star reviews" },
+  { number: "1000+", label: "Users worldwide" },
+  { number: "$400M", label: "Spend managed" },
+  { number: "10+", label: "Countries" },
+  { number: "85+", label: "Five-star reviews" },
 ]
 
 const values = [
@@ -56,36 +56,37 @@ const values = [
 
 const team = [
   {
-    name: "Sarah Johnson",
+    name: "Suman Kumar",
     role: "CEO & Co-Founder",
-    description: "Former procurement executive with 15+ years at Fortune 500 companies.",
+    description: "Sets RiditStack's vision and leads the company's growth across procurement automation.",
   },
   {
-    name: "Michael Chen",
+    name: "Manish Mishra",
     role: "CTO & Co-Founder",
-    description: "Technology leader specializing in AI and enterprise software architecture.",
+    description: "Drives the technology strategy behind RiditStack's AI-powered procurement platform.",
   },
   {
-    name: "Emily Rodriguez",
+    name: "Pavan Tamvada",
     role: "VP of Product",
-    description: "Product strategist with deep expertise in procurement workflows and UX.",
+    description: "Shapes the product roadmap with a focus on procurement workflows and user experience.",
   },
   {
-    name: "David Kim",
+    name: "Pritesh Kumar",
     role: "VP of Engineering",
-    description: "Engineering leader focused on building scalable, secure enterprise platforms.",
+    description: "Leads engineering to build scalable, secure, enterprise-grade platforms.",
   },
 ]
 
-const milestones = [
-  { year: "2018", event: "Company founded with a vision to automate procurement" },
-  { year: "2019", event: "First enterprise customers and $2M seed funding" },
-  { year: "2020", event: "Launched AI-powered invoice processing capabilities" },
-  { year: "2021", event: "Reached 100+ customers and $10M Series A" },
-  { year: "2022", event: "International expansion and B Corp certification" },
-  { year: "2023", event: "1000+ customers milestone and $25M Series B" },
-  { year: "2024", event: "Advanced AI features and global market leadership" },
-]
+// Timeline data for the "Our journey" section (currently hidden).
+// const milestones = [
+//   { year: "2018", event: "Company founded with a vision to automate procurement" },
+//   { year: "2019", event: "First enterprise customers and $2M seed funding" },
+//   { year: "2020", event: "Launched AI-powered invoice processing capabilities" },
+//   { year: "2021", event: "Reached 100+ customers and $10M Series A" },
+//   { year: "2022", event: "International expansion and B Corp certification" },
+//   { year: "2023", event: "1000+ customers milestone and $25M Series B" },
+//   { year: "2024", event: "Advanced AI features and global market leadership" },
+// ]
 
 export default function AboutPage() {
   return (
@@ -145,7 +146,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
+      <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Our values</h2>
@@ -171,7 +172,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership */}
-      <section className="px-4 py-20 sm:py-24 lg:py-32">
+      <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-6xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Leadership team</h2>
@@ -196,8 +197,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
+      {/* Timeline — "Our journey" hidden for now, restore when ready */}
+      {/* <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-3xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Our journey</h2>
@@ -206,7 +207,6 @@ export default function AboutPage() {
             </p>
           </Reveal>
           <div className="relative pl-8">
-            {/* vertical line */}
             <div
               aria-hidden
               className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-primary via-border to-transparent"
@@ -226,7 +226,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <CTA />
     </Layout>

@@ -31,22 +31,22 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Headquarters",
-    details: ["123 Innovation Drive", "San Francisco, CA 94107", "United States"],
+    details: ["Site No 19/50, #41", "Hennur Bagalur Main Road, Bidarahalli Hobli", "Bengaluru, Karnataka"],
   },
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (555) 123-4567", "Mon–Fri 9:00 AM – 6:00 PM PST"],
+    details: ["+91-8904415566", "Mon–Fri 9:00 AM – 6:00 PM IST"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["hello@riditstack.com", "support@riditstack.com"],
+    details: ["hello@riditstack.com"],
   },
   {
     icon: Clock,
     title: "Support hours",
-    details: ["24/7 for Enterprise customers", "Mon–Fri 9:00 AM – 6:00 PM PST for others"],
+    details: ["24/7 for Enterprise customers", "Mon–Fri 9:00 AM – 6:00 PM IST for others"],
   },
 ]
 

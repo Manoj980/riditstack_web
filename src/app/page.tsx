@@ -8,7 +8,6 @@ import {
   SecurityCompliance,
   HomeIntegrations,
   HomeTestimonials,
-  CaseStudiesTeaser,
   ResourcesTeaser,
 } from "@/components/sections/home/trust"
 import { HomeFaq, homeFaqs } from "@/components/sections/home/faq"
@@ -36,7 +35,6 @@ export default function Home() {
         <SecurityCompliance />
         <HomeIntegrations />
         <HomeTestimonials />
-        <CaseStudiesTeaser />
         <ResourcesTeaser />
         <HomeFaq />
         <CTA />

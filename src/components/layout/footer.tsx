@@ -28,7 +28,6 @@ const footerLinks = {
   ],
   Resources: [
     { name: "Blog", href: "/blog" },
-    { name: "Customers", href: "/customers" },
     { name: "Documentation", href: "/features/api" },
     { name: "Pricing", href: "/pricing" },
   ],

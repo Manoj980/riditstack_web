@@ -143,7 +143,6 @@ const megaMenus: Record<string, MegaMenu> = {
         title: "Learn",
         items: [
           { name: "Blog", href: "/blog", description: "Insights on spend & strategy", icon: BookOpen },
-          { name: "Case Studies", href: "/customers", description: "Customer success stories", icon: FileText },
           { name: "Documentation", href: "/features/api", description: "Developer & product docs", icon: FileText },
           { name: "Platform Overview", href: "/features", description: "Tour the whole platform", icon: LayoutGrid },
         ]
@@ -169,7 +168,6 @@ const megaMenus: Record<string, MegaMenu> = {
 
 const navLinks: { name: string; href: string }[] = [
   { name: "Pricing", href: "/pricing" },
-  { name: "Customers", href: "/customers" },
   { name: "Company", href: "/about" },
   { name: "Contact", href: "/contact" },
 ]

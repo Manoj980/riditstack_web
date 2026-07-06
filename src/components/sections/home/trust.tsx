@@ -156,12 +156,6 @@ export function HomeTestimonials() {
             </Reveal>
           ))}
         </div>
-        <Reveal delay={200} className="mt-10 text-center">
-          <Link href="/customers" className="group inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
-            Read customer stories
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </Link>
-        </Reveal>
       </div>
     </section>
   )
