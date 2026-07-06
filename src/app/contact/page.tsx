@@ -154,27 +154,10 @@ export default async function ContactPage({
         subtitle={cfg.hero.subtitle}
       />
 
-      {/* Contact reasons */}
-      <section className="px-4 pb-8">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid gap-6 md:grid-cols-3">
-            {cfg.reasons.map((reason, i) => (
-              <Reveal key={reason.title} delay={i * 80}>
-                <div className="group h-full rounded-2xl border border-border bg-card/60 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl">
-                  <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
-                    <reason.icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="mt-4 text-lg font-semibold">{reason.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{reason.description}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Form + info */}
-      <section className="px-4 py-20 sm:py-24 lg:py-32">
+      <section className="px-4 py-20 sm:py-24 lg:py-20">
         <div className="container mx-auto max-w-6xl">
           <div className="grid gap-10 lg:grid-cols-2">
             <Reveal variant="scale">
@@ -245,6 +228,25 @@ export default async function ContactPage({
                 </div>
               </div>
             </Reveal>
+          </div>
+        </div>
+      </section>
+
+       {/* Contact reasons */}
+      <section className="px-4 pb-8">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid gap-6 md:grid-cols-3">
+            {cfg.reasons.map((reason, i) => (
+              <Reveal key={reason.title} delay={i * 80}>
+                <div className="group h-full rounded-2xl border border-border bg-card/60 p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl">
+                  <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
+                    <reason.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-4 text-lg font-semibold">{reason.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{reason.description}</p>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

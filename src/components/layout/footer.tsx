@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Github, Linkedin, Twitter, Youtube } from "lucide-react"
+import { Github, Instagram, Linkedin, Twitter, Youtube } from "lucide-react"
 import { NewsletterForm } from "@/components/forms/newsletter-form"
 
 const footerLinks = {
@@ -40,10 +40,10 @@ const footerLinks = {
 }
 
 const socials = [
-  { name: "LinkedIn", href: "https://www.linkedin.com/company/riditstack", icon: Linkedin },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/riditstack-private-limited/", icon: Linkedin },
   { name: "Twitter", href: "https://x.com/riditstack", icon: Twitter },
-  { name: "GitHub", href: "https://github.com/riditstack", icon: Github },
   { name: "YouTube", href: "https://www.youtube.com/@riditstack", icon: Youtube },
+  { name: "Instagram", href: "https://www.instagram.com/riditstack", icon: Instagram },
 ]
 
 export function Footer() {

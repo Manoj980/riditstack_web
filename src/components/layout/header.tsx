@@ -292,12 +292,12 @@ export function Header() {
 
           {/* Right side */}
           <div className="hidden items-center gap-2 lg:flex">
-            <Link
+            {/* <Link
               href={LOGIN_HREF}
               className={cn(NAV_ITEM_BASE, "text-foreground/80 hover:text-foreground")}
             >
               Login
-            </Link>
+            </Link> */}
             <Button className="group btn-shine" asChild>
               <Link href={DEMO_HREF}>
                 Book a demo

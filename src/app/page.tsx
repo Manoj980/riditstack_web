@@ -25,7 +25,7 @@ export default function Home() {
       <Layout>
         {/* Enterprise AI company → flagship product (ProcLeo) → proof → convert */}
         <HomeHero />
-        <LogoCloud />
+        {/* <LogoCloud /> */}
         <EnterpriseStats />
         <WhatWeBuild />
         <ProcleoHighlight />

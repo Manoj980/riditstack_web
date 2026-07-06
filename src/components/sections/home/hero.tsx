@@ -90,23 +90,23 @@ export function HomeHero() {
             </Reveal>
 
             {/* Compliance + logos */}
-            <Reveal delay={340} className="mt-8 flex w-full flex-col items-center gap-5 border-t border-border/70 pt-7 lg:items-start">
-              <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 lg:justify-start">
+            {/* <Reveal delay={340} className="mt-8 flex w-full flex-col items-center gap-5 border-t border-border/70 pt-7 lg:items-start"> */}
+              {/* <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 lg:justify-start">
                 {compliance.map((c) => (
                   <span key={c.label} className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground">
                     <c.icon className="h-4 w-4 text-primary/80" />
                     {c.label}
                   </span>
                 ))}
-              </div>
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 lg:justify-start">
+              </div> */}
+              {/* <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 lg:justify-start">
                 {heroLogos.map((name) => (
                   <span key={name} className="text-base font-semibold tracking-tight text-muted-foreground/55">
                     {name}
                   </span>
                 ))}
-              </div>
-            </Reveal>
+              </div> */}
+            {/* </Reveal> */}
           </div>
 
           {/* ---- Right: layered product cockpit ---- */}

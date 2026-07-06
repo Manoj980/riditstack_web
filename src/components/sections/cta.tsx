@@ -28,16 +28,16 @@ export function CTA() {
             </div>
 
             {/* Certification badges */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+            {/* <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
               {badges.map((badge) => (
                 <div key={badge.label} className="flex items-center gap-2 text-sm text-muted-foreground">
                   <badge.icon className="h-4 w-4 text-primary" />
                   <span className="font-medium">{badge.label}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
 
-            <h2 className="mx-auto mt-8 max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
+            <h2 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
               Take command of your
               <span className="text-gradient-animated"> spend</span>
             </h2>

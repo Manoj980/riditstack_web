@@ -67,7 +67,7 @@ export default function PricingPage() {
       />
 
       {/* Pricing plans */}
-      <section className="px-4 pb-20">
+      <section className="px-4 pb-20 pt-5">
         <div className="container mx-auto max-w-6xl">
           <PricingPlans />
         </div>
