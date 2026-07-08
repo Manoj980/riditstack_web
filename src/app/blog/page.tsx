@@ -6,6 +6,7 @@ import { Reveal } from "@/components/ui/reveal"
 import { SectionBadge } from "@/components/ui/section-badge"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, ArrowRight, User, Newspaper, Mail, BookOpen } from "lucide-react"
+import { featuredPost, otherPosts } from "@/content/blog"
 
 export const metadata: Metadata = {
   title: "Blog - RiditStack Procurement Platform",
@@ -21,66 +22,7 @@ const categories = [
   "Case Studies",
 ]
 
-const featuredPost = {
-  title: "The Future of AI in Procurement: 5 Trends to Watch in 2024",
-  excerpt: "Artificial Intelligence is transforming procurement operations worldwide. Here are the key trends that will shape the industry this year and how forward-thinking organizations are already adapting.",
-  author: "Suman Kumar",
-  date: "March 15, 2024",
-  readTime: "8 min read",
-  category: "AI & Automation",
-  featured: true,
-}
-
-const blogPosts = [
-  {
-    title: "How to Reduce Procurement Costs by 30% in 6 Months",
-    excerpt: "A comprehensive guide to identifying cost-saving opportunities in your procurement process through automation and strategic sourcing.",
-    author: "Suman Kumar",
-    date: "March 12, 2024",
-    readTime: "6 min read",
-    category: "Procurement Best Practices",
-  },
-  {
-    title: "Case Study: Global Manufacturing Company Saves $2M Annually",
-    excerpt: "Learn how a Fortune 500 manufacturing company reduced costs and improved compliance with RiditStack's procurement automation platform.",
-    author: "Suman Kumar",
-    date: "March 10, 2024",
-    readTime: "5 min read",
-    category: "Case Studies",
-  },
-  {
-    title: "The Complete Guide to Supplier Risk Management",
-    excerpt: "Best practices for identifying, assessing, and mitigating supplier risks to ensure business continuity and compliance.",
-    author: "Suman Kumar",
-    date: "March 8, 2024",
-    readTime: "10 min read",
-    category: "Industry Insights",
-  },
-  {
-    title: "New Feature: Advanced Spend Analytics Dashboard",
-    excerpt: "Introducing powerful new analytics capabilities that provide deeper insights into your organization's spending patterns.",
-    author: "Suman Kumar",
-    date: "March 5, 2024",
-    readTime: "4 min read",
-    category: "Product Updates",
-  },
-  {
-    title: "Building a Business Case for Procurement Automation",
-    excerpt: "How to calculate ROI and present a compelling case for procurement automation to your executive team.",
-    author: "Suman Kumar",
-    date: "March 1, 2024",
-    readTime: "7 min read",
-    category: "Procurement Best Practices",
-  },
-  {
-    title: "Industry Report: State of Procurement Technology 2024",
-    excerpt: "Our annual report on procurement technology adoption trends, challenges, and opportunities across industries.",
-    author: "Suman Kumar",
-    date: "February 28, 2024",
-    readTime: "12 min read",
-    category: "Industry Insights",
-  },
-]
+const blogPosts = otherPosts
 
 export default function BlogPage() {
   return (
@@ -153,7 +95,7 @@ export default function BlogPage() {
 
                   <div>
                     <Button className="group" asChild>
-                      <Link href="/blog">
+                      <Link href={`/blog/${featuredPost.slug}`}>
                         Read full article
                         <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
                       </Link>
@@ -199,7 +141,7 @@ export default function BlogPage() {
                   <div className="mt-2 text-sm text-muted-foreground">{post.date}</div>
 
                   <Link
-                    href="/blog"
+                    href={`/blog/${post.slug}`}
                     className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                   >
                     Read more
