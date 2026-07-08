@@ -180,9 +180,9 @@ export const solutions: MarketingPage[] = [
     story: {
       quote:
         "We shaved four days off our monthly close and stopped chasing invoices entirely. The control is real-time now, not retrospective.",
-      author: "David Osei",
-      role: "VP Finance",
-      company: "Cobalt Health",
+      author: "Bharath Agarwal",
+      role: "Manager",
+      company: "SCM Corp",
       metric: "4 days",
       metricLabel: "cut from monthly close",
     },
