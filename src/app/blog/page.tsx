@@ -24,7 +24,7 @@ const categories = [
 const featuredPost = {
   title: "The Future of AI in Procurement: 5 Trends to Watch in 2024",
   excerpt: "Artificial Intelligence is transforming procurement operations worldwide. Here are the key trends that will shape the industry this year and how forward-thinking organizations are already adapting.",
-  author: "Sarah Johnson",
+  author: "Suman Kumar",
   date: "March 15, 2024",
   readTime: "8 min read",
   category: "AI & Automation",
@@ -35,7 +35,7 @@ const blogPosts = [
   {
     title: "How to Reduce Procurement Costs by 30% in 6 Months",
     excerpt: "A comprehensive guide to identifying cost-saving opportunities in your procurement process through automation and strategic sourcing.",
-    author: "Michael Chen",
+    author: "Suman Kumar",
     date: "March 12, 2024",
     readTime: "6 min read",
     category: "Procurement Best Practices",
@@ -43,7 +43,7 @@ const blogPosts = [
   {
     title: "Case Study: Global Manufacturing Company Saves $2M Annually",
     excerpt: "Learn how a Fortune 500 manufacturing company reduced costs and improved compliance with RiditStack's procurement automation platform.",
-    author: "Emily Rodriguez",
+    author: "Suman Kumar",
     date: "March 10, 2024",
     readTime: "5 min read",
     category: "Case Studies",
@@ -51,7 +51,7 @@ const blogPosts = [
   {
     title: "The Complete Guide to Supplier Risk Management",
     excerpt: "Best practices for identifying, assessing, and mitigating supplier risks to ensure business continuity and compliance.",
-    author: "David Kim",
+    author: "Suman Kumar",
     date: "March 8, 2024",
     readTime: "10 min read",
     category: "Industry Insights",
@@ -59,7 +59,7 @@ const blogPosts = [
   {
     title: "New Feature: Advanced Spend Analytics Dashboard",
     excerpt: "Introducing powerful new analytics capabilities that provide deeper insights into your organization's spending patterns.",
-    author: "Product Team",
+    author: "Suman Kumar",
     date: "March 5, 2024",
     readTime: "4 min read",
     category: "Product Updates",
@@ -67,7 +67,7 @@ const blogPosts = [
   {
     title: "Building a Business Case for Procurement Automation",
     excerpt: "How to calculate ROI and present a compelling case for procurement automation to your executive team.",
-    author: "Sarah Johnson",
+    author: "Suman Kumar",
     date: "March 1, 2024",
     readTime: "7 min read",
     category: "Procurement Best Practices",
@@ -75,7 +75,7 @@ const blogPosts = [
   {
     title: "Industry Report: State of Procurement Technology 2024",
     excerpt: "Our annual report on procurement technology adoption trends, challenges, and opportunities across industries.",
-    author: "Research Team",
+    author: "Suman Kumar",
     date: "February 28, 2024",
     readTime: "12 min read",
     category: "Industry Insights",

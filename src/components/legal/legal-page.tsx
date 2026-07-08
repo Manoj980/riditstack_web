@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import { Layout } from "@/components/layout/layout"
 import { Reveal } from "@/components/ui/reveal"
 import { SectionBadge } from "@/components/ui/section-badge"
@@ -11,12 +12,14 @@ export function LegalPage({
   updated,
   sections,
   contactCard = true,
+  disclaimer,
 }: {
   title: string
   intro: string
   updated: string
   sections: LegalSection[]
   contactCard?: boolean
+  disclaimer?: ReactNode
 }) {
   return (
     <Layout>
@@ -57,6 +60,12 @@ export function LegalPage({
               </Reveal>
             ))}
           </div>
+
+          {disclaimer && (
+            <div className="mt-14 rounded-2xl border border-border bg-muted/40 p-6 text-sm leading-relaxed text-muted-foreground">
+              {disclaimer}
+            </div>
+          )}
 
           {contactCard && (
             <div className="mt-14 rounded-2xl border border-border bg-muted/40 p-6 text-sm text-muted-foreground">

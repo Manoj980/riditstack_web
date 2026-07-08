@@ -75,7 +75,7 @@ const megaMenus: Record<string, MegaMenu> = {
       title: "Meet ProcLeo",
       description: "Our flagship AI procurement product - the whole platform on one intelligent record.",
       cta: "Explore ProcLeo",
-      href: "/features"
+      href: "https://www.procleo.com"
     }
   },
   Solutions: {
@@ -269,7 +269,12 @@ export function Header() {
                               {categoryData.highlight.description}
                             </p>
                             <Button size="sm" className="group btn-shine mt-4 w-fit" asChild>
-                              <Link href={categoryData.highlight.href}>
+                              <Link
+                                href={categoryData.highlight.href}
+                                {...(categoryData.highlight.href.startsWith("http")
+                                  ? { target: "_blank", rel: "noopener noreferrer" }
+                                  : {})}
+                              >
                                 {categoryData.highlight.cta}
                                 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
                               </Link>

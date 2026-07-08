@@ -14,6 +14,21 @@ export default function TermsPage() {
       title="Terms of Service"
       intro="These terms govern your access to and use of RiditStack's websites and products. By using our services, you agree to these terms."
       updated="July 5, 2026"
+      contactCard={false}
+      disclaimer={
+        <>
+          All copyrighted material, including logos, photographs, graphics, and
+          designs, used on this website belongs to its respective owners. If you
+          have any objection to its use, please contact us at{" "}
+          <a
+            href="mailto:hello@riditstack.com"
+            className="font-medium text-primary hover:underline"
+          >
+            hello@riditstack.com
+          </a>
+          .
+        </>
+      }
       sections={[
         {
           heading: "Using our services",
