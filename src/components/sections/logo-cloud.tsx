@@ -27,7 +27,7 @@ export function LogoCloud() {
   return (
     <section className="relative border-y border-border bg-muted/30 px-4 py-12">
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-noise opacity-[0.02] mix-blend-overlay" />
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <Reveal as="p" className="text-center text-sm font-medium text-muted-foreground">
           Trusted by procurement teams at fast-growing companies worldwide
         </Reveal>

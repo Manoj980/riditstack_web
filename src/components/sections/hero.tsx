@@ -53,7 +53,7 @@ export function Hero() {
           {/* Subhead */}
           <Reveal delay={160} as="p" className="mt-6 max-w-2xl text-xl leading-relaxed text-muted-foreground sm:text-2xl">
             RiditStack centralizes every request, PO, and invoice on one AI-driven
-            platform — so finance and procurement teams cut costs, close faster, and
+            platform - so finance and procurement teams cut costs, close faster, and
             scale without the spreadsheets.
           </Reveal>
 
@@ -84,7 +84,7 @@ export function Hero() {
           </Reveal>
         </div>
 
-        {/* Product mockup — a real, interactive-looking enterprise dashboard */}
+        {/* Product mockup - a real, interactive-looking enterprise dashboard */}
         <Reveal delay={120} variant="scale" className="relative mx-auto mt-16 max-w-5xl">
           {/* Rotating conic glow + soft gradient bloom behind the shot */}
           <div aria-hidden className="absolute -inset-x-16 -top-16 bottom-0 -z-10 rounded-[3rem] conic-glow animate-spin-slow" />

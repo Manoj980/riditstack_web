@@ -14,7 +14,7 @@ export const runtime = "nodejs"
 export async function POST(req: NextRequest) {
   const ip = getClientIp(req)
 
-  // 1. Rate limit — 5 demo requests / minute / IP.
+  // 1. Rate limit - 5 demo requests / minute / IP.
   const rl = rateLimit(`book-demo:${ip}`, { limit: 5, windowMs: 60_000 })
   if (!rl.success) return tooManyRequests(rl.retryAfter)
 
@@ -75,7 +75,7 @@ export async function POST(req: NextRequest) {
       message: input.message,
     })
 
-    return ok("Thanks! Your demo request is in — a specialist will reach out within 24 hours.")
+    return ok("Thanks! Your demo request is in - a specialist will reach out within 24 hours.")
   } catch (err) {
     logger.error("book-demo", "Failed to process demo request", {
       error: err instanceof Error ? err.message : "unknown",

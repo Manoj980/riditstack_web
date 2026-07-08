@@ -60,7 +60,7 @@ export function Counter({
     const run = (ts: number) => {
       if (!start) start = ts
       const t = Math.min((ts - start) / duration, 1)
-      // easeOutExpo — fast then settle, feels premium
+      // easeOutExpo - fast then settle, feels premium
       const eased = t === 1 ? 1 : 1 - Math.pow(2, -10 * t)
       setDisplay(value * eased)
       if (t < 1) raf = requestAnimationFrame(run)

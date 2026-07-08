@@ -12,7 +12,7 @@ import { logger } from "@/lib/logger"
  *
  * Emails are sent with Promise.allSettled: a failed confirmation email never
  * blocks the internal notification (or the user's success response). Failures
- * are logged, not thrown — the submission is already persisted by that point.
+ * are logged, not thrown - the submission is already persisted by that point.
  */
 
 let resendClient: Resend | null = null
@@ -121,7 +121,7 @@ export const EmailService = {
       }),
       send("contact:customer", {
         to: data.email,
-        subject: "We've received your message — RiditStack",
+        subject: "We've received your message - RiditStack",
         react: ContactCustomer({ name: data.name }),
       }),
     ])

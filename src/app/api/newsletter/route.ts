@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     // Idempotent: already-subscribed returns success without re-sending email.
     if (outcome.status === "already_subscribed") {
       logger.info("newsletter", "Duplicate subscribe ignored")
-      return ok("You're already subscribed — thanks for being here!")
+      return ok("You're already subscribed - thanks for being here!")
     }
 
     logger.info("newsletter", "Subscriber stored", { id: outcome.id })

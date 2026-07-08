@@ -5,11 +5,11 @@ import { ReceiptText, EyeOff, Hourglass, AlertTriangle } from "lucide-react"
 const pains = [
   {
     icon: ReceiptText,
-    stat: "5–10%",
+    stat: "5-10%",
     statLabel: "of spend lost to leakage",
     title: "Spend leaks everywhere",
     description:
-      "Maverick buying, duplicate invoices, and renewals nobody caught. The savings are real — they're just invisible.",
+      "Maverick buying, duplicate invoices, and renewals nobody caught. The savings are real - they're just invisible.",
   },
   {
     icon: EyeOff,
@@ -32,10 +32,10 @@ const pains = [
 export function Problem() {
   return (
     <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-32">
-      {/* Calm, neutral backdrop — the coral accents live in the cards, not the background */}
+      {/* Calm, neutral backdrop - the coral accents live in the cards, not the background */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid opacity-[0.22] mask-fade-b" />
 
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
             <SectionBadge tone="accent" icon={AlertTriangle}>
@@ -46,7 +46,7 @@ export function Problem() {
             Procurement wasn&apos;t built for how you work now
           </Reveal>
           <Reveal delay={120} as="p" className="mt-5 text-lg text-muted-foreground sm:text-xl">
-            Growth multiplies purchases — and the tools meant to control them turn
+            Growth multiplies purchases - and the tools meant to control them turn
             into the bottleneck. Here&apos;s what it actually costs.
           </Reveal>
         </div>

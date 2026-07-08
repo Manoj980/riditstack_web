@@ -156,11 +156,11 @@ const caseStudies = [
 const faqs = [
   {
     q: "What size companies use RiditStack?",
-    a: "From early-stage startups to global enterprises. The platform right-sizes to your stage — lightweight for lean teams, and multi-entity, multi-currency, and deeply configurable for global operations.",
+    a: "From early-stage startups to global enterprises. The platform right-sizes to your stage - lightweight for lean teams, and multi-entity, multi-currency, and deeply configurable for global operations.",
   },
   {
     q: "How quickly do customers see results?",
-    a: "Most teams are live on their first workflow within two weeks and see measurable impact — faster cycles, recovered savings, less manual work — within the first quarter.",
+    a: "Most teams are live on their first workflow within two weeks and see measurable impact - faster cycles, recovered savings, less manual work - within the first quarter.",
   },
   {
     q: "Can you share references in my industry?",
@@ -168,7 +168,7 @@ const faqs = [
   },
   {
     q: "How do you measure the ROI customers report?",
-    a: "Savings are tied to real transactions — awarded rates compared to actual spend — and efficiency gains are measured against baseline cycle times and AP effort, so the numbers are auditable, not estimated.",
+    a: "Savings are tied to real transactions - awarded rates compared to actual spend - and efficiency gains are measured against baseline cycle times and AP effort, so the numbers are auditable, not estimated.",
   },
 ]
 
@@ -235,7 +235,7 @@ export default function CustomersPage() {
 
         {/* Trusted-by logos */}
         <section className="border-y border-border bg-muted/30 px-4 py-12">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <Reveal as="p" className="text-center text-sm font-medium text-muted-foreground">
               Trusted by procurement and finance teams across every industry
             </Reveal>
@@ -257,14 +257,14 @@ export default function CustomersPage() {
 
         {/* Business outcomes / ROI */}
         <section className="px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary" icon={TrendingUp}>Business outcomes</SectionBadge></Reveal>
               <Reveal delay={60} as="h2" className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
                 Results our customers can measure
               </Reveal>
               <Reveal delay={120} as="p" className="mt-5 text-lg text-muted-foreground">
-                Averages reported across RiditStack customers — tied to real transactions and baseline benchmarks,
+                Averages reported across RiditStack customers - tied to real transactions and baseline benchmarks,
                 not estimates.
               </Reveal>
             </div>
@@ -286,7 +286,7 @@ export default function CustomersPage() {
 
         {/* Featured customers */}
         <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary">Featured customers</SectionBadge></Reveal>
               <Reveal delay={60} as="h2" className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -330,7 +330,7 @@ export default function CustomersPage() {
 
         {/* Testimonials */}
         <section className="px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary" icon={Star}>Testimonials</SectionBadge></Reveal>
               <Reveal delay={60} as="h2" className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -351,7 +351,7 @@ export default function CustomersPage() {
                     </blockquote>
                     <figcaption className="mt-4 text-sm">
                       <span className="font-semibold">{t.author}</span>
-                      <span className="text-muted-foreground"> — {t.role}</span>
+                      <span className="text-muted-foreground"> - {t.role}</span>
                     </figcaption>
                   </figure>
                 </Reveal>
@@ -362,7 +362,7 @@ export default function CustomersPage() {
 
         {/* Industry breakdown */}
         <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="mx-auto max-w-2xl text-center">
               <Reveal><SectionBadge tone="primary" icon={Building2}>By industry</SectionBadge></Reveal>
               <Reveal delay={60} as="h2" className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -395,7 +395,7 @@ export default function CustomersPage() {
 
         {/* Case study previews */}
         <section className="px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <Reveal>
                 <SectionBadge tone="primary">Case studies</SectionBadge>
@@ -438,7 +438,7 @@ export default function CustomersPage() {
 
         {/* FAQ */}
         <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
               <Reveal>
                 <SectionBadge tone="primary">FAQ</SectionBadge>
@@ -458,7 +458,7 @@ export default function CustomersPage() {
 
         {/* CTA */}
         <section className="px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <Reveal variant="scale">
               <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">
                 <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">

@@ -37,7 +37,7 @@ export default async function FeaturePage({
   const feature = getFeature(slug)
   if (!feature) notFound()
 
-  // Structured data — BreadcrumbList + FAQPage for rich results
+  // Structured data - BreadcrumbList + FAQPage for rich results
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

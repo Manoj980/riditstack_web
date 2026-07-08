@@ -49,7 +49,7 @@ const emailField = z
  */
 const workEmailField = emailField.refine(
   (v) => !/@(gmail|googlemail)\.com$/.test(v),
-  "Please use your work email — Gmail addresses aren't accepted.",
+  "Please use your work email - Gmail addresses aren't accepted.",
 )
 
 // Loose international phone check: digits, spaces, and + ( ) - . between 7 and 20 chars.

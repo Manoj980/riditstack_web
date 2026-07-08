@@ -11,7 +11,7 @@ export type NewsletterAdminProps = {
 
 export default function NewsletterAdmin(props: NewsletterAdminProps) {
   return (
-    <EmailLayout preview={`New newsletter subscriber — ${props.email}`}>
+    <EmailLayout preview={`New newsletter subscriber - ${props.email}`}>
       <Heading>New newsletter subscriber</Heading>
       <Paragraph>Someone just joined the RiditStack briefing.</Paragraph>
       <DetailRow label="Email" value={props.email} />

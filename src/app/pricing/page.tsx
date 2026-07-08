@@ -63,12 +63,12 @@ export default function PricingPage() {
         eyebrowIcon={BadgeDollarSign}
         title="Pricing that scales"
         highlight="with your team."
-        subtitle="Choose the plan that fits your business — no hidden fees, no surprises. Start your 30-day free trial today."
+        subtitle="Choose the plan that fits your business - no hidden fees, no surprises. Start your 30-day free trial today."
       />
 
       {/* Pricing plans */}
       <section className="px-4 pb-20 pt-5">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <PricingPlans />
         </div>
       </section>

@@ -95,7 +95,7 @@ export default function BlogPage() {
 
       {/* Categories */}
       <section className="border-y border-border bg-muted/30 px-4 py-12">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <Reveal className="flex flex-wrap justify-center gap-3">
             {categories.map((category, index) => (
               <Button
@@ -112,7 +112,7 @@ export default function BlogPage() {
 
       {/* Featured Post */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <Reveal>
             <SectionBadge tone="primary" icon={Newspaper}>Featured post</SectionBadge>
           </Reveal>
@@ -168,7 +168,7 @@ export default function BlogPage() {
 
       {/* Blog Posts Grid */}
       <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <Reveal>
             <SectionBadge tone="primary">Latest posts</SectionBadge>
           </Reveal>

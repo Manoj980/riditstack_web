@@ -30,7 +30,7 @@ export function HomeHero() {
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       </div>
 
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] lg:gap-10">
           {/* ---- Left: copy ---- */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
@@ -44,7 +44,7 @@ export function HomeHero() {
                   Enterprise AI
                 </span>
                 <span className="text-muted-foreground transition-colors group-hover:text-foreground">
-                  Meet ProcLeo — flagship AI procurement
+                  Meet ProcLeo - flagship AI procurement
                 </span>
                 <ArrowRight className="h-3.5 w-3.5 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
               </Link>
@@ -60,7 +60,7 @@ export function HomeHero() {
             </Reveal>
 
             <Reveal delay={160} as="p" className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-              RiditStack builds intelligent enterprise software — spanning AI procurement, automation,
+              RiditStack builds intelligent enterprise software - spanning AI procurement, automation,
               cloud, and data. Our flagship product, ProcLeo, runs procurement end to end with AI at every step.
             </Reveal>
 

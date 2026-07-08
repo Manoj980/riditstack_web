@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = generateSEO({
   title: "Platform Overview - Procurement Software | RiditStack",
   description:
-    "Explore the RiditStack platform: procure-to-pay and source-to-pay suites, intake, purchasing, approvals, supplier management, invoice automation, spend analytics, AI copilot, and more — on one connected record.",
+    "Explore the RiditStack platform: procure-to-pay and source-to-pay suites, intake, purchasing, approvals, supplier management, invoice automation, spend analytics, AI copilot, and more - on one connected record.",
   path: "/features",
 })
 
@@ -31,7 +31,7 @@ const categoryMeta: Record<
   },
   "Core modules": {
     icon: Boxes,
-    blurb: "The building blocks of day-to-day procurement — each sharing the same data.",
+    blurb: "The building blocks of day-to-day procurement - each sharing the same data.",
   },
   "AI & control": {
     icon: Sparkles,
@@ -51,7 +51,7 @@ export default function FeaturesPage() {
       />
 
       <section className="px-4 pb-4">
-        <div className="container mx-auto max-w-6xl space-y-24 lg:space-y-32">
+        <div className="container mx-auto max-w-7xl space-y-24 lg:space-y-32">
           {featureCategories.map((category) => {
             const meta = categoryMeta[category]
             const items = featuresByCategory(category)

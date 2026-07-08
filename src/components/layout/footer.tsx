@@ -72,14 +72,14 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Link columns — footer-bg image scoped to this section */}
+      {/* Link columns - footer-bg image scoped to this section */}
       <div className="relative isolate overflow-hidden">
         {/* Single dark overlay (base tone), below the watermark */}
         <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-[#050814]/80" />
         {/* Subtle grid texture */}
         <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-grid opacity-[0.12] mask-fade-b" />
         {/* Watermark: footer-bg rendered as a Next.js <Image>, centered and scaled to
-            ~140% width with its natural aspect ratio preserved — never stretched.
+            ~140% width with its natural aspect ratio preserved - never stretched.
             Sits above the dark overlay (so it stays visible) but below the content. */}
         <div
           aria-hidden
@@ -103,7 +103,7 @@ export function Footer() {
               <Image src="/logo-white.png" alt="RiditStack" width={170} height={32} className="hidden object-contain dark:block" />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              RiditStack is an enterprise AI company building intelligent software — powered by ProcLeo, our
+              RiditStack is an enterprise AI company building intelligent software - powered by ProcLeo, our
               flagship AI procurement product.
             </p>
             <div className="mt-6 flex gap-2">

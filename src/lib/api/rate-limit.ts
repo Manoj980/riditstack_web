@@ -7,7 +7,7 @@
  * NOTE on durability: serverless instances are ephemeral and don't share memory,
  * so this does not enforce a hard global limit across a scaled-out deployment.
  * For strict, distributed limits on Vercel, swap `rateLimit()` for an Upstash
- * Redis (@upstash/ratelimit) implementation — the call site and return shape
+ * Redis (@upstash/ratelimit) implementation - the call site and return shape
  * are designed to make that a drop-in change.
  */
 

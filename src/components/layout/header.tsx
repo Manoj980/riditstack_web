@@ -73,7 +73,7 @@ const megaMenus: Record<string, MegaMenu> = {
     ],
     highlight: {
       title: "Meet ProcLeo",
-      description: "Our flagship AI procurement product — the whole platform on one intelligent record.",
+      description: "Our flagship AI procurement product - the whole platform on one intelligent record.",
       cta: "Explore ProcLeo",
       href: "/features"
     }
@@ -101,7 +101,7 @@ const megaMenus: Record<string, MegaMenu> = {
     ],
     highlight: {
       title: "Find your fit",
-      description: "See how teams like yours put RiditStack to work — and what it could save you.",
+      description: "See how teams like yours put RiditStack to work - and what it could save you.",
       cta: "Book a demo",
       href: DEMO_HREF
     }
@@ -175,7 +175,7 @@ const navLinks: { name: string; href: string }[] = [
 // Shared geometry for every top-level nav item. Both the mega-menu triggers
 // and the plain links inherit this identical box (inline-flex, fixed h-9,
 // items-center) so every item is naturally the same height and vertically
-// centered — matching NavigationMenuTrigger's base style. Only the per-type
+// centered - matching NavigationMenuTrigger's base style. Only the per-type
 // hover/focus/state colors differ below.
 const NAV_ITEM_BASE =
   "inline-flex h-9 w-max items-center justify-center rounded-lg px-3 py-2 text-sm font-medium transition-colors"
@@ -223,7 +223,7 @@ export function Header() {
 
   return (
     <header data-scrolled={scrolled} className="header-sticky top-0 z-50 w-full">
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-16 items-center justify-between gap-2">
           {/* Logo */}
           <Link

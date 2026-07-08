@@ -6,7 +6,7 @@ import { FeatureFaq } from "@/components/features/feature-faq"
 export const homeFaqs = [
   {
     q: "What does RiditStack do?",
-    a: "RiditStack is an enterprise AI company. We build intelligent software for large organizations — spanning procurement, automation, cloud, and data. Our flagship product, ProcLeo, runs the full procurement lifecycle with AI at every step.",
+    a: "RiditStack is an enterprise AI company. We build intelligent software for large organizations - spanning procurement, automation, cloud, and data. Our flagship product, ProcLeo, runs the full procurement lifecycle with AI at every step.",
   },
   {
     q: "What is ProcLeo?",
@@ -14,7 +14,7 @@ export const homeFaqs = [
   },
   {
     q: "How is RiditStack different from legacy procurement suites?",
-    a: "Legacy suites bolt AI on as an afterthought and take years to implement. RiditStack builds AI into the core, delivers a modern experience people actually adopt, and goes live in weeks — with the depth global enterprises still require.",
+    a: "Legacy suites bolt AI on as an afterthought and take years to implement. RiditStack builds AI into the core, delivers a modern experience people actually adopt, and goes live in weeks - with the depth global enterprises still require.",
   },
   {
     q: "Who uses RiditStack?",
@@ -22,14 +22,14 @@ export const homeFaqs = [
   },
   {
     q: "How quickly can we get started?",
-    a: "Most teams are live on their first workflow within two weeks — no multi-quarter implementation. You can book a demo tailored to your team, or start a free trial and explore at your own pace.",
+    a: "Most teams are live on their first workflow within two weeks - no multi-quarter implementation. You can book a demo tailored to your team, or start a free trial and explore at your own pace.",
   },
 ]
 
 export function HomeFaq() {
   return (
     <section className="px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <Reveal>
             <SectionBadge tone="primary">FAQ</SectionBadge>

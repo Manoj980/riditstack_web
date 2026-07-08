@@ -1,7 +1,7 @@
 import type { LucideIcon } from "lucide-react"
 
 /**
- * Shared content model for the marketing "vertical" pages — Solutions (by
+ * Shared content model for the marketing "vertical" pages - Solutions (by
  * department / by company size) and Industries. Both render through the same
  * MarketingPageTemplate, so their content shares one shape.
  */

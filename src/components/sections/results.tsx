@@ -88,7 +88,7 @@ export function Results() {
       <div aria-hidden className="absolute inset-0 -z-10 border-y border-border bg-muted/40" />
       <div aria-hidden className="pointer-events-none absolute -top-28 left-1/2 -z-10 h-[32rem] w-[38rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-[0.32]" />
 
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
             <SectionBadge tone="primary" icon={TrendingUp}>
@@ -99,7 +99,7 @@ export function Results() {
             Outcomes the boardroom actually cares about
           </Reveal>
           <Reveal delay={120} as="p" className="mt-5 text-lg text-muted-foreground sm:text-xl">
-            Not vanity metrics — the savings, speed, and control that show up on the
+            Not vanity metrics - the savings, speed, and control that show up on the
             P&amp;L within the first year.
           </Reveal>
         </div>
@@ -112,14 +112,14 @@ export function Results() {
           ))}
         </div>
 
-        {/* Emotional proof — customer voice */}
+        {/* Emotional proof - customer voice */}
         <Reveal delay={120} variant="scale" className="mx-auto mt-10 max-w-4xl">
           <figure className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-xl sm:p-10">
             <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
             <blockquote className="relative text-xl font-medium leading-relaxed tracking-tight sm:text-2xl">
               &ldquo;We cut our close from three weeks to four days and clawed back
               <span className="text-gradient"> $2.4M in the first year</span>. RiditStack
-              didn&apos;t just digitize procurement — it gave finance the wheel.&rdquo;
+              didn&apos;t just digitize procurement - it gave finance the wheel.&rdquo;
             </blockquote>
             <figcaption className="mt-6 flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-primary to-[var(--brand-2)] text-sm font-semibold text-primary-foreground">

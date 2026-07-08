@@ -109,7 +109,7 @@ export function MarketingPageTemplate({
 
       {/* =========================== PAIN POINTS =========================== */}
       <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="accent">The challenges</SectionBadge>
@@ -140,7 +140,7 @@ export function MarketingPageTemplate({
 
       {/* =========================== SOLUTION =========================== */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <Reveal>
               <SectionBadge tone="primary" icon={Sparkles}>
@@ -176,7 +176,7 @@ export function MarketingPageTemplate({
 
       {/* =========================== CAPABILITIES =========================== */}
       <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="primary">Capabilities</SectionBadge>
@@ -207,7 +207,7 @@ export function MarketingPageTemplate({
 
       {/* =========================== WORKFLOW =========================== */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="primary">How it works</SectionBadge>
@@ -263,7 +263,7 @@ export function MarketingPageTemplate({
 
       {/* =========================== INTEGRATIONS =========================== */}
       <section className="px-4 py-16">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="primary" icon={Plug}>Integrations</SectionBadge>
@@ -272,7 +272,7 @@ export function MarketingPageTemplate({
               Fits the systems you already run on
             </Reveal>
             <Reveal delay={120} as="p" className="mt-4 text-muted-foreground">
-              RiditStack syncs bidirectionally with your ERP, finance, and identity stack — so procurement
+              RiditStack syncs bidirectionally with your ERP, finance, and identity stack - so procurement
               connects to everything without a rip-and-replace.{" "}
               <Link href="/features/integrations" className="font-medium text-primary hover:underline">
                 See all integrations
@@ -294,7 +294,7 @@ export function MarketingPageTemplate({
 
       {/* ============================= FAQ ============================= */}
       <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <Reveal>
               <SectionBadge tone="primary">FAQ</SectionBadge>
@@ -317,7 +317,7 @@ export function MarketingPageTemplate({
       {/* =========================== RELATED =========================== */}
       {related.length > 0 && (
         <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <Reveal>
                 <SectionBadge tone="primary">Keep exploring</SectionBadge>
@@ -356,7 +356,7 @@ export function MarketingPageTemplate({
 
       {/* ============================= CTA ============================= */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <Reveal variant="scale">
             <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">
               <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">

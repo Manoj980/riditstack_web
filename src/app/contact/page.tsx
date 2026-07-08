@@ -36,7 +36,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91-8904415566", "Mon–Fri 9:00 AM – 6:00 PM IST"],
+    details: ["+91-8904415566", "Mon-Fri 9:00 AM - 6:00 PM IST"],
   },
   {
     icon: Mail,
@@ -46,7 +46,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Support hours",
-    details: ["24/7 for Enterprise customers", "Mon–Fri 9:00 AM – 6:00 PM IST for others"],
+    details: ["24/7 for Enterprise customers", "Mon-Fri 9:00 AM - 6:00 PM IST for others"],
   },
 ]
 
@@ -98,7 +98,7 @@ const modes: Record<ContactMode, ModeConfig> = {
       title: "Book a Personalized",
       highlight: "Demo",
       subtitle:
-        "See RiditStack applied to your team, your stack, and the outcomes you care about. Share a few details and we'll tailor a walkthrough — no slideware, just the product on real procurement scenarios.",
+        "See RiditStack applied to your team, your stack, and the outcomes you care about. Share a few details and we'll tailor a walkthrough - no slideware, just the product on real procurement scenarios.",
     },
     form: {
       defaultReason: "demo",
@@ -109,7 +109,7 @@ const modes: Record<ContactMode, ModeConfig> = {
     reasons: [
       { icon: CalendarDays, title: "A time that suits you", description: "We'll coordinate a slot that works for you and your stakeholders." },
       { icon: Sparkles, title: "Tailored to your needs", description: "The walkthrough focuses on the workflows and modules that matter to you." },
-      { icon: Users, title: "Bring your whole team", description: "Invite finance, procurement, and ops — everyone who'll use the platform." },
+      { icon: Users, title: "Bring your whole team", description: "Invite finance, procurement, and ops - everyone who'll use the platform." },
     ],
   },
   login: {
@@ -119,7 +119,7 @@ const modes: Record<ContactMode, ModeConfig> = {
       title: "Login",
       highlight: "assistance.",
       subtitle:
-        "Your dedicated login portal is on its way. In the meantime, our team can get you into your RiditStack workspace directly — just share a few details below and we'll help you sign in.",
+        "Your dedicated login portal is on its way. In the meantime, our team can get you into your RiditStack workspace directly - just share a few details below and we'll help you sign in.",
     },
     form: {
       defaultReason: "login",
@@ -158,7 +158,7 @@ export default async function ContactPage({
 
       {/* Form + info */}
       <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-20">
-        <div className="relative container mx-auto max-w-6xl">
+        <div className="relative container mx-auto max-w-7xl">
           {/* Ambient neon lighting behind the form */}
           <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
             <div
@@ -254,7 +254,7 @@ export default async function ContactPage({
 
        {/* Contact reasons */}
       <section className="px-4 pb-8">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid gap-6 md:grid-cols-3">
             {cfg.reasons.map((reason, i) => (
               <Reveal key={reason.title} delay={i * 80}>

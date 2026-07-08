@@ -30,7 +30,7 @@ const securityFeatures = [
 export function SecurityCompliance() {
   return (
     <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <SectionBadge tone="primary" icon={ShieldCheck}>Security & compliance</SectionBadge>
@@ -38,7 +38,7 @@ export function SecurityCompliance() {
               Enterprise-grade trust, by default
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-              RiditStack is built to the standards global enterprises require — secure, compliant, and auditable
+              RiditStack is built to the standards global enterprises require - secure, compliant, and auditable
               from the ground up, so your procurement data is protected at every layer.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -79,14 +79,14 @@ export function SecurityCompliance() {
 export function HomeIntegrations() {
   return (
     <section className="px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Plug}>Integrations</SectionBadge></Reveal>
           <Reveal delay={60} as="h2" className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
             Connects to the systems you already run
           </Reveal>
           <Reveal delay={120} as="p" className="mt-4 text-muted-foreground">
-            Bidirectional, real-time sync with your ERP, finance, and identity stack — plus an open API.{" "}
+            Bidirectional, real-time sync with your ERP, finance, and identity stack - plus an open API.{" "}
             <Link href="/features/integrations" className="font-medium text-primary hover:underline">
               See all integrations
             </Link>
@@ -129,7 +129,7 @@ const quotes = [
 export function HomeTestimonials() {
   return (
     <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Star}>Testimonials</SectionBadge></Reveal>
           <Reveal delay={60} as="h2" className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -171,7 +171,7 @@ const caseStudies = [
 export function CaseStudiesTeaser() {
   return (
     <section className="px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <Reveal>
             <SectionBadge tone="primary">Customer success</SectionBadge>
@@ -210,7 +210,7 @@ export function CaseStudiesTeaser() {
 export function ResourcesTeaser() {
   return (
     <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid items-center gap-8 rounded-3xl border border-border bg-card p-8 shadow-sm md:grid-cols-[1.3fr_1fr] sm:p-10">
           <div>
             <SectionBadge tone="primary" icon={BookOpen}>Latest resources</SectionBadge>

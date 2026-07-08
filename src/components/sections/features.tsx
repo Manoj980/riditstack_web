@@ -33,7 +33,7 @@ const features: Feature[] = [
     title: "AI-powered AP automation",
     tagline: "Invoices that approve themselves",
     description:
-      "AI captures, codes, and 3-way-matches every invoice in seconds — flagging only the exceptions that need a human.",
+      "AI captures, codes, and 3-way-matches every invoice in seconds - flagging only the exceptions that need a human.",
     bullets: ["3-way matching", "Duplicate & fraud detection", "Touchless approvals"],
     visual: <ApVisual />,
   },
@@ -53,7 +53,7 @@ const features: Feature[] = [
     title: "Purchasing & POs",
     tagline: "Real-time control across departments",
     description:
-      "Create, track, and reconcile purchase orders against budgets the moment they're raised — never after the fact.",
+      "Create, track, and reconcile purchase orders against budgets the moment they're raised - never after the fact.",
     bullets: ["Budget checks at source", "Live PO tracking", "Auto receipt matching"],
     visual: <PoVisual />,
   },
@@ -63,7 +63,7 @@ const features: Feature[] = [
     title: "Supplier management",
     tagline: "Every vendor, one record",
     description:
-      "A single hub for onboarding, contracts, and performance — so renewals never sneak up and risk stays visible.",
+      "A single hub for onboarding, contracts, and performance - so renewals never sneak up and risk stays visible.",
     bullets: ["Centralized vendor records", "Renewal reminders", "Performance scoring"],
     visual: <SupplierVisual />,
   },
@@ -83,7 +83,7 @@ const features: Feature[] = [
     title: "Integrations",
     tagline: "Plugs into your stack in days",
     description:
-      "Sync your ERP, accounting, and SSO through a documented API and prebuilt connectors — no rip-and-replace.",
+      "Sync your ERP, accounting, and SSO through a documented API and prebuilt connectors - no rip-and-replace.",
     bullets: ["NetSuite, SAP, QuickBooks", "SSO & SCIM", "Open REST API"],
     visual: <IntegrationsVisual />,
   },
@@ -121,10 +121,10 @@ export function Features() {
 
   return (
     <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-32">
-      {/* Calm tinted surface — a change of shade for rhythm, no gradient wash */}
+      {/* Calm tinted surface - a change of shade for rhythm, no gradient wash */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 border-y border-border bg-muted/40" />
 
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
@@ -136,7 +136,7 @@ export function Features() {
             One platform from request to reconciliation
           </Reveal>
           <Reveal delay={120} as="p" className="mt-5 text-lg text-muted-foreground sm:text-xl">
-            Explore the modules that replace your patchwork of tools — each one
+            Explore the modules that replace your patchwork of tools - each one
             sharing the same data, so nothing slips through the cracks.
           </Reveal>
         </div>

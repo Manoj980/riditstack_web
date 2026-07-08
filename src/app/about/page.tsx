@@ -101,7 +101,7 @@ export default function AboutPage() {
 
       {/* Stats */}
       <section className="border-y border-border bg-muted/20 px-4 py-14">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
             {stats.map((stat, i) => (
               <Reveal key={stat.label} delay={i * 80}>
@@ -117,7 +117,7 @@ export default function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid gap-6 lg:grid-cols-2">
             {[
               {
@@ -147,7 +147,7 @@ export default function AboutPage() {
 
       {/* Values */}
       <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Our values</h2>
             <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
@@ -173,7 +173,7 @@ export default function AboutPage() {
 
       {/* Leadership */}
       <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Leadership team</h2>
             <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
@@ -197,13 +197,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline — "Our journey" hidden for now, restore when ready */}
+      {/* Timeline - "Our journey" hidden for now, restore when ready */}
       {/* <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
         <div className="container mx-auto max-w-3xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Our journey</h2>
             <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
-              From startup to industry leader — the key milestones in our growth.
+              From startup to industry leader - the key milestones in our growth.
             </p>
           </Reveal>
           <div className="relative pl-8">

@@ -2,7 +2,7 @@
  * Verify a Cloudflare Turnstile token server-side.
  *
  * If `TURNSTILE_SECRET_KEY` is not configured the check is SKIPPED and returns
- * success — this keeps the forms working out-of-the-box in development while
+ * success - this keeps the forms working out-of-the-box in development while
  * still enforcing verification in any environment where the secret is set.
  *
  * Reads the secret directly (not via `serverEnv()`) so this bot-check never

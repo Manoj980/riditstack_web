@@ -9,7 +9,7 @@ import { Sparkles, Check, TrendingUp, ShieldCheck } from "lucide-react"
  * Layered hero "cockpit": the ProcLeo dashboard on a 3D tilt, ringed by
  * overlapping glass widgets that drift on a float loop and shift with the
  * pointer (mouse parallax). All motion is guarded for touch + reduced motion
- * — the parent only publishes --nx/--ny when a fine pointer is present, and
+ * - the parent only publishes --nx/--ny when a fine pointer is present, and
  * `.parallax`/`.animate-float*` are neutralized under prefers-reduced-motion.
  * Floating widgets are desktop-only (lg+) so mobile stays clean and CLS-free.
  */
@@ -60,7 +60,7 @@ export function HeroShowcase() {
         className="pointer-events-none absolute inset-6 -z-10 rounded-[2rem] conic-glow animate-spin-slow"
       />
 
-      {/* Base panel — tilts in 3D under the pointer */}
+      {/* Base panel - tilts in 3D under the pointer */}
       <div className="parallax" style={{ ["--depth" as string]: "8" }}>
         <Tilt max={6}>
           <DashboardShowcase />

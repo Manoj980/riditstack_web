@@ -38,7 +38,7 @@ export function NewsletterForm({
         }`}
       >
         <Check className="h-4 w-4" />
-        You&apos;re subscribed — check your inbox!
+        You&apos;re subscribed - check your inbox!
       </div>
     )
   }

@@ -24,16 +24,16 @@ const DEMO_HREF = "/contact?type=demo"
 
 /* ---------------- Enterprise statistics band ---------------- */
 const stats = [
-  { value: 1000, suffix: "+", label: "enterprise teams" },
-  { value: 1.4, prefix: "$", decimals: 1, suffix: "B+", label: "spend under management" },
-  { value: 40, suffix: "+", label: "AI-powered modules" },
-  { value: 4.8, decimals: 1, suffix: "/5", label: "average rating" },
+  { value: 1000, suffix: "+", label: "Users worldwide" },
+  { value: 400, prefix: "$", suffix: "M", label: "Spend managed" },
+  { value: 10, suffix: "+", label: "Countries" },
+  { value: 85, suffix: "+", label: "Five-star reviews" },
 ]
 
 export function EnterpriseStats() {
   return (
     <section className="px-4 py-14">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <Reveal variant="scale">
           <div className="glass-card grid gap-y-8 rounded-3xl p-8 sm:grid-cols-2 sm:p-10 lg:grid-cols-4 lg:divide-x lg:divide-border/60">
             {stats.map((s, i) => (
@@ -56,26 +56,26 @@ const areas = [
   {
     icon: ShoppingCart,
     title: "AI Procurement",
-    body: "ProcLeo, our flagship product, runs procurement end to end — sourcing, buying, AP, and analytics with AI at every step.",
+    body: "ProcLeo, our flagship product, runs procurement end to end - sourcing, buying, AP, and analytics with AI at every step.",
     href: "/features",
     flagship: true,
   },
   {
     icon: RefreshCw,
     title: "Digital Transformation",
-    body: "We modernize the systems and workflows enterprises depend on — replacing manual, disconnected processes with intelligent ones.",
+    body: "We modernize the systems and workflows enterprises depend on - replacing manual, disconnected processes with intelligent ones.",
     href: DEMO_HREF,
   },
   {
     icon: Bot,
     title: "AI Consulting",
-    body: "From strategy to deployment, we help enterprises apply AI where it changes the economics — not where it makes a demo.",
+    body: "From strategy to deployment, we help enterprises apply AI where it changes the economics - not where it makes a demo.",
     href: DEMO_HREF,
   },
   {
     icon: Layers,
     title: "Enterprise Platforms",
-    body: "Configurable, secure platforms built for scale — multi-entity, multi-region, and ready for the way large organizations operate.",
+    body: "Configurable, secure platforms built for scale - multi-entity, multi-region, and ready for the way large organizations operate.",
     href: DEMO_HREF,
   },
   {
@@ -87,7 +87,7 @@ const areas = [
   {
     icon: Cloud,
     title: "Cloud & Data",
-    body: "Cloud-native architecture and unified data — so every insight is live, every integration is real-time, and nothing is siloed.",
+    body: "Cloud-native architecture and unified data - so every insight is live, every integration is real-time, and nothing is siloed.",
     href: DEMO_HREF,
   },
 ]
@@ -95,7 +95,7 @@ const areas = [
 export function WhatWeBuild() {
   return (
     <section className="border-y border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Sparkles}>What we build</SectionBadge></Reveal>
           <Reveal delay={60} as="h2" className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -103,7 +103,7 @@ export function WhatWeBuild() {
           </Reveal>
           <Reveal delay={120} as="p" className="mt-5 text-lg text-muted-foreground">
             RiditStack is an enterprise AI company. We build products and platforms that make large
-            organizations faster, leaner, and smarter — anchored by our flagship procurement product, ProcLeo.
+            organizations faster, leaner, and smarter - anchored by our flagship procurement product, ProcLeo.
           </Reveal>
         </div>
 
@@ -164,7 +164,7 @@ const procleoCallouts = [
 export function ProcleoHighlight() {
   return (
     <section className="px-4 py-20 sm:py-24 lg:py-32">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <SectionBadge tone="primary" icon={ShoppingCart}>Flagship product · ProcLeo</SectionBadge>
@@ -173,7 +173,7 @@ export function ProcleoHighlight() {
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
               ProcLeo is RiditStack&apos;s flagship AI procurement product. It unifies intake, sourcing,
-              suppliers, invoicing, and analytics on one intelligent record — so procurement runs itself and
+              suppliers, invoicing, and analytics on one intelligent record - so procurement runs itself and
               finance stays in control.
             </p>
 

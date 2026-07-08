@@ -12,7 +12,7 @@ import { solutionGroups, solutionsByGroup } from "@/content/solutions"
 export const metadata: Metadata = generateSEO({
   title: "Solutions by Team & Company Size | RiditStack",
   description:
-    "RiditStack procurement solutions for every team and stage — procurement, finance, operations, supply chain, and executives; from startups to global enterprises.",
+    "RiditStack procurement solutions for every team and stage - procurement, finance, operations, supply chain, and executives; from startups to global enterprises.",
   path: "/solutions",
 })
 
@@ -28,11 +28,11 @@ export default function SolutionsIndexPage() {
           eyebrowIcon={Users}
           title="One platform,"
           highlight="every team."
-          subtitle="However you're organized and whatever your stage, RiditStack shapes to your team — bringing procurement, finance, operations, and leadership onto one intelligent record."
+          subtitle="However you're organized and whatever your stage, RiditStack shapes to your team - bringing procurement, finance, operations, and leadership onto one intelligent record."
         />
 
         <section className="px-4 pb-4">
-          <div className="container mx-auto max-w-6xl space-y-24 lg:space-y-32">
+          <div className="container mx-auto max-w-7xl space-y-24 lg:space-y-32">
             {solutionGroups.map((group) => (
               <div key={group}>
                 <div className="mx-auto max-w-2xl text-center">

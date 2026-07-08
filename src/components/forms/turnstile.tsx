@@ -70,7 +70,7 @@ export function Turnstile({ onToken }: { onToken: (token: string) => void }) {
         })
       })
       .catch(() => {
-        /* network blocked — server still enforces if secret is set */
+        /* network blocked - server still enforces if secret is set */
       })
 
     return () => {

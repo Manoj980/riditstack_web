@@ -22,7 +22,7 @@ export default function BookDemoCustomer({ name }: BookDemoCustomerProps) {
         stack, and the outcomes you care about.
       </Paragraph>
       <Paragraph>
-        No slideware — just ProcLeo running on real procurement scenarios. If
+        No slideware - just ProcLeo running on real procurement scenarios. If
         you&apos;d like to bring colleagues from finance, procurement, or ops,
         they&apos;re very welcome to join.
       </Paragraph>

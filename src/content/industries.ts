@@ -33,7 +33,7 @@ import type { MarketingPage } from "./marketing"
 
 /**
  * Industry pages. Per the RiditStack positioning, ProcLeo is the flagship AI
- * procurement product — so each industry's "capabilities" section is framed as
+ * procurement product - so each industry's "capabilities" section is framed as
  * how ProcLeo transforms procurement for that sector.
  */
 export const industries: MarketingPage[] = [
@@ -59,7 +59,7 @@ export const industries: MarketingPage[] = [
     ],
     pains: {
       heading: "One weak link stops everything",
-      body: "Manufacturers run on tight margins and tighter schedules. A supplier's financial trouble, an unnoticed stockout, or a slow requisition becomes a stopped line — and lost revenue you never recover.",
+      body: "Manufacturers run on tight margins and tighter schedules. A supplier's financial trouble, an unnoticed stockout, or a slow requisition becomes a stopped line - and lost revenue you never recover.",
       items: [
         { icon: AlertTriangle, title: "Supplier disruption", body: "A single supplier failure halts production." },
         { icon: Boxes, title: "Material stockouts", body: "Inventory and buying aren't connected." },
@@ -68,7 +68,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Resilient procurement, built for the floor",
-      body: "RiditStack unifies direct and indirect procurement with real-time inventory, continuous supplier risk monitoring, and automated buying — so the right materials arrive on time and disruptions are caught before they stop the line.",
+      body: "RiditStack unifies direct and indirect procurement with real-time inventory, continuous supplier risk monitoring, and automated buying - so the right materials arrive on time and disruptions are caught before they stop the line.",
       highlights: [
         "Real-time inventory tied to purchasing",
         "Continuous supplier risk monitoring",
@@ -133,7 +133,7 @@ export const industries: MarketingPage[] = [
       titleLead: "Procurement that puts",
       titleHighlight: "care first.",
       subtitle:
-        "Healthcare procurement can't afford a stockout or a compliance gap. RiditStack keeps supplies available, vendors compliant, and spend controlled — so clinical teams get what they need and finance keeps every purchase auditable.",
+        "Healthcare procurement can't afford a stockout or a compliance gap. RiditStack keeps supplies available, vendors compliant, and spend controlled - so clinical teams get what they need and finance keeps every purchase auditable.",
     },
     metrics: [
       { value: "100%", label: "vendor compliance tracked" },
@@ -151,7 +151,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Reliable supply, enforced compliance",
-      body: "RiditStack keeps clinical and operational supplies available with real-time inventory and automated replenishment, tracks every vendor's compliance continuously, and gives finance an audit-ready trail — so care is never short and control is never in doubt.",
+      body: "RiditStack keeps clinical and operational supplies available with real-time inventory and automated replenishment, tracks every vendor's compliance continuously, and gives finance an audit-ready trail - so care is never short and control is never in doubt.",
       highlights: [
         "Real-time supply inventory and replenishment",
         "Continuous vendor compliance tracking",
@@ -187,7 +187,7 @@ export const industries: MarketingPage[] = [
       metricLabel: "critical-item availability",
     },
     faqs: [
-      { q: "How does RiditStack support healthcare compliance?", a: "It continuously tracks vendor certifications, credentials, and document expirations, alerts you before anything lapses, and logs every transaction for audit — keeping compliance enforced, not assumed." },
+      { q: "How does RiditStack support healthcare compliance?", a: "It continuously tracks vendor certifications, credentials, and document expirations, alerts you before anything lapses, and logs every transaction for audit - keeping compliance enforced, not assumed." },
       { q: "Can it prevent stockouts of critical supplies?", a: "Yes. Inventory management tracks clinical and operational supplies in real time and auto-replenishes at reorder points so critical items stay available." },
       { q: "Is procurement data kept secure?", a: "RiditStack uses enterprise-grade security including encryption, granular role-based access, and complete audit logging to keep sensitive procurement data protected." },
     ],
@@ -234,7 +234,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "One buying standard, protected margin",
-      body: "RiditStack gives every location one controlled way to buy, consolidates suppliers, and enforces negotiated pricing at the point of purchase — while AI surfaces the duplicate and off-contract spend that's quietly costing you margin.",
+      body: "RiditStack gives every location one controlled way to buy, consolidates suppliers, and enforces negotiated pricing at the point of purchase - while AI surfaces the duplicate and off-contract spend that's quietly costing you margin.",
       highlights: [
         "Standardized buying across all locations",
         "Enforced contract pricing at purchase",
@@ -317,7 +317,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Procurement built around the project",
-      body: "RiditStack ties every purchase to its project budget, checks cost at commitment, and lets field teams raise requests from mobile with fast approvals — so materials arrive on schedule and project margin stays intact.",
+      body: "RiditStack ties every purchase to its project budget, checks cost at commitment, and lets field teams raise requests from mobile with fast approvals - so materials arrive on schedule and project margin stays intact.",
       highlights: [
         "Per-project budgets checked at commitment",
         "Mobile field requisitions and approvals",
@@ -382,7 +382,7 @@ export const industries: MarketingPage[] = [
       titleLead: "Scale spend as fast as",
       titleHighlight: "you scale.",
       subtitle:
-        "Technology companies grow fast and buy faster — SaaS, cloud, hardware, contractors. RiditStack keeps that spend controlled and visible, catches redundant subscriptions, and automates the busywork so lean teams stay in command.",
+        "Technology companies grow fast and buy faster - SaaS, cloud, hardware, contractors. RiditStack keeps that spend controlled and visible, catches redundant subscriptions, and automates the busywork so lean teams stay in command.",
     },
     metrics: [
       { value: "Every", label: "SaaS & vendor tracked" },
@@ -391,7 +391,7 @@ export const industries: MarketingPage[] = [
     ],
     pains: {
       heading: "Fast growth, faster spend sprawl",
-      body: "Tech spend scatters across teams, cards, and dozens of SaaS tools. Renewals auto-charge unnoticed, subscriptions duplicate, and cloud and contractor costs balloon — all faster than a lean finance team can track by hand.",
+      body: "Tech spend scatters across teams, cards, and dozens of SaaS tools. Renewals auto-charge unnoticed, subscriptions duplicate, and cloud and contractor costs balloon - all faster than a lean finance team can track by hand.",
       items: [
         { icon: RefreshCw, title: "SaaS sprawl", body: "Duplicate and unused subscriptions pile up." },
         { icon: Clock, title: "Silent renewals", body: "Auto-renewals charge before anyone reviews them." },
@@ -400,7 +400,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Control that keeps pace with growth",
-      body: "RiditStack brings every SaaS, cloud, and vendor purchase onto one record, flags renewals before they charge, and uses AI to catch duplicate and unused spend — with self-serve buying that lean teams can actually keep up with.",
+      body: "RiditStack brings every SaaS, cloud, and vendor purchase onto one record, flags renewals before they charge, and uses AI to catch duplicate and unused spend - with self-serve buying that lean teams can actually keep up with.",
       highlights: [
         "Every vendor and subscription on one record",
         "Renewal alerts before auto-charges",
@@ -465,7 +465,7 @@ export const industries: MarketingPage[] = [
       titleLead: "Make every budget dollar",
       titleHighlight: "go further.",
       subtitle:
-        "Schools, districts, and universities steward tight, scrutinized budgets. RiditStack brings transparency and control to institutional buying — enforcing budgets, simplifying approvals across departments, and keeping every purchase compliant and auditable.",
+        "Schools, districts, and universities steward tight, scrutinized budgets. RiditStack brings transparency and control to institutional buying - enforcing budgets, simplifying approvals across departments, and keeping every purchase compliant and auditable.",
     },
     metrics: [
       { value: "Per-department", label: "budget control" },
@@ -474,7 +474,7 @@ export const industries: MarketingPage[] = [
     ],
     pains: {
       heading: "Tight budgets, heavy scrutiny",
-      body: "Educational institutions must account for every dollar across many departments, grants, and funding sources — often with manual, paper-heavy processes that make transparency and compliance a constant struggle.",
+      body: "Educational institutions must account for every dollar across many departments, grants, and funding sources - often with manual, paper-heavy processes that make transparency and compliance a constant struggle.",
       items: [
         { icon: Wallet, title: "Budget pressure", body: "Every department must justify tight spend." },
         { icon: Clock, title: "Manual processes", body: "Paper approvals slow everything down." },
@@ -483,7 +483,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Transparent, compliant institutional buying",
-      body: "RiditStack enforces budgets by department and funding source, streamlines approvals without the paperwork, and keeps every transaction auditable — so institutions stretch their budgets and satisfy every stakeholder.",
+      body: "RiditStack enforces budgets by department and funding source, streamlines approvals without the paperwork, and keeps every transaction auditable - so institutions stretch their budgets and satisfy every stakeholder.",
       highlights: [
         "Budget control by department and fund",
         "Streamlined, transparent approvals",
@@ -548,7 +548,7 @@ export const industries: MarketingPage[] = [
       titleLead: "Public procurement that earns",
       titleHighlight: "public trust.",
       subtitle:
-        "Government buying demands transparency, fairness, and an unimpeachable audit trail. RiditStack enforces procurement rules automatically, runs competitive sourcing on structured data, and documents every decision — so public spend is defensible by design.",
+        "Government buying demands transparency, fairness, and an unimpeachable audit trail. RiditStack enforces procurement rules automatically, runs competitive sourcing on structured data, and documents every decision - so public spend is defensible by design.",
     },
     metrics: [
       { value: "100%", label: "auditable decisions" },
@@ -557,7 +557,7 @@ export const industries: MarketingPage[] = [
     ],
     pains: {
       heading: "Rules, scrutiny, and manual process",
-      body: "Public sector procurement operates under strict rules and intense scrutiny, yet often runs on manual, paper-based processes that make fairness hard to prove and audits painful — while transparency requirements grow every year.",
+      body: "Public sector procurement operates under strict rules and intense scrutiny, yet often runs on manual, paper-based processes that make fairness hard to prove and audits painful - while transparency requirements grow every year.",
       items: [
         { icon: ShieldCheck, title: "Strict compliance", body: "Rigid procurement rules must be enforced." },
         { icon: Search, title: "Transparency demands", body: "Every decision must be documented and defensible." },
@@ -566,7 +566,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Defensible procurement by design",
-      body: "RiditStack encodes procurement rules as enforced workflows, runs fair competitive sourcing on structured data, and documents every step automatically — so public procurement is transparent, compliant, and audit-ready without the paperwork.",
+      body: "RiditStack encodes procurement rules as enforced workflows, runs fair competitive sourcing on structured data, and documents every step automatically - so public procurement is transparent, compliant, and audit-ready without the paperwork.",
       highlights: [
         "Procurement rules enforced automatically",
         "Fair, structured competitive sourcing",
@@ -603,7 +603,7 @@ export const industries: MarketingPage[] = [
     },
     faqs: [
       { q: "Does RiditStack enforce procurement rules?", a: "Yes. Procurement policies and thresholds are encoded as enforced, no-code workflows, so every purchase follows the rules automatically and consistently." },
-      { q: "How does it support transparency and audit?", a: "Every decision — sourcing, evaluation, award, and payment — is documented automatically in a complete, tamper-evident audit trail that makes reviews fast and defensible." },
+      { q: "How does it support transparency and audit?", a: "Every decision - sourcing, evaluation, award, and payment - is documented automatically in a complete, tamper-evident audit trail that makes reviews fast and defensible." },
       { q: "Can it run competitive tenders?", a: "Yes. RiditStack runs fair RFPs and tenders on structured line items with side-by-side evaluation and a full record of why each award was made." },
     ],
     related: {
@@ -631,7 +631,7 @@ export const industries: MarketingPage[] = [
       titleLead: "Control cost without compromising",
       titleHighlight: "the guest experience.",
       subtitle:
-        "Hospitality runs on countless suppliers across every property and outlet. RiditStack standardizes buying, controls food and operating costs, and keeps quality consistent — so margins hold and guests never notice the difference.",
+        "Hospitality runs on countless suppliers across every property and outlet. RiditStack standardizes buying, controls food and operating costs, and keeps quality consistent - so margins hold and guests never notice the difference.",
     },
     metrics: [
       { value: "Every", label: "property on one process" },
@@ -649,7 +649,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "One standard across the portfolio",
-      body: "RiditStack standardizes procurement across every property, enforces negotiated pricing with preferred suppliers, and gives operators real-time cost control — protecting margin while keeping the quality guests expect.",
+      body: "RiditStack standardizes procurement across every property, enforces negotiated pricing with preferred suppliers, and gives operators real-time cost control - protecting margin while keeping the quality guests expect.",
       highlights: [
         "Standardized buying across properties",
         "Enforced pricing with preferred suppliers",
@@ -677,7 +677,7 @@ export const industries: MarketingPage[] = [
     ],
     story: {
       quote:
-        "We standardized purchasing across all our properties and brought food cost back under control — without changing a single thing guests can see.",
+        "We standardized purchasing across all our properties and brought food cost back under control - without changing a single thing guests can see.",
       author: "Sofia Almeida",
       role: "VP Operations",
       company: "Lumina Hotels",
@@ -732,7 +732,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Connected procurement across the network",
-      body: "RiditStack keeps every depot and fleet stocked with real-time inventory and auto-replenishment, controls MRO and operating spend, and consolidates cost into one network-wide view — so vehicles keep moving and spend stays in check.",
+      body: "RiditStack keeps every depot and fleet stocked with real-time inventory and auto-replenishment, controls MRO and operating spend, and consolidates cost into one network-wide view - so vehicles keep moving and spend stays in check.",
       highlights: [
         "Real-time parts and MRO inventory",
         "Auto-replenishment across depots",
@@ -769,7 +769,7 @@ export const industries: MarketingPage[] = [
     },
     faqs: [
       { q: "Can it keep every depot stocked?", a: "Yes. Inventory tracks parts and MRO in real time across depots and auto-replenishes at reorder points, so a missing part doesn't ground a vehicle." },
-      { q: "Does it track fleet and equipment assets?", a: "Yes. Asset management tracks equipment and vehicles through their full lifecycle — assignment, maintenance, warranty, and disposal." },
+      { q: "Does it track fleet and equipment assets?", a: "Yes. Asset management tracks equipment and vehicles through their full lifecycle - assignment, maintenance, warranty, and disposal." },
       { q: "Can we see spend across the whole network?", a: "Yes. Spend analytics consolidates fuel, parts, and MRO cost across every depot and fleet into one real-time view." },
     ],
     related: {
@@ -815,7 +815,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Rigor and resilience for critical spend",
-      body: "RiditStack runs strategic sourcing on structured data with full decision trails, monitors critical-supplier risk continuously, and enforces compliance across high-value contracts — so energy operations source with confidence and stay defensible.",
+      body: "RiditStack runs strategic sourcing on structured data with full decision trails, monitors critical-supplier risk continuously, and enforces compliance across high-value contracts - so energy operations source with confidence and stay defensible.",
       highlights: [
         "Structured, auditable strategic sourcing",
         "Continuous critical-supplier risk monitoring",
@@ -898,7 +898,7 @@ export const industries: MarketingPage[] = [
     },
     solution: {
       heading: "Coordinated, resilient automotive sourcing",
-      body: "RiditStack connects suppliers, materials, contracts, and inventory across tiers, monitors risk continuously, and ties buying to real-time demand — so automotive production stays on schedule and cost and quality stay in control.",
+      body: "RiditStack connects suppliers, materials, contracts, and inventory across tiers, monitors risk continuously, and ties buying to real-time demand - so automotive production stays on schedule and cost and quality stay in control.",
       highlights: [
         "Real-time inventory tied to JIT demand",
         "Multi-tier supplier risk monitoring",

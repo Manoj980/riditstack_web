@@ -5,21 +5,21 @@ import { Clock, Target, TrendingUp, Rocket, Sparkles } from "lucide-react"
 const timelineSteps = [
   {
     icon: Clock,
-    timeframe: "2–8 weeks",
+    timeframe: "2-8 weeks",
     title: "Initial go-live",
     description:
       "Quick deployment with core procurement workflows and guided onboarding to get your team productive immediately.",
   },
   {
     icon: Target,
-    timeframe: "1–4 months",
+    timeframe: "1-4 months",
     title: "Operational excellence",
     description:
       "Full feature adoption with customized workflows, integrations, and advanced automation across teams.",
   },
   {
     icon: TrendingUp,
-    timeframe: "4–12 months",
+    timeframe: "4-12 months",
     title: "ROI achievement",
     description:
       "Measurable cost savings, process efficiencies, and improved compliance from optimized procurement.",
@@ -36,10 +36,10 @@ const timelineSteps = [
 export function Timeline() {
   return (
     <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-32">
-      {/* Subtle dotted texture only — the gradient rail carries the color here */}
+      {/* Subtle dotted texture only - the gradient rail carries the color here */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-dots opacity-40 mask-fade-b" />
 
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
@@ -51,7 +51,7 @@ export function Timeline() {
             Value that compounds at every stage
           </Reveal>
           <Reveal delay={120} as="p" className="mt-5 text-lg text-muted-foreground sm:text-xl">
-            From first go-live to company-wide transformation — here&apos;s what
+            From first go-live to company-wide transformation - here&apos;s what
             RiditStack returns to your team at each step of the journey.
           </Reveal>
         </div>

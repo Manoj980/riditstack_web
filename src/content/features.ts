@@ -100,13 +100,13 @@ export const features: FeatureContent[] = [
     menuLabel: "AI Procurement",
     category: "Suites",
     icon: BrainCircuit,
-    summary: "AI woven through every step — from request to payment — not bolted on as an add-on.",
+    summary: "AI woven through every step - from request to payment - not bolted on as an add-on.",
     eyebrow: "AI procurement",
     hero: {
       titleLead: "Procurement that runs itself,",
       titleHighlight: "with AI at every step.",
       subtitle:
-        "RiditStack embeds AI across the entire lifecycle — reading documents, routing approvals, matching invoices, and surfacing savings. Not a chatbot bolted onto old software, but intelligence built into the record every transaction runs on.",
+        "RiditStack embeds AI across the entire lifecycle - reading documents, routing approvals, matching invoices, and surfacing savings. Not a chatbot bolted onto old software, but intelligence built into the record every transaction runs on.",
     },
     metrics: [
       { value: "Every step", label: "touched by intelligence" },
@@ -115,7 +115,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "AI that's a demo, not a workflow",
-      body: "Every vendor claims AI now, but most of it is a chatbot in the corner or a feature you have to trigger by hand. The busywork — reading invoices, routing requests, catching duplicates — still lands on people, because the intelligence was never wired into the actual process.",
+      body: "Every vendor claims AI now, but most of it is a chatbot in the corner or a feature you have to trigger by hand. The busywork - reading invoices, routing requests, catching duplicates - still lands on people, because the intelligence was never wired into the actual process.",
       pains: [
         { icon: Search, title: "Bolt-on AI", body: "The model sits beside the workflow instead of inside it, so the manual work remains." },
         { icon: Database, title: "Trapped in silos", body: "AI can't see the full record, so its suggestions stay shallow and generic." },
@@ -124,7 +124,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Intelligence built into the record",
-      body: "RiditStack applies AI where the work actually happens. Document AI reads every invoice and contract, models route requests and approvals by policy, matching runs touchlessly, and the copilot answers questions grounded in your data. Because it all shares one record, the AI has full context — and the process largely runs itself.",
+      body: "RiditStack applies AI where the work actually happens. Document AI reads every invoice and contract, models route requests and approvals by policy, matching runs touchlessly, and the copilot answers questions grounded in your data. Because it all shares one record, the AI has full context - and the process largely runs itself.",
       highlights: [
         "Document AI that reads any invoice or contract",
         "Policy-aware routing and approvals",
@@ -133,7 +133,7 @@ export const features: FeatureContent[] = [
       ],
     },
     benefits: [
-      { icon: ScanText, title: "Reads your documents", body: "Extracts data from invoices, contracts, and quotes automatically — no templates." },
+      { icon: ScanText, title: "Reads your documents", body: "Extracts data from invoices, contracts, and quotes automatically - no templates." },
       { icon: GitBranch, title: "Routes intelligently", body: "Sends every request and approval down the right path by policy, on its own." },
       { icon: CheckCheck, title: "Matches touchlessly", body: "Clears clean invoices with automatic 3-way matching and flags only exceptions." },
       { icon: Sparkles, title: "Finds the savings", body: "Continuously surfaces consolidation, off-contract spend, and anomalies to act on." },
@@ -152,15 +152,15 @@ export const features: FeatureContent[] = [
       { title: "Lean operations", body: "Scale procurement volume without scaling procurement headcount." },
     ],
     faqs: [
-      { q: "Is this just a chatbot?", a: "No. The copilot is one part of it. AI is embedded across the whole lifecycle — document extraction, approval routing, invoice matching, savings and risk detection — so intelligence runs the process, not just a chat window." },
+      { q: "Is this just a chatbot?", a: "No. The copilot is one part of it. AI is embedded across the whole lifecycle - document extraction, approval routing, invoice matching, savings and risk detection - so intelligence runs the process, not just a chat window." },
       { q: "Will our data train external models?", a: "No. Your data stays private to your workspace and is never used to train shared models. The AI operates on your data under your security and permission controls." },
       { q: "How accurate is it?", a: "Document extraction exceeds 99% on clean documents, and every AI action is traceable to its source data with confidence scoring, so you can trust and verify results." },
-      { q: "Do we need a data science team?", a: "No. The intelligence is built in and works out of the box. There are no models to train or pipelines to maintain — it runs on your live procurement data automatically." },
+      { q: "Do we need a data science team?", a: "No. The intelligence is built in and works out of the box. There are no models to train or pipelines to maintain - it runs on your live procurement data automatically." },
     ],
     related: ["ai-copilot", "document-intelligence", "invoice-automation", "analytics"],
     seo: {
       title: "AI Procurement Software | RiditStack",
-      description: "AI woven through every step of procurement — document reading, approval routing, touchless matching, and savings detection — built into one record, not bolted on. Meet RiditStack.",
+      description: "AI woven through every step of procurement - document reading, approval routing, touchless matching, and savings detection - built into one record, not bolted on. Meet RiditStack.",
       keywords: "ai procurement, ai procurement software, autonomous procurement, ai spend management, intelligent procurement platform",
     },
   },
@@ -171,13 +171,13 @@ export const features: FeatureContent[] = [
     menuLabel: "Procure-to-Pay",
     category: "Suites",
     icon: Workflow,
-    summary: "One connected flow from request to payment — no re-keying, no blind spots.",
+    summary: "One connected flow from request to payment - no re-keying, no blind spots.",
     eyebrow: "Procure-to-Pay suite",
     hero: {
       titleLead: "Every purchase, from first request to final payment, on",
       titleHighlight: "one intelligent flow.",
       subtitle:
-        "RiditStack unifies intake, buying, receiving, and AP into a single record. Data is entered once and follows the transaction end to end — so finance closes faster and nothing falls between systems.",
+        "RiditStack unifies intake, buying, receiving, and AP into a single record. Data is entered once and follows the transaction end to end - so finance closes faster and nothing falls between systems.",
     },
     metrics: [
       { value: "73%", label: "faster cycle time, request to PO" },
@@ -186,7 +186,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "Procurement breaks at the handoffs",
-      body: "Most teams don't have a procurement problem — they have a handoff problem. A request starts in a spreadsheet, becomes an email to finance, turns into a PO in the ERP, then a PDF invoice in an inbox. Every jump is a chance to lose context, double-key data, or approve something that never should have shipped.",
+      body: "Most teams don't have a procurement problem - they have a handoff problem. A request starts in a spreadsheet, becomes an email to finance, turns into a PO in the ERP, then a PDF invoice in an inbox. Every jump is a chance to lose context, double-key data, or approve something that never should have shipped.",
       pains: [
         {
           icon: Layers,
@@ -196,7 +196,7 @@ export const features: FeatureContent[] = [
         {
           icon: Clock,
           title: "Slow, opaque cycles",
-          body: "Nobody can say where a request is or who's sitting on it — so buying stalls for weeks.",
+          body: "Nobody can say where a request is or who's sitting on it - so buying stalls for weeks.",
         },
         {
           icon: AlertTriangle,
@@ -207,7 +207,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "A single system of record for spend",
-      body: "RiditStack connects the entire procure-to-pay lifecycle on one data model. A request captured at intake becomes the PO, the receipt, and the matched invoice — automatically. Approvers see full context, AP matches touchlessly, and finance gets a live, auditable trail from the first ask to the cleared payment.",
+      body: "RiditStack connects the entire procure-to-pay lifecycle on one data model. A request captured at intake becomes the PO, the receipt, and the matched invoice - automatically. Approvers see full context, AP matches touchlessly, and finance gets a live, auditable trail from the first ask to the cleared payment.",
       highlights: [
         "Guided intake that routes itself to the right approver",
         "Budgets checked at the moment of commitment, not after",
@@ -219,7 +219,7 @@ export const features: FeatureContent[] = [
       { icon: Clock, title: "Close the loop in days", body: "Compress request-to-PO from weeks to hours with policy-aware automation at every step." },
       { icon: Eye, title: "See spend as it happens", body: "Live visibility into committed and actual spend across every team, entity, and category." },
       { icon: ShieldCheck, title: "Control without friction", body: "Policy is enforced automatically, so people move fast and finance stays in control." },
-      { icon: RefreshCw, title: "Enter data once", body: "Information flows forward through the lifecycle — no re-keying between tools." },
+      { icon: RefreshCw, title: "Enter data once", body: "Information flows forward through the lifecycle - no re-keying between tools." },
       { icon: Gauge, title: "Cut processing cost", body: "Automate the manual matching and chasing that quietly consumes your AP team's week." },
       { icon: FileText, title: "Audit-ready by default", body: "Every approval, edit, and match is logged, so audits take hours instead of weeks." },
     ],
@@ -237,7 +237,7 @@ export const features: FeatureContent[] = [
     faqs: [
       { q: "How is this different from buying separate intake and AP tools?", a: "Point tools each own a slice of the process and hand off with integrations that drift. RiditStack keeps intake, purchasing, receiving, and AP on one record, so the data never disagrees and there's nothing to reconcile between systems." },
       { q: "Do we have to replace our ERP?", a: "No. RiditStack sits in front of your ERP as the system of engagement for procurement, syncing POs, receipts, and invoices bidirectionally. Your ledger stays the source of truth for accounting." },
-      { q: "How long does implementation take?", a: "Most teams are live on their first workflow in under two weeks. We start with one high-volume category, prove the flow, then expand — you see value before the rollout is finished." },
+      { q: "How long does implementation take?", a: "Most teams are live on their first workflow in under two weeks. We start with one high-volume category, prove the flow, then expand - you see value before the rollout is finished." },
       { q: "Can we keep our existing approval rules?", a: "Yes. Approval policies are configured without code and can mirror your current thresholds, delegations, and segregation-of-duties rules on day one." },
     ],
     related: ["intake", "purchase-orders", "invoice-automation", "analytics"],
@@ -254,13 +254,13 @@ export const features: FeatureContent[] = [
     menuLabel: "Source-to-Pay",
     category: "Suites",
     icon: Route,
-    summary: "Strategic sourcing, contracts, and payment — connected into one closed loop.",
+    summary: "Strategic sourcing, contracts, and payment - connected into one closed loop.",
     eyebrow: "Source-to-Pay suite",
     hero: {
       titleLead: "Turn sourcing decisions into savings you can",
       titleHighlight: "actually see and keep.",
       subtitle:
-        "RiditStack extends procure-to-pay upstream into sourcing and contracts, so the rates you negotiate become the prices you pay. Run events, award suppliers, and enforce the contract automatically — with the numbers to prove the impact.",
+        "RiditStack extends procure-to-pay upstream into sourcing and contracts, so the rates you negotiate become the prices you pay. Run events, award suppliers, and enforce the contract automatically - with the numbers to prove the impact.",
     },
     metrics: [
       { value: "12%", label: "average sourced savings identified" },
@@ -290,7 +290,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Close the loop from strategy to spend",
-      body: "RiditStack connects sourcing events and contracts directly to the buying flow. Award a supplier and their pricing becomes the catalog buyers see. Contract terms become guardrails the platform enforces at the point of purchase. Every PO traces back to the deal that set its price — so savings are realized, not just projected.",
+      body: "RiditStack connects sourcing events and contracts directly to the buying flow. Award a supplier and their pricing becomes the catalog buyers see. Contract terms become guardrails the platform enforces at the point of purchase. Every PO traces back to the deal that set its price - so savings are realized, not just projected.",
       highlights: [
         "Run RFQs, RFPs, and reverse auctions on structured data",
         "Contracts that enforce their own pricing and terms",
@@ -301,7 +301,7 @@ export const features: FeatureContent[] = [
     benefits: [
       { icon: Target, title: "Realize the savings", body: "Negotiated rates become the only rates buyers can pick, so value lands on the P&L." },
       { icon: Handshake, title: "Source with structure", body: "Compare bids on apples-to-apples data instead of a tangle of email attachments." },
-      { icon: FileSignature, title: "Contracts that work", body: "Terms, renewals, and pricing live where buying happens — not in a forgotten folder." },
+      { icon: FileSignature, title: "Contracts that work", body: "Terms, renewals, and pricing live where buying happens - not in a forgotten folder." },
       { icon: LineChart, title: "Prove the impact", body: "Tie every award to realized spend and show finance defensible, traceable savings." },
       { icon: ShieldCheck, title: "Reduce supplier risk", body: "Score and monitor suppliers through sourcing so risk is a decision input, not a surprise." },
       { icon: Eye, title: "One version of the truth", body: "Sourcing, contracts, and purchasing share one dataset, so decisions rest on the same facts." },
@@ -318,10 +318,10 @@ export const features: FeatureContent[] = [
       { title: "Finance leadership", body: "Report realized savings tied to actual spend instead of unverifiable projections." },
     ],
     faqs: [
-      { q: "What's the difference between source-to-pay and procure-to-pay?", a: "Procure-to-pay covers request through payment. Source-to-pay adds the strategic front end — sourcing events, supplier selection, and contracts — and connects it to buying so the value you negotiate is enforced downstream." },
+      { q: "What's the difference between source-to-pay and procure-to-pay?", a: "Procure-to-pay covers request through payment. Source-to-pay adds the strategic front end - sourcing events, supplier selection, and contracts - and connects it to buying so the value you negotiate is enforced downstream." },
       { q: "Can we run reverse auctions?", a: "Yes. RiditStack supports RFQs, RFPs, and live reverse auctions on structured line items, with side-by-side bid comparison and a complete award record." },
       { q: "How do contract terms get enforced?", a: "When an award becomes a contract, its pricing and terms are attached to the supplier and category. Buyers transact against those rates automatically, and off-contract attempts are flagged for review." },
-      { q: "How do you measure realized savings?", a: "Because awards connect to the POs that use them, RiditStack compares awarded rates to actual spend and reports the delta as realized savings — auditable back to individual transactions." },
+      { q: "How do you measure realized savings?", a: "Because awards connect to the POs that use them, RiditStack compares awarded rates to actual spend and reports the delta as realized savings - auditable back to individual transactions." },
     ],
     related: ["contracts", "suppliers", "analytics", "procure-to-pay"],
     seo: {
@@ -344,7 +344,7 @@ export const features: FeatureContent[] = [
       titleLead: "Give every purchase request",
       titleHighlight: "one intelligent front door.",
       subtitle:
-        "Stop chasing requests across email, Slack, and spreadsheets. RiditStack captures every ask through a guided intake that gathers the right details up front and routes itself to the right approver — no forms nobody understands, no requests lost in a thread.",
+        "Stop chasing requests across email, Slack, and spreadsheets. RiditStack captures every ask through a guided intake that gathers the right details up front and routes itself to the right approver - no forms nobody understands, no requests lost in a thread.",
     },
     metrics: [
       { value: "90%", label: "of requests complete on first submit" },
@@ -353,7 +353,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "Requests arrive from everywhere and nowhere",
-      body: "When there's no single way to ask for something, people invent their own. A Slack DM here, a forwarded quote there, a ticket in the wrong queue. Procurement spends its day playing detective — figuring out what's needed, who should approve, and whether budget even exists.",
+      body: "When there's no single way to ask for something, people invent their own. A Slack DM here, a forwarded quote there, a ticket in the wrong queue. Procurement spends its day playing detective - figuring out what's needed, who should approve, and whether budget even exists.",
       pains: [
         { icon: MessageSquare, title: "Scattered channels", body: "Requests land in inboxes and chats with no structure and no paper trail." },
         { icon: FileText, title: "Missing information", body: "Half-filled asks bounce back and forth for days before they're even actionable." },
@@ -381,7 +381,7 @@ export const features: FeatureContent[] = [
     workflow: [
       { title: "Ask", body: "The requester describes what they need; the form adapts and gathers only what's relevant." },
       { title: "Enrich", body: "RiditStack attaches budget, category, and supplier context automatically." },
-      { title: "Route", body: "The request flows to the right approver by policy — no manual triage." },
+      { title: "Route", body: "The request flows to the right approver by policy - no manual triage." },
       { title: "Track", body: "Everyone sees live status until the request converts to a PO." },
     ],
     useCases: [
@@ -392,7 +392,7 @@ export const features: FeatureContent[] = [
     faqs: [
       { q: "Do requesters need training?", a: "No. Intake is designed for people who don't know procurement. They describe what they need in plain language and the form handles the structure, questions, and routing behind the scenes." },
       { q: "Can we customize the intake forms?", a: "Yes. Forms are configured without code and adapt dynamically to category, amount, and department, so requesters only see fields relevant to their request." },
-      { q: "Does intake connect to approvals and POs?", a: "Directly. An approved intake request becomes a purchase order on the same record — no re-entry — and carries its full context forward." },
+      { q: "Does intake connect to approvals and POs?", a: "Directly. An approved intake request becomes a purchase order on the same record - no re-entry - and carries its full context forward." },
       { q: "Can employees request from Slack?", a: "Yes. Requests can start in Slack or email and land in the same structured intake, so people use the tools they already live in." },
     ],
     related: ["approvals", "purchase-orders", "budgeting", "ai-copilot"],
@@ -409,13 +409,13 @@ export const features: FeatureContent[] = [
     menuLabel: "Purchase Requisition",
     category: "Core modules",
     icon: ClipboardList,
-    summary: "Structured requisitions with line items and budget checks — approved before any PO.",
+    summary: "Structured requisitions with line items and budget checks - approved before any PO.",
     eyebrow: "Purchase requisitions",
     hero: {
       titleLead: "Turn every 'we need this' into a",
       titleHighlight: "clean, approved requisition.",
       subtitle:
-        "Capture what people need as structured requisitions — line items, quantities, cost centers, and budget — then route them for approval before a single PO is raised. RiditStack makes the requisition the disciplined first step, not an afterthought.",
+        "Capture what people need as structured requisitions - line items, quantities, cost centers, and budget - then route them for approval before a single PO is raised. RiditStack makes the requisition the disciplined first step, not an afterthought.",
     },
     metrics: [
       { value: "Line-level", label: "requisition detail" },
@@ -424,7 +424,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "Requisitions that aren't really requisitions",
-      body: "In many companies the 'requisition' is an email or a verbal ask, and the PO is where structure first appears — too late to control anything. Without a disciplined PR step, budget isn't checked up front, line items are vague, and there's no clean record of what was requested versus what was ordered.",
+      body: "In many companies the 'requisition' is an email or a verbal ask, and the PO is where structure first appears - too late to control anything. Without a disciplined PR step, budget isn't checked up front, line items are vague, and there's no clean record of what was requested versus what was ordered.",
       pains: [
         { icon: MessageSquare, title: "Informal asks", body: "Requests arrive as email and chat, with no structure to approve or track." },
         { icon: Wallet, title: "No budget check", body: "Spend isn't validated against budget until it's already a purchase order." },
@@ -433,7 +433,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "A disciplined first step for every purchase",
-      body: "RiditStack captures requisitions with full line-item detail, cost-center coding, and budget validation up front. Each PR routes through the right approvals and, once approved, converts straight into a purchase order — so every PO traces back to an approved, budget-checked requisition.",
+      body: "RiditStack captures requisitions with full line-item detail, cost-center coding, and budget validation up front. Each PR routes through the right approvals and, once approved, converts straight into a purchase order - so every PO traces back to an approved, budget-checked requisition.",
       highlights: [
         "Line-item requisitions with cost-center coding",
         "Budget validated before the PR is approved",
@@ -461,7 +461,7 @@ export const features: FeatureContent[] = [
       { title: "Audit & compliance", body: "Maintain a clean, traceable line from requisition to order to payment." },
     ],
     faqs: [
-      { q: "How is a requisition different from intake?", a: "Intake is the friendly front door — anyone describes what they need in plain language. A purchase requisition is the structured, line-item document that results: coded, budget-checked, and formally approved before it becomes a PO. Intake feeds requisitions." },
+      { q: "How is a requisition different from intake?", a: "Intake is the friendly front door - anyone describes what they need in plain language. A purchase requisition is the structured, line-item document that results: coded, budget-checked, and formally approved before it becomes a PO. Intake feeds requisitions." },
       { q: "Can requisitions be budget-checked automatically?", a: "Yes. Each requisition validates against the relevant live budget before approval, so overspend is caught at the request stage rather than after a PO is raised." },
       { q: "Do approved requisitions become POs automatically?", a: "An approved requisition converts to a purchase order in one click, carrying all its line items and coding forward with no re-entry." },
       { q: "Can we require requisitions for certain spend?", a: "Yes. You can mandate a requisition above thresholds or for specific categories, and RiditStack enforces the rule automatically." },
@@ -469,7 +469,7 @@ export const features: FeatureContent[] = [
     related: ["intake", "purchase-orders", "approvals", "budgeting"],
     seo: {
       title: "Purchase Requisition Software | RiditStack",
-      description: "Capture structured, line-item purchase requisitions with up-front budget checks and policy-based approvals — then convert to POs in one click. Full PR-to-PO traceability with RiditStack.",
+      description: "Capture structured, line-item purchase requisitions with up-front budget checks and policy-based approvals - then convert to POs in one click. Full PR-to-PO traceability with RiditStack.",
       keywords: "purchase requisition software, requisition management, purchase request approval, pr to po",
     },
   },
@@ -486,7 +486,7 @@ export const features: FeatureContent[] = [
       titleLead: "Purchase orders that check the budget",
       titleHighlight: "before the money's gone.",
       subtitle:
-        "Turn approved requests into purchase orders in one click, track them against live budgets, and reconcile receipts automatically. RiditStack gives you real-time control over committed spend — not a monthly surprise after the invoices arrive.",
+        "Turn approved requests into purchase orders in one click, track them against live budgets, and reconcile receipts automatically. RiditStack gives you real-time control over committed spend - not a monthly surprise after the invoices arrive.",
     },
     metrics: [
       { value: "1-click", label: "request to PO conversion" },
@@ -495,7 +495,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "Commitments you only discover at month-end",
-      body: "In too many companies, a PO is a formality typed up after the fact — or skipped entirely. Spend gets committed with a handshake, budgets are checked in hindsight, and receiving is a pile of packing slips no one matches. By the time finance sees the number, the money's already spent.",
+      body: "In too many companies, a PO is a formality typed up after the fact - or skipped entirely. Spend gets committed with a handshake, budgets are checked in hindsight, and receiving is a pile of packing slips no one matches. By the time finance sees the number, the money's already spent.",
       pains: [
         { icon: AlertTriangle, title: "Off-PO buying", body: "Purchases happen without a PO, so commitments are invisible until the invoice lands." },
         { icon: Wallet, title: "Budgets checked too late", body: "Overspend is caught after commitment, when nothing can be done about it." },
@@ -504,7 +504,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Control commitments in real time",
-      body: "RiditStack turns every approved request into a structured PO that checks the budget at the moment of commitment. As goods and services arrive, receipts are logged against the PO automatically. You always know what's committed, what's received, and what's left to spend — before the invoice ever shows up.",
+      body: "RiditStack turns every approved request into a structured PO that checks the budget at the moment of commitment. As goods and services arrive, receipts are logged against the PO automatically. You always know what's committed, what's received, and what's left to spend - before the invoice ever shows up.",
       highlights: [
         "One-click conversion from approved request to PO",
         "Live budget checks at the point of commitment",
@@ -513,9 +513,9 @@ export const features: FeatureContent[] = [
       ],
     },
     benefits: [
-      { icon: ShoppingCart, title: "Instant PO creation", body: "Approved requests become clean, structured POs automatically — no re-typing." },
+      { icon: ShoppingCart, title: "Instant PO creation", body: "Approved requests become clean, structured POs automatically - no re-typing." },
       { icon: Wallet, title: "Budget at commitment", body: "Spend is checked against live budgets before it's committed, not after." },
-      { icon: Eye, title: "Live PO tracking", body: "See the status of every PO — open, received, matched, closed — at a glance." },
+      { icon: Eye, title: "Live PO tracking", body: "See the status of every PO - open, received, matched, closed - at a glance." },
       { icon: RefreshCw, title: "Auto reconciliation", body: "Receipts match to POs automatically, ready for touchless invoice matching." },
       { icon: Gauge, title: "Fewer errors", body: "Structured data means fewer disputes, duplicate orders, and mismatched receipts." },
       { icon: ShieldCheck, title: "Enforced control", body: "Every PO respects approval and budget policy, with a complete audit trail." },
@@ -557,7 +557,7 @@ export const features: FeatureContent[] = [
       titleLead: "Approvals that move at the speed of",
       titleHighlight: "your business, not your inbox.",
       subtitle:
-        "Design approval workflows without code, route them by amount, category, and budget, and let approvers decide in one click from Slack, email, or mobile. Fast when it should be, strict when it must be — always with a clean audit trail.",
+        "Design approval workflows without code, route them by amount, category, and budget, and let approvers decide in one click from Slack, email, or mobile. Fast when it should be, strict when it must be - always with a clean audit trail.",
     },
     metrics: [
       { value: "No-code", label: "workflow builder" },
@@ -566,7 +566,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "The approval is where everything stalls",
-      body: "Every procurement process eventually waits on a human to say yes. When that yes lives in an overflowing inbox, requests rot for days. When the rules only exist in someone's head, the wrong things get approved. Speed and control feel like a trade-off — and both suffer.",
+      body: "Every procurement process eventually waits on a human to say yes. When that yes lives in an overflowing inbox, requests rot for days. When the rules only exist in someone's head, the wrong things get approved. Speed and control feel like a trade-off - and both suffer.",
       pains: [
         { icon: Clock, title: "Bottlenecked approvers", body: "Decisions pile up in inboxes and requests wait on a single busy person." },
         { icon: GitBranch, title: "Rules in someone's head", body: "Undocumented approval logic means inconsistent, un-auditable decisions." },
@@ -575,7 +575,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Policy as a workflow, not a memory",
-      body: "RiditStack lets you build approval workflows visually — thresholds, parallel steps, conditional branches, delegations, and segregation-of-duties rules — with no code. Approvers act in one click wherever they work, escalations prevent stalls, and every decision is captured for audit. Control becomes automatic instead of manual.",
+      body: "RiditStack lets you build approval workflows visually - thresholds, parallel steps, conditional branches, delegations, and segregation-of-duties rules - with no code. Approvers act in one click wherever they work, escalations prevent stalls, and every decision is captured for audit. Control becomes automatic instead of manual.",
       highlights: [
         "Visual, no-code multi-step workflow builder",
         "Conditional routing by amount, category, and budget",
@@ -584,7 +584,7 @@ export const features: FeatureContent[] = [
       ],
     },
     benefits: [
-      { icon: Workflow, title: "Build without code", body: "Design and change approval flows in a visual builder — no IT ticket required." },
+      { icon: Workflow, title: "Build without code", body: "Design and change approval flows in a visual builder - no IT ticket required." },
       { icon: GitBranch, title: "Route intelligently", body: "Branch by amount, category, budget, or department, in parallel or in series." },
       { icon: Zap, title: "Approve anywhere", body: "Decisions happen in one click from Slack, email, or the mobile app." },
       { icon: Bell, title: "Never stall", body: "Reminders and auto-escalation keep requests moving when approvers are slow or away." },
@@ -592,7 +592,7 @@ export const features: FeatureContent[] = [
       { icon: FileText, title: "Audit in minutes", body: "Every approval, comment, and escalation is logged and instantly reviewable." },
     ],
     workflow: [
-      { title: "Design", body: "Drag together steps, conditions, and thresholds in a visual builder — no code." },
+      { title: "Design", body: "Drag together steps, conditions, and thresholds in a visual builder - no code." },
       { title: "Route", body: "Each request flows through the right path based on its amount, category, and budget." },
       { title: "Decide", body: "Approvers act in one click from wherever they already work." },
       { title: "Escalate", body: "Reminders and escalations kick in automatically so nothing sits idle." },
@@ -628,7 +628,7 @@ export const features: FeatureContent[] = [
       titleLead: "Every supplier relationship,",
       titleHighlight: "on a single living record.",
       subtitle:
-        "Onboard vendors in minutes, keep contracts and performance in one place, and monitor risk continuously. RiditStack turns a scattered vendor list into a managed portfolio — so renewals never surprise you and risk never hides.",
+        "Onboard vendors in minutes, keep contracts and performance in one place, and monitor risk continuously. RiditStack turns a scattered vendor list into a managed portfolio - so renewals never surprise you and risk never hides.",
     },
     metrics: [
       { value: "5 min", label: "self-serve supplier onboarding" },
@@ -637,7 +637,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "Your vendor data is everywhere but together",
-      body: "Supplier information scatters across spreadsheets, inboxes, and the memory of whoever onboarded them. Contracts auto-renew unnoticed, insurance certificates expire silently, and performance is a gut feeling. When a supplier becomes a risk, you find out from the disruption — not the data.",
+      body: "Supplier information scatters across spreadsheets, inboxes, and the memory of whoever onboarded them. Contracts auto-renew unnoticed, insurance certificates expire silently, and performance is a gut feeling. When a supplier becomes a risk, you find out from the disruption - not the data.",
       pains: [
         { icon: Database, title: "Fragmented records", body: "Vendor details live in a dozen places and none of them agree." },
         { icon: Clock, title: "Surprise renewals", body: "Contracts renew or lapse before anyone notices there was a decision to make." },
@@ -674,7 +674,7 @@ export const features: FeatureContent[] = [
       { title: "Supplier performance", body: "Consolidate to your best vendors using objective, tracked performance data." },
     ],
     faqs: [
-      { q: "How do suppliers get onboarded?", a: "You send an invite and the supplier self-registers through a guided flow, submitting their details, banking, and compliance documents — which route for internal review before approval." },
+      { q: "How do suppliers get onboarded?", a: "You send an invite and the supplier self-registers through a guided flow, submitting their details, banking, and compliance documents - which route for internal review before approval." },
       { q: "What risk signals do you monitor?", a: "RiditStack tracks financial health, compliance and certification status, sanctions and watchlists, and document expirations, alerting you proactively when anything changes." },
       { q: "Can we score supplier performance?", a: "Yes. Suppliers are scored on delivery, quality, and responsiveness using real transaction data, so renewal and award decisions rest on evidence, not opinion." },
       { q: "Does this connect to sourcing and contracts?", a: "Directly. Supplier records link to sourcing events and contracts, so awards, terms, and pricing all live against the same vendor profile." },
@@ -696,7 +696,7 @@ export const features: FeatureContent[] = [
     summary: "A self-serve portal where suppliers update details, submit invoices, and track payment.",
     eyebrow: "Vendor portal",
     hero: {
-      titleLead: "Let suppliers help themselves —",
+      titleLead: "Let suppliers help themselves -",
       titleHighlight: "and stop the status emails.",
       subtitle:
         "Give every vendor a secure portal to manage their profile, submit invoices, confirm POs, and check payment status. Fewer 'where's my payment?' emails, cleaner data, and a supplier experience that reflects how good your company is to work with.",
@@ -737,7 +737,7 @@ export const features: FeatureContent[] = [
       { title: "Invite", body: "Give a supplier secure access to their own branded portal in minutes." },
       { title: "Maintain", body: "They keep profile, contacts, and banking details current themselves." },
       { title: "Transact", body: "Suppliers confirm POs and submit structured invoices directly." },
-      { title: "Track", body: "They check invoice and payment status live — no email required." },
+      { title: "Track", body: "They check invoice and payment status live - no email required." },
     ],
     useCases: [
       { title: "AP teams", body: "Eliminate status-chasing and receive clean, structured invoices ready to match." },
@@ -764,13 +764,13 @@ export const features: FeatureContent[] = [
     menuLabel: "Invoice Automation",
     category: "Core modules",
     icon: ReceiptText,
-    summary: "AI captures, codes, and 3-way-matches every invoice — flagging only real exceptions.",
+    summary: "AI captures, codes, and 3-way-matches every invoice - flagging only real exceptions.",
     eyebrow: "AP & invoice automation",
     hero: {
       titleLead: "Invoices that",
       titleHighlight: "approve themselves.",
       subtitle:
-        "RiditStack captures every invoice, extracts and codes it with AI, and runs a 3-way match against the PO and receipt automatically. Your team stops keying line items and chasing approvals — and steps in only for the exceptions that genuinely need judgment.",
+        "RiditStack captures every invoice, extracts and codes it with AI, and runs a 3-way match against the PO and receipt automatically. Your team stops keying line items and chasing approvals - and steps in only for the exceptions that genuinely need judgment.",
     },
     metrics: [
       { value: "80%", label: "less manual AP effort" },
@@ -779,7 +779,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "AP is drowning in manual matching",
-      body: "Invoices arrive as PDFs, scans, and email bodies in a hundred formats. Someone keys the line items, hunts down the matching PO and receipt, checks the math, and routes it for approval. Multiply by thousands a month and AP becomes a data-entry factory — slow, expensive, and prone to duplicate and fraudulent payments.",
+      body: "Invoices arrive as PDFs, scans, and email bodies in a hundred formats. Someone keys the line items, hunts down the matching PO and receipt, checks the math, and routes it for approval. Multiply by thousands a month and AP becomes a data-entry factory - slow, expensive, and prone to duplicate and fraudulent payments.",
       pains: [
         { icon: ReceiptText, title: "Manual data entry", body: "Every invoice is re-typed by hand from a different format." },
         { icon: Search, title: "Match hunting", body: "AP manually locates the right PO and receipt for each invoice." },
@@ -788,7 +788,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Touchless AP, powered by document AI",
-      body: "RiditStack's document intelligence reads any invoice — PDF, scan, or email — and extracts every line item with high accuracy. It codes the invoice to the right GL and cost center, runs an automatic 3-way match against the PO and receipt, and detects duplicates and anomalies. Clean invoices flow straight to payment; only true exceptions reach a human.",
+      body: "RiditStack's document intelligence reads any invoice - PDF, scan, or email - and extracts every line item with high accuracy. It codes the invoice to the right GL and cost center, runs an automatic 3-way match against the PO and receipt, and detects duplicates and anomalies. Clean invoices flow straight to payment; only true exceptions reach a human.",
       highlights: [
         "AI extraction from any invoice format",
         "Automatic GL and cost-center coding",
@@ -838,10 +838,10 @@ export const features: FeatureContent[] = [
     summary: "A living contract repository that enforces its own terms and never misses a renewal.",
     eyebrow: "Contract management",
     hero: {
-      titleLead: "Contracts that enforce themselves —",
+      titleLead: "Contracts that enforce themselves -",
       titleHighlight: "and never lapse unnoticed.",
       subtitle:
-        "Store every agreement in one searchable repository, extract key terms with AI, and connect pricing to the buying flow so contracts are actually honored. RiditStack turns dormant PDFs into active guardrails — with renewal alerts that give you time to negotiate.",
+        "Store every agreement in one searchable repository, extract key terms with AI, and connect pricing to the buying flow so contracts are actually honored. RiditStack turns dormant PDFs into active guardrails - with renewal alerts that give you time to negotiate.",
     },
     metrics: [
       { value: "0", label: "renewals missed by surprise" },
@@ -859,7 +859,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "A contract repository that does the work",
-      body: "RiditStack centralizes every contract in a searchable repository and uses AI to extract key terms, pricing, and dates. Renewal and milestone alerts fire with enough lead time to act, and contract pricing connects directly to guided buying — so the terms you negotiated are the terms you transact on.",
+      body: "RiditStack centralizes every contract in a searchable repository and uses AI to extract key terms, pricing, and dates. Renewal and milestone alerts fire with enough lead time to act, and contract pricing connects directly to guided buying - so the terms you negotiated are the terms you transact on.",
       highlights: [
         "Central, searchable repository for every agreement",
         "AI extraction of terms, pricing, and key dates",
@@ -869,7 +869,7 @@ export const features: FeatureContent[] = [
     },
     benefits: [
       { icon: FileSignature, title: "One repository", body: "Every contract stored, versioned, and searchable in a single place." },
-      { icon: ScanText, title: "AI term extraction", body: "Key clauses, pricing, and dates are pulled out automatically — no manual abstracting." },
+      { icon: ScanText, title: "AI term extraction", body: "Key clauses, pricing, and dates are pulled out automatically - no manual abstracting." },
       { icon: Bell, title: "Never miss a renewal", body: "Alerts fire ahead of renewal and milestone dates so you have time to negotiate." },
       { icon: Target, title: "Terms that stick", body: "Negotiated pricing flows into buying, so contracts are honored, not ignored." },
       { icon: ShieldCheck, title: "Obligation tracking", body: "Monitor commitments and compliance so nothing agreed goes unmet." },
@@ -887,7 +887,7 @@ export const features: FeatureContent[] = [
       { title: "Savings realization", body: "Ensure negotiated contract pricing actually reaches the purchase order." },
     ],
     faqs: [
-      { q: "Can AI read our existing contracts?", a: "Yes. Upload your current agreements and RiditStack extracts key terms, pricing, parties, and dates into structured fields you can search and report on — no manual abstracting." },
+      { q: "Can AI read our existing contracts?", a: "Yes. Upload your current agreements and RiditStack extracts key terms, pricing, parties, and dates into structured fields you can search and report on - no manual abstracting." },
       { q: "How do renewal alerts work?", a: "RiditStack tracks renewal, expiration, and milestone dates on every contract and notifies the right owners with configurable lead time, so auto-renewals never catch you off guard." },
       { q: "How does contract pricing get enforced?", a: "Contract pricing links to the supplier and category, so guided buying transacts on agreed rates and off-contract purchases are flagged for review." },
       { q: "Does this connect to sourcing?", a: "Yes. Sourcing awards can convert directly into contracts, carrying the negotiated terms and pricing straight into the repository and the buying flow." },
@@ -906,13 +906,13 @@ export const features: FeatureContent[] = [
     menuLabel: "Inventory Management",
     category: "Core modules",
     icon: Warehouse,
-    summary: "Track stock, reorder points, and consumption — and replenish automatically before you run out.",
+    summary: "Track stock, reorder points, and consumption - and replenish automatically before you run out.",
     eyebrow: "Inventory management",
     hero: {
       titleLead: "Never run out,",
       titleHighlight: "never over-order again.",
       subtitle:
-        "See stock levels across locations in real time, set reorder points, and let RiditStack raise requisitions automatically when inventory runs low. Purchasing and stock finally speak to each other — so you hold less and stock out less.",
+        "See stock levels across locations in real time, set reorder points, and let RiditStack raise requisitions automatically when inventory runs low. Purchasing and stock finally speak to each other - so you hold less and stock out less.",
     },
     metrics: [
       { value: "Real-time", label: "stock across locations" },
@@ -924,13 +924,13 @@ export const features: FeatureContent[] = [
       body: "Purchasing doesn't know what's on the shelf, and the shelf doesn't know what's on order. So you stock out of critical items while cash sits frozen in overstock of others. Counts happen on spreadsheets weeks apart, and by the time anyone notices a shortage, it's already a disruption.",
       pains: [
         { icon: Eye, title: "No live visibility", body: "Stock levels are a periodic spreadsheet, never a real-time number you can trust." },
-        { icon: RefreshCw, title: "Manual reordering", body: "Someone has to notice a shortage and raise a request — usually too late." },
+        { icon: RefreshCw, title: "Manual reordering", body: "Someone has to notice a shortage and raise a request - usually too late." },
         { icon: AlertTriangle, title: "Overstock & stockouts", body: "Cash freezes in excess inventory while critical items run dry." },
       ],
     },
     solution: {
       heading: "Stock and purchasing on one system",
-      body: "RiditStack tracks inventory across every location in real time, ties consumption to purchasing, and triggers requisitions automatically when items hit their reorder point. You see what you have, what's committed, and what's coming — and the system keeps the shelf stocked without manual watching.",
+      body: "RiditStack tracks inventory across every location in real time, ties consumption to purchasing, and triggers requisitions automatically when items hit their reorder point. You see what you have, what's committed, and what's coming - and the system keeps the shelf stocked without manual watching.",
       highlights: [
         "Real-time stock levels across every location",
         "Reorder points that raise requisitions automatically",
@@ -940,7 +940,7 @@ export const features: FeatureContent[] = [
     },
     benefits: [
       { icon: Eye, title: "Real-time visibility", body: "Know exactly what's in stock, committed, and inbound across all locations." },
-      { icon: RefreshCw, title: "Auto-replenishment", body: "Items at their reorder point raise a requisition automatically — no watching." },
+      { icon: RefreshCw, title: "Auto-replenishment", body: "Items at their reorder point raise a requisition automatically - no watching." },
       { icon: Wallet, title: "Less overstock", body: "Hold only what you need, freeing working capital trapped on the shelf." },
       { icon: ShieldCheck, title: "Fewer stockouts", body: "Critical items get reordered on time, before a shortage disrupts operations." },
       { icon: ShoppingCart, title: "Tied to purchasing", body: "Consumption drives buying directly, so orders match real demand." },
@@ -977,13 +977,13 @@ export const features: FeatureContent[] = [
     menuLabel: "Asset Management",
     category: "Core modules",
     icon: Tag,
-    summary: "Track every asset from purchase to disposal — assignments, maintenance, and depreciation in one place.",
+    summary: "Track every asset from purchase to disposal - assignments, maintenance, and depreciation in one place.",
     eyebrow: "Asset management",
     hero: {
       titleLead: "Every asset accounted for,",
       titleHighlight: "cradle to retirement.",
       subtitle:
-        "Track the full lifecycle of every asset you buy — assignment, location, maintenance, warranty, and depreciation — connected to the purchase that created it. RiditStack turns a forgotten asset register into a live, accountable record.",
+        "Track the full lifecycle of every asset you buy - assignment, location, maintenance, warranty, and depreciation - connected to the purchase that created it. RiditStack turns a forgotten asset register into a live, accountable record.",
     },
     metrics: [
       { value: "Full lifecycle", label: "purchase to disposal" },
@@ -992,7 +992,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "Assets vanish the moment they're bought",
-      body: "You buy a laptop, a machine, a license — and then lose track of it. Who has it, where it is, whether it's under warranty, what it's worth now: nobody knows, because the asset register, if one exists, is a stale spreadsheet disconnected from procurement. Assets get lost, double-bought, and depreciated wrong.",
+      body: "You buy a laptop, a machine, a license - and then lose track of it. Who has it, where it is, whether it's under warranty, what it's worth now: nobody knows, because the asset register, if one exists, is a stale spreadsheet disconnected from procurement. Assets get lost, double-bought, and depreciated wrong.",
       pains: [
         { icon: Search, title: "No single register", body: "Asset records are scattered spreadsheets that no one trusts or maintains." },
         { icon: AlertTriangle, title: "Untracked lifecycle", body: "Custody, location, maintenance, and warranty go unrecorded after purchase." },
@@ -1001,7 +1001,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "A living register, born at purchase",
-      body: "In RiditStack, an asset is created automatically from the purchase that bought it, then tracked through its whole life — assigned to people or locations, scheduled for maintenance, monitored for warranty, and depreciated on schedule. When it's retired, the record closes cleanly. Nothing disappears.",
+      body: "In RiditStack, an asset is created automatically from the purchase that bought it, then tracked through its whole life - assigned to people or locations, scheduled for maintenance, monitored for warranty, and depreciated on schedule. When it's retired, the record closes cleanly. Nothing disappears.",
       highlights: [
         "Assets created automatically from purchases",
         "Assignment, location, and custody tracking",
@@ -1037,7 +1037,7 @@ export const features: FeatureContent[] = [
     related: ["inventory", "purchase-orders", "contracts", "suppliers"],
     seo: {
       title: "Asset Management Software | RiditStack",
-      description: "Track every asset from purchase to disposal — custody, maintenance, warranty, and depreciation — connected to procurement. RiditStack turns a stale asset register into a live record.",
+      description: "Track every asset from purchase to disposal - custody, maintenance, warranty, and depreciation - connected to procurement. RiditStack turns a stale asset register into a live record.",
       keywords: "asset management software, it asset management, fixed asset tracking, asset lifecycle, depreciation tracking",
     },
   },
@@ -1049,7 +1049,7 @@ export const features: FeatureContent[] = [
     menuLabel: "Spend Analytics",
     category: "AI & control",
     icon: BarChart3,
-    summary: "Live, categorized spend across every team and vendor — with AI that finds the savings.",
+    summary: "Live, categorized spend across every team and vendor - with AI that finds the savings.",
     eyebrow: "Spend analytics",
     hero: {
       titleLead: "See every dollar clearly, and",
@@ -1073,7 +1073,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Live spend intelligence, not month-old reports",
-      body: "RiditStack unifies and auto-classifies every transaction the moment it happens, giving you a live picture of spend by team, category, and supplier. AI continuously scans for consolidation opportunities, off-contract spend, and anomalies — turning raw data into specific, actionable savings you can take to the board.",
+      body: "RiditStack unifies and auto-classifies every transaction the moment it happens, giving you a live picture of spend by team, category, and supplier. AI continuously scans for consolidation opportunities, off-contract spend, and anomalies - turning raw data into specific, actionable savings you can take to the board.",
       highlights: [
         "Automatic classification of every transaction",
         "Live dashboards by team, category, and vendor",
@@ -1082,7 +1082,7 @@ export const features: FeatureContent[] = [
       ],
     },
     benefits: [
-      { icon: BarChart3, title: "Live dashboards", body: "Slice spend by team, category, or supplier in real time — no data team required." },
+      { icon: BarChart3, title: "Live dashboards", body: "Slice spend by team, category, or supplier in real time - no data team required." },
       { icon: Sparkles, title: "AI finds savings", body: "Surface duplicate vendors, off-contract spend, and consolidation wins automatically." },
       { icon: Eye, title: "Total visibility", body: "One classified view of every dollar across entities, cards, and systems." },
       { icon: AlertTriangle, title: "Catch anomalies", body: "Spot maverick spend and unusual patterns the moment they appear." },
@@ -1103,7 +1103,7 @@ export const features: FeatureContent[] = [
     faqs: [
       { q: "Where does the spend data come from?", a: "RiditStack combines the transactions flowing through the platform with data synced from your ERP, cards, and other systems, unifying it all into one classified model." },
       { q: "How accurate is the categorization?", a: "AI classifies transactions consistently across sources and learns from your corrections, so categories stay clean without the manual tagging that plagues spreadsheet analysis." },
-      { q: "What kind of savings can it find?", a: "It surfaces duplicate and fragmented vendors, off-contract and maverick spend, tail-spend consolidation, and unusual patterns worth investigating — each as a specific, actionable insight." },
+      { q: "What kind of savings can it find?", a: "It surfaces duplicate and fragmented vendors, off-contract and maverick spend, tail-spend consolidation, and unusual patterns worth investigating - each as a specific, actionable insight." },
       { q: "Can we build custom reports?", a: "Yes. Alongside prebuilt dashboards, you can slice spend by any dimension, save custom views, schedule reports, and export board-ready output." },
     ],
     related: ["budgeting", "ai-copilot", "contracts", "source-to-pay"],
@@ -1123,10 +1123,10 @@ export const features: FeatureContent[] = [
     summary: "Live budgets checked at the point of commitment, so overspend can't happen.",
     eyebrow: "Budget control",
     hero: {
-      titleLead: "Stop overspend before it happens —",
+      titleLead: "Stop overspend before it happens -",
       titleHighlight: "not after the report.",
       subtitle:
-        "RiditStack checks every request and PO against live budgets at the moment of commitment, alerts owners as thresholds approach, and keeps actuals current in real time. Budget control becomes a guardrail people can't accidentally cross — not a post-mortem.",
+        "RiditStack checks every request and PO against live budgets at the moment of commitment, alerts owners as thresholds approach, and keeps actuals current in real time. Budget control becomes a guardrail people can't accidentally cross - not a post-mortem.",
     },
     metrics: [
       { value: "Real-time", label: "budget vs. committed spend" },
@@ -1156,7 +1156,7 @@ export const features: FeatureContent[] = [
       { icon: Wallet, title: "Check at source", body: "Spend is validated against live budget before it's ever committed." },
       { icon: Bell, title: "Early warnings", body: "Owners are alerted as they approach limits, with time to act." },
       { icon: Eye, title: "Owner self-service", body: "Every budget owner sees their remaining balance in real time." },
-      { icon: Layers, title: "Budget any way", body: "Model budgets by department, project, category, or entity — or all at once." },
+      { icon: Layers, title: "Budget any way", body: "Model budgets by department, project, category, or entity - or all at once." },
       { icon: RefreshCw, title: "Always current", body: "Actuals update as commitments happen, so the number is never stale." },
       { icon: ShieldCheck, title: "Enforced limits", body: "Hard and soft controls stop or flag spend that would breach budget." },
     ],
@@ -1172,15 +1172,15 @@ export const features: FeatureContent[] = [
       { title: "Finance planning", body: "Replace stale spreadsheets with budgets that enforce themselves at source." },
     ],
     faqs: [
-      { q: "How is this different from budgets in our ERP?", a: "ERP budgets are typically checked after the fact at the accounting layer. RiditStack checks at the point of commitment — when a request or PO is raised — so overspend is prevented, not just recorded." },
+      { q: "How is this different from budgets in our ERP?", a: "ERP budgets are typically checked after the fact at the accounting layer. RiditStack checks at the point of commitment - when a request or PO is raised - so overspend is prevented, not just recorded." },
       { q: "Can we set different levels of budget?", a: "Yes. Budgets can be modeled by department, project, category, cost center, or entity, and nested, so a single PO can validate against several budgets at once." },
       { q: "What happens when a budget is exceeded?", a: "You choose: a soft control warns and requires additional approval, while a hard control blocks the commitment. Owners are alerted well before the limit is reached." },
-      { q: "Do actuals update automatically?", a: "Yes. As commitments and payments flow through the platform and sync from your ERP, budget actuals update in real time — no manual reconciliation." },
+      { q: "Do actuals update automatically?", a: "Yes. As commitments and payments flow through the platform and sync from your ERP, budget actuals update in real time - no manual reconciliation." },
     ],
     related: ["purchase-orders", "analytics", "intake", "approvals"],
     seo: {
       title: "Budget Control Software for Procurement | RiditStack",
-      description: "Check every request and PO against live budgets before commitment, alert owners early, and keep actuals real-time. RiditStack makes overspend impossible to miss — or make.",
+      description: "Check every request and PO against live budgets before commitment, alert owners early, and keep actuals real-time. RiditStack makes overspend impossible to miss - or make.",
       keywords: "budget control software, procurement budgeting, budget management, spend control, real-time budgets",
     },
   },
@@ -1197,7 +1197,7 @@ export const features: FeatureContent[] = [
       titleLead: "Your procurement team's",
       titleHighlight: "always-on expert.",
       subtitle:
-        "Ask RiditStack's AI Copilot anything — 'What did we spend with this vendor last quarter?', 'Draft an RFQ for laptops', 'Which contracts renew next month?' — and get an answer grounded in your real data, with the action ready to take. No dashboards to hunt through, no analysts to wait on.",
+        "Ask RiditStack's AI Copilot anything - 'What did we spend with this vendor last quarter?', 'Draft an RFQ for laptops', 'Which contracts renew next month?' - and get an answer grounded in your real data, with the action ready to take. No dashboards to hunt through, no analysts to wait on.",
     },
     metrics: [
       { value: "Plain English", label: "ask anything, get answers" },
@@ -1205,7 +1205,7 @@ export const features: FeatureContent[] = [
       { value: "24/7", label: "instant expert on call" },
     ],
     problem: {
-      heading: "The answers exist — buried and out of reach",
+      heading: "The answers exist - buried and out of reach",
       body: "Your procurement data holds the answer to almost any question, but getting it means knowing which dashboard, which filter, or which analyst to ask. So people don't ask. Decisions get made without the data that was sitting right there, and the team's expertise stays locked in a few overloaded heads.",
       pains: [
         { icon: Search, title: "Answers are hard to reach", body: "Insight requires knowing exactly where to look and how to slice it." },
@@ -1215,7 +1215,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Conversational procurement, grounded in your data",
-      body: "The AI Copilot understands your spend, suppliers, contracts, and policies. Ask a question in plain language and it answers from your real data with sources. Ask it to do something — draft an RFQ, summarize a contract, find savings, start a request — and it prepares the action for your review. Expertise, on demand, for everyone.",
+      body: "The AI Copilot understands your spend, suppliers, contracts, and policies. Ask a question in plain language and it answers from your real data with sources. Ask it to do something - draft an RFQ, summarize a contract, find savings, start a request - and it prepares the action for your review. Expertise, on demand, for everyone.",
       highlights: [
         "Natural-language answers grounded in your data",
         "Drafts RFQs, summaries, and requests on command",
@@ -1234,7 +1234,7 @@ export const features: FeatureContent[] = [
     workflow: [
       { title: "Ask", body: "Type a question or request in plain language, right where you work." },
       { title: "Understand", body: "The Copilot interprets intent against your live procurement data." },
-      { title: "Answer", body: "It responds with grounded, cited insight — or a ready-to-run action." },
+      { title: "Answer", body: "It responds with grounded, cited insight - or a ready-to-run action." },
       { title: "Act", body: "Approve the drafted RFQ, request, or report and it's done." },
     ],
     useCases: [
@@ -1243,7 +1243,7 @@ export const features: FeatureContent[] = [
       { title: "Everyone else", body: "Let any employee self-serve procurement help without training." },
     ],
     faqs: [
-      { q: "Is the Copilot just a chatbot?", a: "No. It's grounded in your live procurement data and can take real actions — drafting RFQs, starting requests, summarizing contracts — within your permissions and policies, not just answering trivia." },
+      { q: "Is the Copilot just a chatbot?", a: "No. It's grounded in your live procurement data and can take real actions - drafting RFQs, starting requests, summarizing contracts - within your permissions and policies, not just answering trivia." },
       { q: "How do we know the answers are accurate?", a: "Every answer is grounded in your actual data and cites its sources, so you can verify it. The Copilot won't invent numbers it can't trace back to your records." },
       { q: "Is our data used to train external models?", a: "No. Your data stays private to your workspace and is not used to train shared models. The Copilot operates on your data under your security and permission controls." },
       { q: "Does it respect user permissions?", a: "Yes. The Copilot only surfaces data and actions each user is already allowed to access, and every action it takes follows your approval policies." },
@@ -1262,13 +1262,13 @@ export const features: FeatureContent[] = [
     menuLabel: "Document Intelligence",
     category: "AI & control",
     icon: ScanText,
-    summary: "AI that reads invoices, contracts, and quotes — and turns them into structured data.",
+    summary: "AI that reads invoices, contracts, and quotes - and turns them into structured data.",
     eyebrow: "Document intelligence (OCR)",
     hero: {
       titleLead: "Turn every document into",
       titleHighlight: "structured, usable data.",
       subtitle:
-        "Invoices, contracts, quotes, and receipts arrive as unstructured files. RiditStack's document intelligence reads them the way a person would — extracting line items, terms, and totals into clean data your workflows can act on, without templates or manual keying.",
+        "Invoices, contracts, quotes, and receipts arrive as unstructured files. RiditStack's document intelligence reads them the way a person would - extracting line items, terms, and totals into clean data your workflows can act on, without templates or manual keying.",
     },
     metrics: [
       { value: "99.5%", label: "extraction accuracy on clean docs" },
@@ -1277,7 +1277,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "Your data is trapped in documents",
-      body: "Most procurement information arrives as a file, not a field. A quote is a PDF, a contract is a scan, an invoice is an email attachment. To use any of it, someone has to read it and re-type it — slowly, inconsistently, and with errors that ripple downstream into every match and report.",
+      body: "Most procurement information arrives as a file, not a field. A quote is a PDF, a contract is a scan, an invoice is an email attachment. To use any of it, someone has to read it and re-type it - slowly, inconsistently, and with errors that ripple downstream into every match and report.",
       pains: [
         { icon: FileText, title: "Unstructured everywhere", body: "Critical data hides inside PDFs, scans, and images no system can read." },
         { icon: ScanText, title: "Template brittleness", body: "Old OCR breaks the moment a document's layout changes." },
@@ -1286,7 +1286,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "AI that reads like a human, at machine scale",
-      body: "RiditStack's document intelligence uses modern AI to understand documents by meaning, not fixed templates. It extracts header and line-level data from any layout — invoices, contracts, quotes, receipts — validates it, and feeds it straight into matching, contracts, and analytics. The information trapped in your files becomes data your platform can use.",
+      body: "RiditStack's document intelligence uses modern AI to understand documents by meaning, not fixed templates. It extracts header and line-level data from any layout - invoices, contracts, quotes, receipts - validates it, and feeds it straight into matching, contracts, and analytics. The information trapped in your files becomes data your platform can use.",
       highlights: [
         "Template-free extraction from any document layout",
         "Line-level accuracy on invoices and quotes",
@@ -1317,12 +1317,12 @@ export const features: FeatureContent[] = [
       { q: "Do we need to set up templates for each vendor?", a: "No. RiditStack's document intelligence reads documents by understanding their meaning, so it handles new layouts and vendors without per-template configuration." },
       { q: "What documents can it process?", a: "Invoices, contracts, quotes, purchase orders, and receipts, in PDF, scanned image, or email-body form, with both header and line-level extraction." },
       { q: "How do you handle low-quality scans?", a: "Every extracted field carries a confidence score. High-confidence data flows straight through, while low-confidence fields are flagged for a quick human review, so accuracy stays high." },
-      { q: "Where does the extracted data go?", a: "Straight into the relevant workflow — invoice data into 3-way matching, contract terms into the repository, quote lines into sourcing — with no manual re-entry." },
+      { q: "Where does the extracted data go?", a: "Straight into the relevant workflow - invoice data into 3-way matching, contract terms into the repository, quote lines into sourcing - with no manual re-entry." },
     ],
     related: ["invoice-automation", "contracts", "ai-copilot", "source-to-pay"],
     seo: {
       title: "Document Intelligence & OCR for Procurement | RiditStack",
-      description: "AI that reads invoices, contracts, and quotes and turns them into structured data — no templates, no manual keying. RiditStack unlocks the data trapped in your documents.",
+      description: "AI that reads invoices, contracts, and quotes and turns them into structured data - no templates, no manual keying. RiditStack unlocks the data trapped in your documents.",
       keywords: "document intelligence, procurement ocr, invoice ocr, contract data extraction, ai document processing",
     },
   },
@@ -1339,7 +1339,7 @@ export const features: FeatureContent[] = [
       titleLead: "Automate the busywork,",
       titleHighlight: "keep the judgment.",
       subtitle:
-        "Build automations that route requests, trigger actions, sync systems, and chase the things that stall — without code. RiditStack handles the repetitive mechanics of procurement so your team spends its time on decisions, not data entry and follow-ups.",
+        "Build automations that route requests, trigger actions, sync systems, and chase the things that stall - without code. RiditStack handles the repetitive mechanics of procurement so your team spends its time on decisions, not data entry and follow-ups.",
     },
     metrics: [
       { value: "No-code", label: "automation builder" },
@@ -1357,7 +1357,7 @@ export const features: FeatureContent[] = [
     },
     solution: {
       heading: "Event-driven automation across procurement",
-      body: "RiditStack lets you build automations visually: when this happens, do that. Route requests, trigger notifications, update records, sync external systems, and escalate stalls — all without code. Because it's built into the platform, automations act on the same data your whole process runs on, consistently and instantly.",
+      body: "RiditStack lets you build automations visually: when this happens, do that. Route requests, trigger notifications, update records, sync external systems, and escalate stalls - all without code. Because it's built into the platform, automations act on the same data your whole process runs on, consistently and instantly.",
       highlights: [
         "Visual, no-code automation builder",
         "Event-driven triggers across the procurement lifecycle",
@@ -1367,14 +1367,14 @@ export const features: FeatureContent[] = [
     },
     benefits: [
       { icon: Zap, title: "Automate anything", body: "Turn repetitive, rule-based steps into automations that just run." },
-      { icon: Workflow, title: "No code needed", body: "Build and change automations visually — no engineering backlog." },
+      { icon: Workflow, title: "No code needed", body: "Build and change automations visually - no engineering backlog." },
       { icon: Bell, title: "It chases for you", body: "Reminders and escalations keep work moving without human nagging." },
       { icon: RefreshCw, title: "Systems in sync", body: "Push and pull data to your ERP and tools automatically as events happen." },
       { icon: Gauge, title: "Consistent every time", body: "Automated steps run the same way, every time, with a full audit trail." },
       { icon: Clock, title: "Give time back", body: "Free your team from mechanical work to focus on real decisions." },
     ],
     workflow: [
-      { title: "Trigger", body: "Choose an event — a request submitted, a threshold crossed, a date reached." },
+      { title: "Trigger", body: "Choose an event - a request submitted, a threshold crossed, a date reached." },
       { title: "Condition", body: "Add rules so the automation only runs when it should." },
       { title: "Act", body: "Route, notify, update records, or sync systems automatically." },
       { title: "Monitor", body: "Track every automation run with a complete, auditable log." },
@@ -1386,9 +1386,9 @@ export const features: FeatureContent[] = [
     ],
     faqs: [
       { q: "Do I need engineering to build automations?", a: "No. Automations are built in a visual, no-code editor, so procurement and finance admins create and adjust them without waiting on IT." },
-      { q: "What can trigger an automation?", a: "Almost any event in the lifecycle — a request submitted, an approval granted, a budget threshold crossed, a contract date reached, or a scheduled time." },
+      { q: "What can trigger an automation?", a: "Almost any event in the lifecycle - a request submitted, an approval granted, a budget threshold crossed, a contract date reached, or a scheduled time." },
       { q: "Can automations update external systems?", a: "Yes. Actions can update records inside RiditStack and push or pull data from your ERP and connected tools, keeping everything in sync automatically." },
-      { q: "How is this different from generic automation tools?", a: "Because it's native to the platform, it acts directly on your procurement data with full context and audit logging — no brittle external integrations to maintain." },
+      { q: "How is this different from generic automation tools?", a: "Because it's native to the platform, it acts directly on your procurement data with full context and audit logging - no brittle external integrations to maintain." },
     ],
     related: ["approvals", "integrations", "ai-copilot", "intake"],
     seo: {
@@ -1404,7 +1404,7 @@ export const features: FeatureContent[] = [
     menuLabel: "Integrations",
     category: "AI & control",
     icon: Plug,
-    summary: "Sync your ERP, finance stack, and identity in days — with prebuilt connectors and an open API.",
+    summary: "Sync your ERP, finance stack, and identity in days - with prebuilt connectors and an open API.",
     eyebrow: "Integrations & API",
     hero: {
       titleLead: "Plugs into your stack in days,",
@@ -1464,7 +1464,7 @@ export const features: FeatureContent[] = [
     related: ["api", "workflow-automation", "procure-to-pay", "invoice-automation"],
     seo: {
       title: "Procurement Integrations & API | RiditStack",
-      description: "Connect your ERP, finance stack, and identity provider with prebuilt connectors and an open API. RiditStack syncs bidirectionally in real time — live in days, no rip-and-replace.",
+      description: "Connect your ERP, finance stack, and identity provider with prebuilt connectors and an open API. RiditStack syncs bidirectionally in real time - live in days, no rip-and-replace.",
       keywords: "procurement integrations, erp integration, procurement api, netsuite sap quickbooks integration, sso scim",
     },
   },
@@ -1490,7 +1490,7 @@ export const features: FeatureContent[] = [
     ],
     problem: {
       heading: "When off-the-shelf isn't enough",
-      body: "Prebuilt connectors cover the common cases, but every enterprise has a workflow, system, or data model that's uniquely theirs. Without programmatic access, those needs turn into manual workarounds or expensive custom projects — and your procurement platform becomes a ceiling instead of a foundation.",
+      body: "Prebuilt connectors cover the common cases, but every enterprise has a workflow, system, or data model that's uniquely theirs. Without programmatic access, those needs turn into manual workarounds or expensive custom projects - and your procurement platform becomes a ceiling instead of a foundation.",
       pains: [
         { icon: KeyRound, title: "Locked in", body: "No programmatic access means every custom need becomes a manual workaround." },
         { icon: Bell, title: "No real-time events", body: "Without webhooks, systems poll and drift out of sync between updates." },
@@ -1509,7 +1509,7 @@ export const features: FeatureContent[] = [
     },
     benefits: [
       { icon: Code2, title: "Full REST API", body: "Read and write every procurement object and action programmatically." },
-      { icon: Webhook, title: "Real-time webhooks", body: "Push events to your systems the moment they happen — no polling." },
+      { icon: Webhook, title: "Real-time webhooks", body: "Push events to your systems the moment they happen - no polling." },
       { icon: KeyRound, title: "Scoped & secure", body: "Granular scopes and API keys keep every integration least-privilege." },
       { icon: Terminal, title: "Sandbox to test", body: "Build and validate against a full sandbox before touching production." },
       { icon: BookOpen, title: "Clear documentation", body: "Comprehensive, versioned docs and examples get developers moving fast." },
@@ -1527,7 +1527,7 @@ export const features: FeatureContent[] = [
       { title: "Custom automation", body: "Orchestrate bespoke procurement processes end to end via the API." },
     ],
     faqs: [
-      { q: "What can the API access?", a: "The REST API exposes RiditStack's full data model and actions — requisitions, purchase orders, invoices, suppliers, contracts, budgets, and more — so you can read and automate virtually anything in the platform." },
+      { q: "What can the API access?", a: "The REST API exposes RiditStack's full data model and actions - requisitions, purchase orders, invoices, suppliers, contracts, budgets, and more - so you can read and automate virtually anything in the platform." },
       { q: "Do you support webhooks?", a: "Yes. You can subscribe to real-time events so your systems react the moment something changes, instead of polling for updates and drifting out of sync." },
       { q: "Is there a sandbox?", a: "Yes. A full sandbox environment lets your developers build and test integrations against realistic data before promoting anything to production." },
       { q: "How is the API secured?", a: "Access uses API keys with granular scopes, so each integration gets only the permissions it needs. All traffic is encrypted and every call is logged for audit." },

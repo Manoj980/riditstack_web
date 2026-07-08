@@ -49,7 +49,7 @@ export const solutions: MarketingPage[] = [
       titleLead: "Elevate procurement from processing to",
       titleHighlight: "strategy.",
       subtitle:
-        "Give your team one platform to run intake, sourcing, suppliers, and spend — with AI handling the manual work so your people focus on savings, risk, and relationships.",
+        "Give your team one platform to run intake, sourcing, suppliers, and spend - with AI handling the manual work so your people focus on savings, risk, and relationships.",
     },
     metrics: [
       { value: "73%", label: "faster cycle times" },
@@ -58,7 +58,7 @@ export const solutions: MarketingPage[] = [
     ],
     pains: {
       heading: "Buried in transactions, starved of strategy",
-      body: "Procurement teams spend their days chasing approvals, re-keying POs, and fielding 'where's my order?' emails. The strategic work — sourcing, supplier development, savings — gets whatever time is left, which is never enough.",
+      body: "Procurement teams spend their days chasing approvals, re-keying POs, and fielding 'where's my order?' emails. The strategic work - sourcing, supplier development, savings - gets whatever time is left, which is never enough.",
       items: [
         { icon: RefreshCw, title: "Manual transaction load", body: "Every requisition, PO, and invoice is handled by hand." },
         { icon: Search, title: "No spend visibility", body: "Fragmented data hides savings and maverick spend." },
@@ -66,7 +66,7 @@ export const solutions: MarketingPage[] = [
       ],
     },
     solution: {
-      heading: "One platform to run — and elevate — procurement",
+      heading: "One platform to run - and elevate - procurement",
       body: "RiditStack automates the transactional core of procurement and gives your team the intelligence to be strategic. Intake routes itself, sourcing runs on structured data, suppliers live on one record, and AI surfaces the savings worth chasing.",
       highlights: [
         "Automated intake, approvals, and PO creation",
@@ -77,7 +77,7 @@ export const solutions: MarketingPage[] = [
     },
     capabilities: {
       heading: "Everything a modern procurement team needs",
-      subheading: "The modules that replace your patchwork of tools — all sharing one dataset.",
+      subheading: "The modules that replace your patchwork of tools - all sharing one dataset.",
       items: [
         { icon: Sparkles, title: "AI Copilot", body: "Answer spend and supplier questions in plain language." },
         { icon: Route, title: "Guided sourcing", body: "Run RFQs and reverse auctions on structured bids." },
@@ -133,7 +133,7 @@ export const solutions: MarketingPage[] = [
       titleLead: "Control every dollar",
       titleHighlight: "before it's committed.",
       subtitle:
-        "Give finance real-time visibility and control over spend — budgets checked at commitment, invoices matched touchlessly, and a clean audit trail from request to payment. Close faster, with fewer surprises.",
+        "Give finance real-time visibility and control over spend - budgets checked at commitment, invoices matched touchlessly, and a clean audit trail from request to payment. Close faster, with fewer surprises.",
     },
     metrics: [
       { value: "80%", label: "less manual AP effort" },
@@ -142,7 +142,7 @@ export const solutions: MarketingPage[] = [
     ],
     pains: {
       heading: "Finding out about spend after it's spent",
-      body: "Finance is always explaining the past — reconciling budgets a month late, chasing invoices through inboxes, and discovering overspend when it's too late to prevent. Control feels like an audit, not a guardrail.",
+      body: "Finance is always explaining the past - reconciling budgets a month late, chasing invoices through inboxes, and discovering overspend when it's too late to prevent. Control feels like an audit, not a guardrail.",
       items: [
         { icon: Clock, title: "Month-end surprises", body: "Budgets are reconciled long after commitments are made." },
         { icon: RefreshCw, title: "Manual AP grind", body: "Invoices are keyed and matched by hand, slowly." },
@@ -187,7 +187,7 @@ export const solutions: MarketingPage[] = [
       metricLabel: "cut from monthly close",
     },
     faqs: [
-      { q: "How does budget control prevent overspend?", a: "Every requisition and PO validates against the relevant live budget before it commits, so overspend is caught at the request stage — not discovered at reconciliation." },
+      { q: "How does budget control prevent overspend?", a: "Every requisition and PO validates against the relevant live budget before it commits, so overspend is caught at the request stage - not discovered at reconciliation." },
       { q: "Will invoice automation work with non-PO spend?", a: "Yes. Non-PO invoices are extracted, coded, and routed through your approval workflow automatically, so even unstructured spend stays controlled." },
       { q: "How does this speed up the close?", a: "Touchless matching, real-time actuals, and a live ERP sync mean far less manual reconciliation at period end, cutting days off the close." },
       { q: "Is the audit trail sufficient for compliance?", a: "Every approval, edit, and match is logged immutably and is exportable, giving auditors a self-serve, tamper-evident trail for every transaction." },
@@ -199,7 +199,7 @@ export const solutions: MarketingPage[] = [
     },
     seo: {
       title: "Procurement & AP Software for Finance Teams | RiditStack",
-      description: "Give finance real-time control over spend — budgets checked at commitment, touchless invoice matching, and an audit-ready trail. Close faster with RiditStack.",
+      description: "Give finance real-time control over spend - budgets checked at commitment, touchless invoice matching, and an audit-ready trail. Close faster with RiditStack.",
       keywords: "finance procurement software, ap automation, budget control, spend management for finance, faster close",
     },
   },
@@ -217,7 +217,7 @@ export const solutions: MarketingPage[] = [
       titleLead: "Keep the business buying",
       titleHighlight: "without the bottlenecks.",
       subtitle:
-        "Operations keeps everything running — and everything needs buying. RiditStack gives ops a single, fast, controlled way to procure across teams and sites, so nothing stalls waiting on a form or an approval.",
+        "Operations keeps everything running - and everything needs buying. RiditStack gives ops a single, fast, controlled way to procure across teams and sites, so nothing stalls waiting on a form or an approval.",
     },
     metrics: [
       { value: "4x", label: "faster approvals" },
@@ -226,7 +226,7 @@ export const solutions: MarketingPage[] = [
     ],
     pains: {
       heading: "Buying that stalls the business",
-      body: "When procurement is slow or scattered, operations pays the price — projects wait on parts, teams route around the process, and consistency across sites is impossible. Ops becomes the expediter of everyone else's purchases.",
+      body: "When procurement is slow or scattered, operations pays the price - projects wait on parts, teams route around the process, and consistency across sites is impossible. Ops becomes the expediter of everyone else's purchases.",
       items: [
         { icon: Clock, title: "Slow approvals", body: "Requests wait days in inboxes while work stops." },
         { icon: GitBranch, title: "Inconsistent process", body: "Every team and site buys a different way." },
@@ -235,7 +235,7 @@ export const solutions: MarketingPage[] = [
     },
     solution: {
       heading: "One fast, consistent way to buy",
-      body: "RiditStack gives operations a guided intake and automated approvals that work the same across every team and location. Requests move fast, status is always visible, and control is built in — so buying supports the business instead of blocking it.",
+      body: "RiditStack gives operations a guided intake and automated approvals that work the same across every team and location. Requests move fast, status is always visible, and control is built in - so buying supports the business instead of blocking it.",
       highlights: [
         "Guided intake for anyone, anywhere",
         "Automated, policy-aware approvals",
@@ -271,7 +271,7 @@ export const solutions: MarketingPage[] = [
       metricLabel: "average approval time",
     },
     faqs: [
-      { q: "Can non-procurement staff use it easily?", a: "Yes. Intake is designed for people who don't know procurement — they describe what they need in plain language and the system handles the structure and routing." },
+      { q: "Can non-procurement staff use it easily?", a: "Yes. Intake is designed for people who don't know procurement - they describe what they need in plain language and the system handles the structure and routing." },
       { q: "Does it work across multiple locations?", a: "Yes. You can standardize one buying process across every site while keeping location-specific budgets, approvers, and rules distinct." },
       { q: "Can we track order and delivery status?", a: "Every request and PO shows live status from raise to receipt, so operations always knows where things stand without chasing." },
       { q: "How does it handle recurring stock needs?", a: "Inventory management tracks stock and raises requisitions automatically at reorder points, so critical items never run out." },
@@ -301,7 +301,7 @@ export const solutions: MarketingPage[] = [
       titleLead: "Build a supply chain that",
       titleHighlight: "sees around corners.",
       subtitle:
-        "Connect sourcing, suppliers, inventory, and risk on one platform so your supply chain is visible end to end. Anticipate disruption, diversify suppliers, and keep goods flowing — with AI watching for risk in the background.",
+        "Connect sourcing, suppliers, inventory, and risk on one platform so your supply chain is visible end to end. Anticipate disruption, diversify suppliers, and keep goods flowing - with AI watching for risk in the background.",
     },
     metrics: [
       { value: "24/7", label: "supplier risk monitoring" },
@@ -310,7 +310,7 @@ export const solutions: MarketingPage[] = [
     ],
     pains: {
       heading: "Blind spots become disruptions",
-      body: "Supply chain teams are only as strong as their visibility — and most is stitched from spreadsheets and phone calls. A single supplier's trouble, an unnoticed stockout, or a lapsed certification becomes a disruption you learn about too late.",
+      body: "Supply chain teams are only as strong as their visibility - and most is stitched from spreadsheets and phone calls. A single supplier's trouble, an unnoticed stockout, or a lapsed certification becomes a disruption you learn about too late.",
       items: [
         { icon: AlertTriangle, title: "Hidden supplier risk", body: "Financial and compliance risk surfaces as disruption." },
         { icon: Boxes, title: "Stockouts & overstock", body: "Inventory and buying don't talk to each other." },
@@ -358,7 +358,7 @@ export const solutions: MarketingPage[] = [
       { q: "What supplier risks do you monitor?", a: "RiditStack continuously tracks financial health, compliance and certification status, sanctions and watchlists, and document expirations, alerting you proactively to any change." },
       { q: "Does inventory connect to purchasing?", a: "Yes. Stock levels and reorder points drive requisitions automatically, so buying reflects real demand and critical items don't run dry." },
       { q: "Can we manage multiple sourcing events?", a: "Yes. Run RFQs, RFPs, and reverse auctions on structured data, compare bids side by side, and diversify your supplier base with a full decision trail." },
-      { q: "How does this improve resilience?", a: "By unifying suppliers, risk, contracts, and inventory with early alerts, RiditStack lets you act on weak signals — diversifying and restocking before a disruption forces your hand." },
+      { q: "How does this improve resilience?", a: "By unifying suppliers, risk, contracts, and inventory with early alerts, RiditStack lets you act on weak signals - diversifying and restocking before a disruption forces your hand." },
     ],
     related: {
       features: ["suppliers", "source-to-pay", "inventory", "contracts"],
@@ -385,7 +385,7 @@ export const solutions: MarketingPage[] = [
       titleLead: "Make procurement a lever for",
       titleHighlight: "margin and control.",
       subtitle:
-        "For CFOs, COOs, and founders, procurement is one of the largest controllable line items in the business. RiditStack turns it into a source of measurable savings, real-time control, and defensible compliance — visible from the top.",
+        "For CFOs, COOs, and founders, procurement is one of the largest controllable line items in the business. RiditStack turns it into a source of measurable savings, real-time control, and defensible compliance - visible from the top.",
     },
     metrics: [
       { value: "12%", label: "average savings identified" },
@@ -402,8 +402,8 @@ export const solutions: MarketingPage[] = [
       ],
     },
     solution: {
-      heading: "Control, savings, and proof — from the top",
-      body: "RiditStack puts every dollar under management, enforces policy automatically, and ties savings to real transactions. Leadership gets a live, defensible view of spend, risk, and impact — and procurement becomes a strategic function you can measure.",
+      heading: "Control, savings, and proof - from the top",
+      body: "RiditStack puts every dollar under management, enforces policy automatically, and ties savings to real transactions. Leadership gets a live, defensible view of spend, risk, and impact - and procurement becomes a strategic function you can measure.",
       highlights: [
         "Every dollar under management and visible",
         "Policy enforced automatically at source",
@@ -439,10 +439,10 @@ export const solutions: MarketingPage[] = [
       metricLabel: "realized savings in year one",
     },
     faqs: [
-      { q: "How do you measure realized savings?", a: "Because sourcing awards connect to the POs that use them, RiditStack compares awarded rates to actual spend and reports the delta as realized savings — auditable to individual transactions." },
+      { q: "How do you measure realized savings?", a: "Because sourcing awards connect to the POs that use them, RiditStack compares awarded rates to actual spend and reports the delta as realized savings - auditable to individual transactions." },
       { q: "Can we see spend across multiple entities?", a: "Yes. RiditStack gives a consolidated view across subsidiaries, regions, and business units while keeping entity-level budgets and controls distinct." },
       { q: "How does it reduce compliance risk?", a: "Policy is enforced automatically at the point of buying, and every decision is logged, so compliance is built into the process rather than assumed." },
-      { q: "What reporting do executives get?", a: "Live dashboards plus board-ready exports covering spend, savings, compliance, and supplier performance — available on demand, not weeks later." },
+      { q: "What reporting do executives get?", a: "Live dashboards plus board-ready exports covering spend, savings, compliance, and supplier performance - available on demand, not weeks later." },
     ],
     related: {
       features: ["analytics", "ai-copilot", "source-to-pay", "budgeting"],
@@ -464,13 +464,13 @@ export const solutions: MarketingPage[] = [
     menuLabel: "Startups",
     group: "By company size",
     icon: Rocket,
-    summary: "Build disciplined procurement from day one — without the overhead.",
+    summary: "Build disciplined procurement from day one - without the overhead.",
     eyebrow: "For startups",
     hero: {
       titleLead: "Spend like you'll be audited",
       titleHighlight: "one day.",
       subtitle:
-        "Set up clean, disciplined procurement before bad habits form. RiditStack gives startups enterprise-grade control and AI automation without the enterprise price or the implementation project — live in days, scaling as you grow.",
+        "Set up clean, disciplined procurement before bad habits form. RiditStack gives startups enterprise-grade control and AI automation without the enterprise price or the implementation project - live in days, scaling as you grow.",
     },
     metrics: [
       { value: "< 1 week", label: "to go live" },
@@ -479,7 +479,7 @@ export const solutions: MarketingPage[] = [
     ],
     pains: {
       heading: "Move fast, but don't lose control",
-      body: "Early on, spend happens on personal cards, in Slack, and on trust. It works — until it doesn't. Without light-touch discipline, startups build habits that become expensive, un-auditable messes right when investors start looking closely.",
+      body: "Early on, spend happens on personal cards, in Slack, and on trust. It works - until it doesn't. Without light-touch discipline, startups build habits that become expensive, un-auditable messes right when investors start looking closely.",
       items: [
         { icon: AlertTriangle, title: "Uncontrolled spend", body: "Purchases happen everywhere with no record." },
         { icon: Search, title: "No visibility", body: "Nobody knows total burn by vendor or category." },
@@ -488,7 +488,7 @@ export const solutions: MarketingPage[] = [
     },
     solution: {
       heading: "Enterprise discipline, startup speed",
-      body: "RiditStack gives you just enough process to stay in control — guided requests, simple approvals, and clean spend visibility — with AI doing the heavy lifting. It's live in days and grows into full source-to-pay as you scale.",
+      body: "RiditStack gives you just enough process to stay in control - guided requests, simple approvals, and clean spend visibility - with AI doing the heavy lifting. It's live in days and grows into full source-to-pay as you scale.",
       highlights: [
         "Guided requests and lightweight approvals",
         "Clean spend visibility from day one",
@@ -516,7 +516,7 @@ export const solutions: MarketingPage[] = [
     ],
     story: {
       quote:
-        "We set up RiditStack in an afternoon. Now every purchase has a record and I can see burn by category instantly — investors love it.",
+        "We set up RiditStack in an afternoon. Now every purchase has a record and I can see burn by category instantly - investors love it.",
       author: "Jordan Kim",
       role: "Co-founder & COO",
       company: "Quanta AI",
@@ -525,7 +525,7 @@ export const solutions: MarketingPage[] = [
     },
     faqs: [
       { q: "Isn't procurement software overkill for a startup?", a: "Traditional suites are. RiditStack is right-sized: it gives you light-touch control and AI automation you can set up in days, then scales into full source-to-pay only as you need it." },
-      { q: "How long does setup take?", a: "Most startups are live within a week — often the same day for basic intake and approvals. There's no implementation project required." },
+      { q: "How long does setup take?", a: "Most startups are live within a week - often the same day for basic intake and approvals. There's no implementation project required." },
       { q: "Will it grow with us?", a: "Yes. The same platform expands from simple requests to full sourcing, contracts, and AP automation, so you never have to re-platform as you scale." },
       { q: "Does it connect to our accounting tools?", a: "Yes. RiditStack integrates with common finance and accounting platforms so spend data stays in sync from the start." },
     ],
@@ -554,7 +554,7 @@ export const solutions: MarketingPage[] = [
       titleLead: "Outgrow the spreadsheets,",
       titleHighlight: "not your control.",
       subtitle:
-        "Growth adds sites, teams, and vendors faster than your process can handle. RiditStack standardizes and automates procurement across the whole company — enterprise capability without enterprise cost or complexity.",
+        "Growth adds sites, teams, and vendors faster than your process can handle. RiditStack standardizes and automates procurement across the whole company - enterprise capability without enterprise cost or complexity.",
     },
     metrics: [
       { value: "73%", label: "faster cycle times" },
@@ -563,7 +563,7 @@ export const solutions: MarketingPage[] = [
     ],
     pains: {
       heading: "Growth outpacing your process",
-      body: "What worked at 50 people breaks at 500. New teams and sites each invent their own way to buy, spend visibility fragments, and the manual work multiplies. You need enterprise discipline — without an enterprise-sized project to get there.",
+      body: "What worked at 50 people breaks at 500. New teams and sites each invent their own way to buy, spend visibility fragments, and the manual work multiplies. You need enterprise discipline - without an enterprise-sized project to get there.",
       items: [
         { icon: GitBranch, title: "Fragmented process", body: "Every team and site buys differently." },
         { icon: RefreshCw, title: "Manual overload", body: "Volume grows faster than your team can key it." },
@@ -572,7 +572,7 @@ export const solutions: MarketingPage[] = [
     },
     solution: {
       heading: "Enterprise capability, right-sized",
-      body: "RiditStack standardizes procurement across every team and site, automates the transactional work with AI, and gives you one clear view of spend — without the cost, complexity, or timeline of a legacy enterprise suite.",
+      body: "RiditStack standardizes procurement across every team and site, automates the transactional work with AI, and gives you one clear view of spend - without the cost, complexity, or timeline of a legacy enterprise suite.",
       highlights: [
         "One standard process across the company",
         "AI automation for approvals and AP",
@@ -608,7 +608,7 @@ export const solutions: MarketingPage[] = [
       metricLabel: "unified in one month",
     },
     faqs: [
-      { q: "How does mid-market pricing compare to enterprise suites?", a: "RiditStack delivers enterprise-grade capability at a fraction of the cost and complexity of legacy suites, with no six-month implementation — you see value in weeks." },
+      { q: "How does mid-market pricing compare to enterprise suites?", a: "RiditStack delivers enterprise-grade capability at a fraction of the cost and complexity of legacy suites, with no six-month implementation - you see value in weeks." },
       { q: "Can we roll out across multiple sites?", a: "Yes. You standardize one process across every team and location while keeping site-specific budgets, approvers, and rules distinct." },
       { q: "How long does implementation take?", a: "Most mid-market companies are live on their first workflow in about two weeks and expand from there, category by category." },
       { q: "Does it integrate with our ERP?", a: "Yes. Prebuilt connectors and an open API sync POs, invoices, suppliers, and budgets with your ERP bidirectionally, typically live in days." },
@@ -632,13 +632,13 @@ export const solutions: MarketingPage[] = [
     menuLabel: "Enterprise",
     group: "By company size",
     icon: Building2,
-    summary: "Global scale, deep control, and AI — without legacy suite complexity.",
+    summary: "Global scale, deep control, and AI - without legacy suite complexity.",
     eyebrow: "For enterprise",
     hero: {
       titleLead: "Global procurement control,",
       titleHighlight: "finally without the bloat.",
       subtitle:
-        "RiditStack delivers the scale, security, and control global enterprises demand — multi-entity, multi-currency, deeply configurable — with modern AI and a rollout measured in weeks, not the years legacy suites take.",
+        "RiditStack delivers the scale, security, and control global enterprises demand - multi-entity, multi-currency, deeply configurable - with modern AI and a rollout measured in weeks, not the years legacy suites take.",
     },
     metrics: [
       { value: "Multi-entity", label: "global by design" },
@@ -647,7 +647,7 @@ export const solutions: MarketingPage[] = [
     ],
     pains: {
       heading: "Legacy suites that cost years and millions",
-      body: "Enterprise procurement suites promise control and deliver complexity — multi-year implementations, rigid workflows, and interfaces nobody wants to use. Adoption suffers, maverick spend returns, and the AI is a bolted-on afterthought.",
+      body: "Enterprise procurement suites promise control and deliver complexity - multi-year implementations, rigid workflows, and interfaces nobody wants to use. Adoption suffers, maverick spend returns, and the AI is a bolted-on afterthought.",
       items: [
         { icon: Clock, title: "Endless implementation", body: "Legacy rollouts take years and armies of consultants." },
         { icon: AlertTriangle, title: "Poor adoption", body: "Clunky tools drive users back to email and cards." },
@@ -656,7 +656,7 @@ export const solutions: MarketingPage[] = [
     },
     solution: {
       heading: "Enterprise power, modern experience",
-      body: "RiditStack combines the depth global enterprises need — multi-entity, multi-currency, granular permissions, deep configurability — with an experience people actually use and AI built into the core. The result: real control, real adoption, in a fraction of the time.",
+      body: "RiditStack combines the depth global enterprises need - multi-entity, multi-currency, granular permissions, deep configurability - with an experience people actually use and AI built into the core. The result: real control, real adoption, in a fraction of the time.",
       highlights: [
         "Multi-entity, multi-currency, multi-language",
         "Granular permissions and configurable workflows",
@@ -684,7 +684,7 @@ export const solutions: MarketingPage[] = [
     ],
     story: {
       quote:
-        "We replaced a legacy suite that took three years to implement. RiditStack was live across four regions in a quarter — and people actually use it.",
+        "We replaced a legacy suite that took three years to implement. RiditStack was live across four regions in a quarter - and people actually use it.",
       author: "Thomas Wright",
       role: "Global Head of Procurement",
       company: "Northwind Industries",
@@ -704,7 +704,7 @@ export const solutions: MarketingPage[] = [
     },
     seo: {
       title: "Enterprise Procurement Software | RiditStack",
-      description: "Global scale, deep control, and built-in AI — without legacy suite complexity. RiditStack delivers multi-entity, secure, configurable procurement live in weeks, not years.",
+      description: "Global scale, deep control, and built-in AI - without legacy suite complexity. RiditStack delivers multi-entity, secure, configurable procurement live in weeks, not years.",
       keywords: "enterprise procurement software, global procurement, source to pay enterprise, multi-entity procurement",
     },
   },

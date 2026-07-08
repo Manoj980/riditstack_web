@@ -1,5 +1,5 @@
 /**
- * Minimal structured logger. Keeps PII out of logs by design — callers pass
+ * Minimal structured logger. Keeps PII out of logs by design - callers pass
  * scope + safe metadata (ids, counts, error messages), never raw form bodies.
  */
 type Meta = Record<string, unknown>

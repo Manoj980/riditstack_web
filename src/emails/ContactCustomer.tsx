@@ -11,7 +11,7 @@ export type ContactCustomerProps = {
 export default function ContactCustomer({ name }: ContactCustomerProps) {
   const firstName = name.split(" ")[0] || name
   return (
-    <EmailLayout preview="We've received your message — RiditStack" showResourceLinks>
+    <EmailLayout preview="We've received your message - RiditStack" showResourceLinks>
       <Heading>Thanks for reaching out, {firstName}!</Heading>
       <Paragraph>
         We&apos;ve received your message and a member of our team will get back to

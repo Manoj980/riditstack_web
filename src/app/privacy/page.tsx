@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         {
           heading: "Information we collect",
           body: [
-            "We collect information you provide directly — such as your name, work email, company, and any details you submit through our forms — as well as information generated when you use our products, including usage and log data.",
+            "We collect information you provide directly - such as your name, work email, company, and any details you submit through our forms - as well as information generated when you use our products, including usage and log data.",
             "For customers, we process procurement and business data on your behalf as a data processor, under the terms of your agreement with us.",
           ],
         },

@@ -12,7 +12,7 @@ type FeatureMockProps = {
  * Reusable, abstract "product window" mock rendered in the solution section of
  * every feature page. It adapts to each module using its own metrics and
  * highlights, so the visual language is consistent without ever repeating the
- * same static image. Pure server component — no client JS.
+ * same static image. Pure server component - no client JS.
  */
 export function FeatureMock({ name, icon: Icon, metrics, highlights }: FeatureMockProps) {
   return (

@@ -36,7 +36,7 @@ export default function TermsPage() {
         {
           heading: "Acceptable use",
           body: [
-            "You agree not to misuse our services — including by attempting to disrupt them, access them without authorization, or use them to violate the rights of others or any applicable law.",
+            "You agree not to misuse our services - including by attempting to disrupt them, access them without authorization, or use them to violate the rights of others or any applicable law.",
           ],
         },
         {

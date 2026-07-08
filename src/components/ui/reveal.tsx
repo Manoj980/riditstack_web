@@ -8,7 +8,7 @@ type RevealProps = {
   className?: string
   /** Stagger delay in ms */
   delay?: number
-  /** Reveal variant — "up" (default) or "scale" */
+  /** Reveal variant - "up" (default) or "scale" */
   variant?: "up" | "scale"
   /** Render as a different element */
   as?: React.ElementType
@@ -19,7 +19,7 @@ type RevealProps = {
 /**
  * Lightweight, dependency-free scroll-reveal.
  * Uses a single shared IntersectionObserver, respects prefers-reduced-motion
- * (handled in globals.css), and keeps the main bundle lean — no Framer Motion
+ * (handled in globals.css), and keeps the main bundle lean - no Framer Motion
  * required for these entrance choreographies.
  */
 export function Reveal({

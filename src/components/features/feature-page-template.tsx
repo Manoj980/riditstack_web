@@ -108,7 +108,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* =========================== PROBLEM =========================== */}
       <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="accent">The problem</SectionBadge>
@@ -139,7 +139,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* =========================== SOLUTION =========================== */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <Reveal>
               <SectionBadge tone="primary" icon={Sparkles}>
@@ -179,7 +179,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* =========================== BENEFITS =========================== */}
       <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="primary">Why teams choose it</SectionBadge>
@@ -207,7 +207,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* =========================== WORKFLOW =========================== */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="primary">How it works</SectionBadge>
@@ -238,7 +238,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* =========================== USE CASES =========================== */}
       <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <SectionBadge tone="primary">Where it fits</SectionBadge>
@@ -267,7 +267,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* ============================= FAQ ============================= */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <Reveal>
               <SectionBadge tone="primary">FAQ</SectionBadge>
@@ -294,7 +294,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
       {/* ========================= RELATED ========================= */}
       {related.length > 0 && (
         <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <Reveal>
                 <SectionBadge tone="primary">Explore more</SectionBadge>
@@ -338,7 +338,7 @@ export function FeaturePageTemplate({ feature }: { feature: FeatureContent }) {
 
       {/* ============================= CTA ============================= */}
       <section className="px-4 py-20 sm:py-24 lg:py-32">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <Reveal variant="scale">
             <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">
               <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">

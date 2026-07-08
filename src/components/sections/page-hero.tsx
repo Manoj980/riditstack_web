@@ -15,7 +15,7 @@ type PageHeroProps = {
 }
 
 /**
- * Shared marketing page header — matches the homepage hero's layered
+ * Shared marketing page header - matches the homepage hero's layered
  * aurora/grid/beam backdrop so every inner page reads as one product.
  */
 export function PageHero({

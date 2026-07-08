@@ -18,7 +18,7 @@ export type BookDemoAdminProps = {
 
 export default function BookDemoAdmin(props: BookDemoAdminProps) {
   return (
-    <EmailLayout preview={`New demo request — ${props.company}`}>
+    <EmailLayout preview={`New demo request - ${props.company}`}>
       <Heading>New demo request</Heading>
       <Paragraph>
         A new ProcLeo demo request just came in. Reach out within 24 hours.

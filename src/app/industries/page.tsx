@@ -11,7 +11,7 @@ import { industries } from "@/content/industries"
 export const metadata: Metadata = generateSEO({
   title: "Procurement Software by Industry | RiditStack",
   description:
-    "Industry-specific procurement, powered by RiditStack's flagship AI product ProcLeo — manufacturing, healthcare, retail, construction, technology, government, and more.",
+    "Industry-specific procurement, powered by RiditStack's flagship AI product ProcLeo - manufacturing, healthcare, retail, construction, technology, government, and more.",
   path: "/industries",
 })
 
@@ -27,11 +27,11 @@ export default function IndustriesIndexPage() {
           eyebrowIcon={Building2}
           title="Procurement built for"
           highlight="your industry."
-          subtitle="Every industry buys differently — different risks, rules, and rhythms. RiditStack and its flagship AI product, ProcLeo, adapt to the way your sector actually operates."
+          subtitle="Every industry buys differently - different risks, rules, and rhythms. RiditStack and its flagship AI product, ProcLeo, adapt to the way your sector actually operates."
         />
 
         <section className="px-4 pb-4">
-          <div className="container mx-auto max-w-6xl">
+          <div className="container mx-auto max-w-7xl">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {industries.map((ind, i) => (
                 <Reveal key={ind.slug} delay={(i % 3) * 60}>

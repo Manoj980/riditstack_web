@@ -31,7 +31,7 @@ export function captureUtmFromUrl(): void {
     try {
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(found))
     } catch {
-      /* storage may be unavailable (private mode) — ignore */
+      /* storage may be unavailable (private mode) - ignore */
     }
   }
 }
