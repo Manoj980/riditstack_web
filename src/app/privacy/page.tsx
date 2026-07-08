@@ -14,6 +14,7 @@ export default function PrivacyPage() {
       title="Privacy Policy"
       intro="This policy explains what information RiditStack collects, how we use and protect it, and the choices you have. It applies to our websites and products."
       updated="July 5, 2026"
+      contactCard={false}
       sections={[
         {
           heading: "Information we collect",

@@ -23,7 +23,13 @@ import {
 const DEMO_HREF = "/contact?type=demo"
 
 /* ---------------- Enterprise statistics band ---------------- */
-const stats = [
+const stats: {
+  value: number
+  label: string
+  prefix?: string
+  suffix?: string
+  decimals?: number
+}[] = [
   { value: 1000, suffix: "+", label: "Users worldwide" },
   { value: 400, prefix: "$", suffix: "M", label: "Spend managed" },
   { value: 10, suffix: "+", label: "Countries" },

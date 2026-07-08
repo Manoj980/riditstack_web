@@ -10,11 +10,13 @@ export function LegalPage({
   intro,
   updated,
   sections,
+  contactCard = true,
 }: {
   title: string
   intro: string
   updated: string
   sections: LegalSection[]
+  contactCard?: boolean
 }) {
   return (
     <Layout>
@@ -56,13 +58,15 @@ export function LegalPage({
             ))}
           </div>
 
-          <div className="mt-14 rounded-2xl border border-border bg-muted/40 p-6 text-sm text-muted-foreground">
-            Questions about this policy? Contact us at{" "}
-            <a href="mailto:legal@riditstack.com" className="font-medium text-primary hover:underline">
-              legal@riditstack.com
-            </a>
-            .
-          </div>
+          {contactCard && (
+            <div className="mt-14 rounded-2xl border border-border bg-muted/40 p-6 text-sm text-muted-foreground">
+              Questions about this policy? Contact us at{" "}
+              <a href="mailto:legal@riditstack.com" className="font-medium text-primary hover:underline">
+                legal@riditstack.com
+              </a>
+              .
+            </div>
+          )}
         </div>
       </section>
     </Layout>
