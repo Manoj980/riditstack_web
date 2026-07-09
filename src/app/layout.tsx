@@ -25,7 +25,7 @@ const ttCommonsPro = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://riditstack.com"),
-  title: "RiditStack - Enterprise AI Company | ProcLeo AI Procurement",
+  title: "RiditStack | AI-Powered Procurement & Supply Chain Solutions",
   description:
     "RiditStack is an enterprise AI company building intelligent software for procurement, automation, cloud, and data. Meet ProcLeo, our flagship AI procurement product.",
   keywords:

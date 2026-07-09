@@ -35,7 +35,7 @@ const footerLinks = {
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
     { name: "Book a demo", href: "/contact?type=demo" },
-    { name: "Login", href: "/contact?type=login" },
+    { name: "Login", href: "https://www.product.procleo.com", external: true },
   ],
 }
 
@@ -128,7 +128,11 @@ export function Footer() {
               <ul className="mt-4 space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
-                    <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                    <Link
+                      href={link.href}
+                      {...("external" in link && link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                    >
                       {link.name}
                     </Link>
                   </li>

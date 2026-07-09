@@ -24,11 +24,10 @@ import {
 } from "@/components/ui/navigation-menu"
 
 /**
- * Auth isn't implemented yet, so Login and Book a Demo route to the Contact
- * page with an intent param. Swapping LOGIN_HREF for the real portal later
- * needs no other change to the header.
+ * Login points to the external ProcLeo product portal. Book a Demo routes to
+ * the Contact page with an intent param.
  */
-const LOGIN_HREF = "/contact?type=login"
+const LOGIN_HREF = "https://www.product.procleo.com"
 const DEMO_HREF = "/contact?type=demo"
 
 type MegaItemData = { name: string; href: string; description: string; icon: LucideIcon }
@@ -299,6 +298,8 @@ export function Header() {
           <div className="hidden items-center gap-2 lg:flex">
             {/* <Link
               href={LOGIN_HREF}
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(NAV_ITEM_BASE, "text-foreground/80 hover:text-foreground")}
             >
               Login
@@ -371,7 +372,7 @@ export function Header() {
 
               <div className="mt-2 flex flex-col gap-2 border-t border-border p-2 pt-3">
                 <Button variant="ghost" className="justify-start" asChild>
-                  <Link href={LOGIN_HREF} onClick={() => setMobileMenuOpen(false)}>Login</Link>
+                  <Link href={LOGIN_HREF} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>Login</Link>
                 </Button>
                 <Button className="group btn-shine" asChild>
                   <Link href={DEMO_HREF} onClick={() => setMobileMenuOpen(false)}>
