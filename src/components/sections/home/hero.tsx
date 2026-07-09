@@ -20,7 +20,7 @@ export function HomeHero() {
       {/* Layered premium background */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-mesh opacity-70" />
-        <div className="absolute inset-0 bg-grid mask-fade-b opacity-[0.5]" />
+        <div className="absolute inset-0 bg-hex mask-fade-b opacity-[0.5]" />
         <div className="absolute -top-48 left-1/2 h-[46rem] w-[46rem] -translate-x-1/2 rounded-full aurora animate-aurora" />
         <div className="absolute -left-24 top-24 h-80 w-80 orb animate-drift" />
         <div className="absolute right-[-6rem] top-40 h-72 w-72 orb orb-2 animate-drift [animation-delay:-8s]" />

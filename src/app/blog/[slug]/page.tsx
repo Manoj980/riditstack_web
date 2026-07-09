@@ -6,6 +6,7 @@ import { Reveal } from "@/components/ui/reveal"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, User, ArrowLeft, Newspaper } from "lucide-react"
 import { posts, getPost } from "@/content/blog"
+import { SITE_TITLE } from "@/lib/seo"
 
 type Params = { slug: string }
 
@@ -20,10 +21,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const post = getPost(slug)
-  if (!post) return { title: "Article not found | RiditStack" }
+  if (!post) return {}
 
   return {
-    title: `${post.title} | RiditStack Blog`,
+    title: SITE_TITLE,
     description: post.excerpt,
   }
 }
@@ -42,7 +43,7 @@ export default async function BlogArticlePage({
       {/* Article header */}
       <section className="relative overflow-hidden px-4 pt-12 pb-10 sm:pt-16">
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-grid mask-fade-b opacity-[0.4]" />
+          <div className="absolute inset-0 bg-hex mask-fade-b opacity-[0.4]" />
           <div className="absolute -top-44 left-1/2 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-30" />
         </div>
         <div className="container mx-auto max-w-3xl">

@@ -55,7 +55,7 @@ export function Footer() {
           <div aria-hidden className="pointer-events-none absolute inset-0">
             <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-primary/40 blur-[90px]" />
             <div className="absolute -left-16 bottom-0 h-48 w-48 rounded-full bg-[var(--brand-2)]/25 blur-[90px]" />
-            <div className="absolute inset-0 bg-grid opacity-[0.06]" />
+            <div className="absolute inset-0 bg-hex opacity-[0.06]" />
           </div>
           <div className="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div className="max-w-md">
@@ -77,7 +77,7 @@ export function Footer() {
         {/* Single dark overlay (base tone), below the watermark */}
         <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-[#050814]/80" />
         {/* Subtle grid texture */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-grid opacity-[0.12] mask-fade-b" />
+        <div aria-hidden className="pointer-events-none absolute inset-0 z-0 bg-hex opacity-[0.12] mask-fade-b" />
         {/* Watermark: footer-bg rendered as a Next.js <Image>, centered and scaled to
             ~140% width with its natural aspect ratio preserved - never stretched.
             Sits above the dark overlay (so it stays visible) but below the content. */}

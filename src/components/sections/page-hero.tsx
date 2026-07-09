@@ -30,7 +30,7 @@ export function PageHero({
     <section className="relative overflow-hidden px-4 pt-10 pb-14 sm:pt-16 sm:pb-20">
       {/* Layered animated background field */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-grid mask-fade-b opacity-[0.5]" />
+        <div className="absolute inset-0 bg-hex mask-fade-b opacity-[0.5]" />
         <div className="absolute -top-52 left-1/2 h-[40rem] w-[40rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-40" />
         <div className="absolute -left-20 top-16 h-72 w-72 orb animate-drift" />
         <div className="absolute -right-16 top-24 h-64 w-64 orb orb-2 animate-drift [animation-delay:-8s]" />

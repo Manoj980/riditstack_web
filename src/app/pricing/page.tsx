@@ -11,9 +11,10 @@ import {
 } from "@/components/ui/accordion"
 import { CheckCircle, BadgeDollarSign } from "lucide-react"
 import type { Metadata } from "next"
+import { SITE_TITLE } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Pricing - RiditStack Procurement Platform",
+  title: SITE_TITLE,
   description:
     "Simple, transparent pricing for procurement automation. Choose the plan that fits your business needs with no hidden fees.",
 }

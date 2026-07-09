@@ -1,5 +1,12 @@
 import type { Metadata } from "next"
 
+/**
+ * The browser-tab title shown on every page. Kept uniform site-wide;
+ * per-page titles still feed OpenGraph/Twitter cards for social sharing.
+ */
+export const SITE_TITLE =
+  "RiditStack | AI-Powered Procurement & Supply Chain Solutions"
+
 interface SEOProps {
   title: string
   description: string
@@ -19,7 +26,8 @@ export function generateSEO({
   const fullUrl = `${baseUrl}${path}`
   
   return {
-    title,
+    // Tab title stays uniform across the site; `title` still drives social cards below.
+    title: SITE_TITLE,
     description,
     keywords,
     robots: noIndex ? "noindex, nofollow" : "index, follow",

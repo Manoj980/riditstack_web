@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AnalyticsInit } from "@/components/analytics-init";
+import { SITE_TITLE } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,7 @@ const ttCommonsPro = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://riditstack.com"),
-  title: "RiditStack | AI-Powered Procurement & Supply Chain Solutions",
+  title: SITE_TITLE,
   description:
     "RiditStack is an enterprise AI company building intelligent software for procurement, automation, cloud, and data. Meet ProcLeo, our flagship AI procurement product.",
   keywords:

@@ -25,7 +25,7 @@ export function LegalPage({
     <Layout>
       <section className="relative overflow-hidden px-4 pt-14 pb-10 sm:pt-20">
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-grid mask-fade-b opacity-[0.4]" />
+          <div className="absolute inset-0 bg-hex mask-fade-b opacity-[0.4]" />
           <div className="absolute -top-40 left-1/2 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-30" />
         </div>
         <div className="container mx-auto max-w-3xl text-center">

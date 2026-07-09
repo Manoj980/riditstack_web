@@ -24,7 +24,7 @@ export function CTA() {
             {/* Decorative backdrop */}
             <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
               <div className="absolute -top-32 left-1/2 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-40" />
-              <div className="absolute inset-0 bg-grid opacity-40 mask-fade-b" />
+              <div className="absolute inset-0 bg-hex opacity-40 mask-fade-b" />
             </div>
 
             {/* Certification badges */}

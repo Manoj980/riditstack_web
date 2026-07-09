@@ -11,7 +11,7 @@ export function Hero() {
       {/* Layered animated background field */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         {/* Fine grid with radial fade */}
-        <div className="absolute inset-0 bg-grid mask-fade-b opacity-[0.55]" />
+        <div className="absolute inset-0 bg-hex mask-fade-b opacity-[0.55]" />
         {/* Central aurora */}
         <div className="absolute -top-48 left-1/2 h-[46rem] w-[46rem] -translate-x-1/2 rounded-full aurora animate-aurora" />
         {/* Drifting brand orbs */}

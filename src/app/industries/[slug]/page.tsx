@@ -15,7 +15,7 @@ export function generateStaticParams(): Params[] {
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params
   const page = getIndustry(slug)
-  if (!page) return { title: "Industry not found | RiditStack" }
+  if (!page) return {}
   return generateSEO({
     title: page.seo.title,
     description: page.seo.description,

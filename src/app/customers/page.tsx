@@ -187,7 +187,7 @@ export default function CustomersPage() {
         {/* Hero */}
         <section className="relative overflow-hidden px-4 pt-12 pb-16 sm:pt-20 sm:pb-20">
           <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-            <div className="absolute inset-0 bg-grid mask-fade-b opacity-[0.5]" />
+            <div className="absolute inset-0 bg-hex mask-fade-b opacity-[0.5]" />
             <div className="absolute -top-52 left-1/2 h-[40rem] w-[40rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-40" />
             <div className="absolute -left-20 top-16 h-72 w-72 orb animate-drift" />
             <div className="absolute -right-16 top-24 h-64 w-64 orb orb-2 animate-drift [animation-delay:-8s]" />
@@ -463,7 +463,7 @@ export default function CustomersPage() {
               <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-xl sm:px-12 sm:py-16">
                 <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
                   <div className="absolute -top-32 left-1/2 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full aurora animate-aurora opacity-40" />
-                  <div className="absolute inset-0 bg-grid opacity-40 mask-fade-b" />
+                  <div className="absolute inset-0 bg-hex opacity-40 mask-fade-b" />
                 </div>
                 <h2 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight sm:text-6xl">
                   Become the next

@@ -13,9 +13,10 @@ import {
   Building2,
 } from "lucide-react"
 import type { Metadata } from "next"
+import { SITE_TITLE } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "About - RiditStack Procurement Platform",
+  title: SITE_TITLE,
   description:
     "Learn about RiditStack's mission to revolutionize procurement automation and help businesses optimize their purchasing processes.",
 }

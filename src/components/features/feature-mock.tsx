@@ -19,7 +19,7 @@ export function FeatureMock({ name, icon: Icon, metrics, highlights }: FeatureMo
     <div className="border-glow relative overflow-hidden rounded-3xl border border-border bg-card p-5 shadow-xl glow-soft sm:p-6">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-16 -right-10 h-40 w-40 rounded-full aurora animate-aurora opacity-25" />
-        <div className="absolute inset-0 bg-grid opacity-30 mask-fade-b" />
+        <div className="absolute inset-0 bg-hex opacity-30 mask-fade-b" />
       </div>
 
       {/* Window chrome */}

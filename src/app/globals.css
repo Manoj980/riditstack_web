@@ -235,6 +235,11 @@
       linear-gradient(to bottom, color-mix(in oklch, var(--foreground) 6%, transparent) 1px, transparent 1px);
     background-size: 56px 56px;
   }
+  /* Seamless isometric 3D cubes — each hexagon split into 3 shaded rhombi (top/right/left faces) */
+  .bg-hex {
+    background-image: url("data:image/svg+xml,%3Csvg%20width='27.7128'%20height='48'%20viewBox='0%200%2027.7128%2048'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20stroke='%23ffffff'%20stroke-opacity='0.08'%20stroke-width='0.5'%3E%3Cg%20fill='%23ffffff'%20fill-opacity='0.12'%3E%3Cpath%20d='M13.8564,8L27.7128,16L13.8564,24L0,16Z'/%3E%3Cpath%20d='M0,-16L13.8564,-8L0,0L-13.8564,-8Z'/%3E%3Cpath%20d='M27.7128,-16L41.5692,-8L27.7128,0L13.8564,-8Z'/%3E%3Cpath%20d='M0,32L13.8564,40L0,48L-13.8564,40Z'/%3E%3Cpath%20d='M27.7128,32L41.5692,40L27.7128,48L13.8564,40Z'/%3E%3C/g%3E%3Cg%20fill='%23ffffff'%20fill-opacity='0.06'%3E%3Cpath%20d='M27.7128,16L27.7128,32L13.8564,40L13.8564,24Z'/%3E%3Cpath%20d='M13.8564,-8L13.8564,8L0,16L0,0Z'/%3E%3Cpath%20d='M41.5692,-8L41.5692,8L27.7128,16L27.7128,0Z'/%3E%3Cpath%20d='M13.8564,40L13.8564,56L0,64L0,48Z'/%3E%3Cpath%20d='M41.5692,40L41.5692,56L27.7128,64L27.7128,48Z'/%3E%3C/g%3E%3Cg%20fill='%23ffffff'%20fill-opacity='0.02'%3E%3Cpath%20d='M0,16L13.8564,24L13.8564,40L0,32Z'/%3E%3Cpath%20d='M-13.8564,-8L0,0L0,16L-13.8564,8Z'/%3E%3Cpath%20d='M13.8564,-8L27.7128,0L27.7128,16L13.8564,8Z'/%3E%3Cpath%20d='M-13.8564,40L0,48L0,64L-13.8564,56Z'/%3E%3Cpath%20d='M13.8564,40L27.7128,48L27.7128,64L13.8564,56Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 56px 97px;
+  }
   .bg-dots {
     background-image: radial-gradient(color-mix(in oklch, var(--foreground) 12%, transparent) 1px, transparent 1px);
     background-size: 22px 22px;

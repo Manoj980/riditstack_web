@@ -7,9 +7,10 @@ import { SectionBadge } from "@/components/ui/section-badge"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, ArrowRight, User, Newspaper, Mail, BookOpen } from "lucide-react"
 import { featuredPost, otherPosts } from "@/content/blog"
+import { SITE_TITLE } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Blog - RiditStack Procurement Platform",
+  title: SITE_TITLE,
   description: "Latest insights, best practices, and industry trends in procurement automation and spend management.",
 }
 

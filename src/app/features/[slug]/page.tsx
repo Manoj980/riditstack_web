@@ -18,7 +18,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const feature = getFeature(slug)
-  if (!feature) return { title: "Feature not found | RiditStack" }
+  if (!feature) return {}
 
   return generateSEO({
     title: feature.seo.title,

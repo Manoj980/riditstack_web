@@ -20,9 +20,10 @@ import type { LucideIcon } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
 import { DemoForm } from "@/components/forms/demo-form"
 import type { Metadata } from "next"
+import { SITE_TITLE } from "@/lib/seo"
 
 export const metadata: Metadata = {
-  title: "Contact - RiditStack Procurement Platform",
+  title: SITE_TITLE,
   description:
     "Get in touch with RiditStack. Book a personalized demo, get login assistance, ask questions, or learn how we can help optimize your procurement processes.",
 }

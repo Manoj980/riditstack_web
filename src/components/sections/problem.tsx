@@ -33,7 +33,7 @@ export function Problem() {
   return (
     <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-32">
       {/* Calm, neutral backdrop - the coral accents live in the cards, not the background */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid opacity-[0.22] mask-fade-b" />
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-hex opacity-[0.22] mask-fade-b" />
 
       <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
