@@ -7,7 +7,7 @@ import { industries } from "@/content/industries"
 
 export function HomeSolutions() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-15">
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <Reveal>
@@ -48,7 +48,7 @@ export function HomeSolutions() {
 
 export function HomeIndustries() {
   return (
-    <section className="px-4 py-20 sm:py-24 lg:py-32">
+    <section className="px-4 py-20 sm:py-24 lg:py-15">
       <div className="container mx-auto max-w-7xl">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <Reveal>

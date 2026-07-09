@@ -47,6 +47,16 @@ export const metadata: Metadata = {
       "Intelligent enterprise software from RiditStack, powered by ProcLeo - our flagship AI procurement product.",
   },
   alternates: { canonical: "https://riditstack.com" },
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({

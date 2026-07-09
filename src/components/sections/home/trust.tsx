@@ -29,7 +29,7 @@ const securityFeatures = [
 
 export function SecurityCompliance() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-20">
       <div className="container mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
@@ -78,7 +78,7 @@ export function SecurityCompliance() {
 /* ---------------- Integrations ---------------- */
 export function HomeIntegrations() {
   return (
-    <section className="px-4 py-20 sm:py-24 lg:py-32">
+    <section className="px-4 py-20 sm:py-24 lg:py-15">
       <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Plug}>Integrations</SectionBadge></Reveal>
@@ -128,7 +128,7 @@ const quotes = [
 
 export function HomeTestimonials() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-15">
       <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Star}>Testimonials</SectionBadge></Reveal>
@@ -209,7 +209,7 @@ export function CaseStudiesTeaser() {
 
 export function ResourcesTeaser() {
   return (
-    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
+    <section className="border-t border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-15">
       <div className="container mx-auto max-w-7xl">
         <div className="grid items-center gap-8 rounded-3xl border border-border bg-card p-8 shadow-sm md:grid-cols-[1.3fr_1fr] sm:p-10">
           <div>

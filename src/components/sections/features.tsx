@@ -120,7 +120,7 @@ export function Features() {
   const current = features[active]
 
   return (
-    <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-32">
+    <section className="relative overflow-hidden px-4 py-20 sm:py-24 lg:py-22">
       {/* Calm tinted surface - a change of shade for rhythm, no gradient wash */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 border-y border-border bg-muted/40" />
 

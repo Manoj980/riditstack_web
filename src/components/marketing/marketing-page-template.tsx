@@ -293,7 +293,7 @@ export function MarketingPageTemplate({
       </section>
 
       {/* ============================= FAQ ============================= */}
-      <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
+      <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-15">
         <div className="container mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <Reveal>

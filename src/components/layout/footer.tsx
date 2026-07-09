@@ -50,7 +50,7 @@ export function Footer() {
   return (
     <footer className="dark relative overflow-hidden border-t border-white/10 bg-[#0a0e1a] py-10 text-white">
       {/* Newsletter */}
-      <div className="relative z-10 container mx-auto px-4 pt-14">
+      <div className="relative z-10 container mx-auto px-4 pt-10">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[oklch(0.24_0.05_282)] via-[oklch(0.19_0.04_284)] to-[oklch(0.15_0.03_286)] px-6 py-10 shadow-2xl ring-1 ring-white/10 sm:px-10 sm:py-12">
           <div aria-hidden className="pointer-events-none absolute inset-0">
             <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-primary/40 blur-[90px]" />

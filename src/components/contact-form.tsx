@@ -1,11 +1,22 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react"
+import {
+  ArrowRight,
+  CheckCircle2,
+  Handshake,
+  HelpCircle,
+  KeyRound,
+  Loader2,
+  MessageSquare,
+  Sparkles,
+  Wrench,
+} from "lucide-react"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Honeypot, SelectField, TextAreaField, TextField } from "@/components/forms/fields"
+import { Honeypot, TextAreaField, TextField } from "@/components/forms/fields"
+import { SelectMenu, type SelectOption } from "@/components/forms/select-menu"
 import { Turnstile } from "@/components/forms/turnstile"
 import { useFormSubmit } from "@/hooks/use-form-submit"
 
@@ -20,13 +31,13 @@ type ContactFormProps = {
   submitLabel?: string
 }
 
-const REASONS: { value: string; label: string }[] = [
-  { value: "demo", label: "Demo Request" },
-  { value: "login", label: "Login Assistance" },
-  { value: "sales", label: "Sales Inquiry" },
-  { value: "support", label: "Technical Support" },
-  { value: "partnership", label: "Partnership Opportunity" },
-  { value: "other", label: "Other" },
+const REASONS: SelectOption[] = [
+  { value: "demo", label: "Demo Request", icon: Sparkles },
+  { value: "login", label: "Login Assistance", icon: KeyRound },
+  { value: "sales", label: "Sales Inquiry", icon: MessageSquare },
+  { value: "support", label: "Technical Support", icon: Wrench },
+  { value: "partnership", label: "Partnership Opportunity", icon: Handshake },
+  { value: "other", label: "Other", icon: HelpCircle },
 ]
 
 export function ContactForm({
@@ -46,6 +57,7 @@ export function ContactForm({
   })
   const [honeypot, setHoneypot] = useState("")
   const [turnstileToken, setTurnstileToken] = useState("")
+  const [clientErrors, setClientErrors] = useState<Record<string, string>>({})
 
   const { submit, isSubmitting, isSuccess, fieldErrors } = useFormSubmit({
     endpoint: "/api/contact",
@@ -55,11 +67,38 @@ export function ContactForm({
     (key: keyof typeof form) =>
     (
       e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
-    ) =>
+    ) => {
       setForm((f) => ({ ...f, [key]: e.target.value }))
+      // Clear this field's client-side error as soon as the user edits it.
+      setClientErrors((prev) => {
+        if (!prev[key]) return prev
+        const next = { ...prev }
+        delete next[key]
+        return next
+      })
+    }
+
+  // Validate every required field on the client so they all highlight together
+  // (the server treats `subject`/reason as optional, and an early return would
+  // skip server validation for the rest).
+  function validate() {
+    const e: Record<string, string> = {}
+    if (!form.firstName.trim()) e.firstName = "First name is required."
+    if (!form.lastName.trim()) e.lastName = "Last name is required."
+    if (!form.email.trim()) e.email = "Email address is required."
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
+      e.email = "Enter a valid email address."
+    if (!form.reason) e.reason = "Please select a reason for contact."
+    if (!form.message.trim()) e.message = "Message is required."
+    return e
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    const errs = validate()
+    setClientErrors(errs)
+    if (Object.keys(errs).length > 0) return
+
     const reasonLabel = REASONS.find((r) => r.value === form.reason)?.label
     await submit({
       name: `${form.firstName} ${form.lastName}`.trim(),
@@ -73,9 +112,12 @@ export function ContactForm({
     })
   }
 
-  // Map server-side `name`/`subject` errors back to the split UI fields.
-  const nameError = fieldErrors.name
-  const subjectError = fieldErrors.subject
+  // Client-side errors take precedence, falling back to server field errors.
+  const firstNameError = clientErrors.firstName ?? fieldErrors.name
+  const lastNameError = clientErrors.lastName
+  const emailError = clientErrors.email ?? fieldErrors.email
+  const subjectError = clientErrors.reason ?? fieldErrors.subject
+  const messageError = clientErrors.message ?? fieldErrors.message
 
   if (isSuccess) {
     return (
@@ -124,7 +166,7 @@ export function ContactForm({
               autoComplete="given-name"
               value={form.firstName}
               onChange={set("firstName")}
-              error={nameError}
+              error={firstNameError}
             />
             <TextField
               label="Last name"
@@ -133,6 +175,7 @@ export function ContactForm({
               autoComplete="family-name"
               value={form.lastName}
               onChange={set("lastName")}
+              error={lastNameError}
             />
           </div>
 
@@ -144,7 +187,7 @@ export function ContactForm({
             autoComplete="email"
             value={form.email}
             onChange={set("email")}
-            error={fieldErrors.email}
+            error={emailError}
           />
 
           <div className="grid gap-4 md:grid-cols-2">
@@ -167,21 +210,24 @@ export function ContactForm({
             />
           </div>
 
-          <SelectField
+          <SelectMenu
             label="Reason for contact"
             name="reason"
             required
             value={form.reason}
-            onChange={set("reason")}
+            onValueChange={(v) => {
+              setForm((f) => ({ ...f, reason: v }))
+              setClientErrors((prev) => {
+                if (!prev.reason) return prev
+                const next = { ...prev }
+                delete next.reason
+                return next
+              })
+            }}
+            options={REASONS}
+            placeholder="Select a reason"
             error={subjectError}
-          >
-            <option value="">Select a reason</option>
-            {REASONS.map((r) => (
-              <option key={r.value} value={r.value}>
-                {r.label}
-              </option>
-            ))}
-          </SelectField>
+          />
 
           <TextAreaField
             label="Message"
@@ -191,7 +237,7 @@ export function ContactForm({
             placeholder="Tell us more about how we can help..."
             value={form.message}
             onChange={set("message")}
-            error={fieldErrors.message}
+            error={messageError}
           />
 
           <Turnstile onToken={setTurnstileToken} />

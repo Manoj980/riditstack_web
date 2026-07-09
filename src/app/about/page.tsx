@@ -117,7 +117,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="px-4 py-20 sm:py-24 lg:py-32">
+      <section className="px-4 py-20 sm:py-24 lg:py-15">
         <div className="container mx-auto max-w-7xl">
           <div className="grid gap-6 lg:grid-cols-2">
             {[
@@ -147,7 +147,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-32">
+      <section className="border-t border-border px-4 py-20 sm:py-24 lg:py-15">
         <div className="container mx-auto max-w-7xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Our values</h2>
@@ -173,7 +173,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership */}
-      <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-32">
+      <section className="border-t border-border bg-muted/20 px-4 py-20 sm:py-24 lg:py-20">
         <div className="container mx-auto max-w-7xl">
           <Reveal className="mb-12 text-center">
             <h2 className="text-3xl font-semibold tracking-tight">Leadership team</h2>

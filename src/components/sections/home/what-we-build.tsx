@@ -100,7 +100,7 @@ const areas = [
 
 export function WhatWeBuild() {
   return (
-    <section className="border-y border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-32">
+    <section className="border-y border-border bg-muted/40 px-4 py-20 sm:py-24 lg:py-15">
       <div className="container mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal><SectionBadge tone="primary" icon={Sparkles}>What we build</SectionBadge></Reveal>
@@ -169,7 +169,7 @@ const procleoCallouts = [
 
 export function ProcleoHighlight() {
   return (
-    <section className="px-4 py-20 sm:py-24 lg:py-32">
+    <section className="px-4 py-20 sm:py-24 lg:py-15">
       <div className="container mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>

@@ -181,12 +181,12 @@ const NAV_ITEM_BASE =
 
 const triggerClass = cn(
   NAV_ITEM_BASE,
-  "bg-transparent text-foreground/80 hover:bg-muted hover:text-foreground data-[state=open]:bg-primary/10 data-[state=open]:text-primary"
+  "bg-transparent text-foreground/80 hover:bg-muted hover:text-foreground focus:bg-muted focus:text-foreground data-[state=open]:bg-primary/10 data-[state=open]:text-primary"
 )
 
 const linkClass = cn(
   NAV_ITEM_BASE,
-  "nav-underline text-foreground/80 hover:text-foreground"
+  "nav-underline text-foreground/80 hover:text-foreground focus:bg-transparent focus:text-foreground"
 )
 
 function MegaItem({ name, href, description, icon: Icon }: MegaItemData) {
