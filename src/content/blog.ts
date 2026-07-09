@@ -8,6 +8,8 @@ export type BlogPost = {
   title: string
   excerpt: string
   author: string
+  /** Optional author role/affiliation shown under the byline on the article page */
+  authorTitle?: string
   date: string
   readTime: string
   category: string
@@ -22,6 +24,7 @@ export const posts: BlogPost[] = [
     excerpt:
       "From GST-aware invoice automation to GeM and ONDC, artificial intelligence is rewriting how Indian organisations buy. Here are the five trends procurement and finance leaders should track this year.",
     author: "Suman Kumar",
+    authorTitle: "Director, RiditStack, Bangalore, India",
     date: "June 18, 2026",
     readTime: "9 min read",
     category: "AI & Automation",
@@ -97,6 +100,7 @@ export const posts: BlogPost[] = [
     excerpt:
       "A practical, India-specific playbook for taking cost out of procurement, from reclaiming GST input credit to consolidating vendors and taming tail spend, without disrupting operations.",
     author: "Manish Mishra",
+    authorTitle: "Director, RiditStack, Bangalore, India",
     date: "June 12, 2026",
     readTime: "8 min read",
     category: "Procurement Best Practices",
@@ -164,7 +168,8 @@ export const posts: BlogPost[] = [
     title: "Case Study: How a Pune Auto-Components Maker Saved ₹15 Crore a Year",
     excerpt:
       "A mid-sized manufacturer supplying India's auto industry cut costs, sped up approvals, and protected its GST credit after moving procurement onto a single intelligent platform. Here is how.",
-    author: "Manoj Sharma",
+    author: "Dr. Purushottam Arya",
+    authorTitle: "Assistant Professor, Delhi School of Economics",
     date: "June 6, 2026",
     readTime: "6 min read",
     category: "Case Studies",
@@ -226,7 +231,8 @@ export const posts: BlogPost[] = [
     title: "A Complete Guide to Supplier Risk Management for Indian Businesses",
     excerpt:
       "Supplier risk looks different in an MSME-heavy, GST-governed economy. A practical framework for identifying, assessing, and mitigating vendor risk without slowing your business down.",
-    author: "Pritesh Kumar",
+    author: "Dr. Vishal Sinha",
+    authorTitle: "Senior Data Scientist, Epassi, Finland",
     date: "May 29, 2026",
     readTime: "10 min read",
     category: "Industry Insights",
@@ -295,6 +301,7 @@ export const posts: BlogPost[] = [
     excerpt:
       "Our redesigned analytics gives Indian finance and procurement teams a GST-aware, entity-wise view of spend, with AI that surfaces savings and leakage automatically.",
     author: "Manish Mishra",
+    authorTitle: "Director, RiditStack, Bangalore, India",
     date: "May 22, 2026",
     readTime: "5 min read",
     category: "Product Updates",
@@ -344,7 +351,8 @@ export const posts: BlogPost[] = [
     title: "Building a Business Case for Procurement Automation in India",
     excerpt:
       "How to calculate ROI in rupees and win over the CFO, IT, and operations, with a practical model tailored to Indian cost structures and compliance realities.",
-    author: "Manoj Sharma",
+    author: "Dr. Purushottam Arya",
+    authorTitle: "Assistant Professor, Delhi School of Economics",
     date: "May 15, 2026",
     readTime: "7 min read",
     category: "Procurement Best Practices",
@@ -398,7 +406,8 @@ export const posts: BlogPost[] = [
     title: "The State of Procurement Technology in India, 2026",
     excerpt:
       "Our annual read on how Indian organisations are adopting procurement technology, the role of digital public infrastructure, and the barriers still holding many teams back.",
-    author: "Pritesh Kumar",
+    author: "Dr. Vishal Sinha",
+    authorTitle: "Senior Data Scientist, Epassi, Finland",
     date: "May 8, 2026",
     readTime: "11 min read",
     category: "Industry Insights",

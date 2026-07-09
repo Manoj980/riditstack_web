@@ -97,7 +97,10 @@ export function SelectField({
         name={name}
         aria-invalid={!!error}
         aria-describedby={error ? `${name}-error` : undefined}
-        className={cn(controlClass)}
+        className={cn(
+          controlClass,
+          "[color-scheme:dark] [&>option]:bg-[#0f121e] [&>option]:text-white/90",
+        )}
         {...rest}
       >
         {children}

@@ -84,6 +84,12 @@ export default async function BlogArticlePage({
               {post.readTime}
             </span>
           </Reveal>
+
+          {post.authorTitle ? (
+            <Reveal delay={200} className="mt-2 text-sm text-muted-foreground/80">
+              {post.authorTitle}
+            </Reveal>
+          ) : null}
         </div>
       </section>
 
